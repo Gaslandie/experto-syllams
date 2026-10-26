@@ -26,16 +26,16 @@ const testimonials = [
   {
     id: 1,
     image: testimonialsImage1,
-    name: 'Client Feedback',
-    role: 'Coming Soon',
-    text: `This space will feature client feedback once it has been collected and approved for publication. The layout is shown with provisional content.`,
+    name: 'Avis clients',
+    role: 'À venir',
+    text: `Cet espace présentera les avis des clients après leur collecte et leur validation. Le contenu affiché est provisoire.`,
   },
   {
     id: 2,
     image: testimonialsImage2,
-    name: 'Client Feedback',
-    role: 'Coming Soon',
-    text: `This space will feature client feedback once it has been collected and approved for publication. The layout is shown with provisional content.`,
+    name: 'Avis clients',
+    role: 'À venir',
+    text: `Cet espace présentera les avis des clients après leur collecte et leur validation. Le contenu affiché est provisoire.`,
   },
 ];
 
@@ -64,7 +64,7 @@ const Testimonial = () => {
                       <figure className="image">
                         <img src={image} alt={name} width={120} height={120} />
                       </figure>
-                      <div className="star" aria-label="Template decoration — no client rating published">
+                      <div className="star" aria-label="Décoration : aucune note client publiée">
                         {[...Array(5)].map((_, i) => (
                           <i key={i} className="fa-solid fa-star" />
                         ))}
@@ -82,10 +82,10 @@ const Testimonial = () => {
             ))}
           </Swiper>
           <div className="swiper-arry">
-            <button className="testimonial-prev" aria-label="Previous testimonial">
+            <button className="testimonial-prev" aria-label="Avis précédent">
               <i className="fa-solid fa-arrow-left" />
             </button>
-            <button className="testimonial-next" aria-label="Next testimonial">
+            <button className="testimonial-next" aria-label="Avis suivant">
               <i className="fa-solid fa-arrow-right" />
             </button>
           </div>

@@ -16,23 +16,23 @@ const slides = [
   {
     Image: BannerImage1,
     subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Expertise for <span>your next chapter</span> Build with Confidence",
-    buttonText: "Explore Our Firms",
-    text: "Six firms bringing together audit, consulting and training to support your next steps.",
+    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
+    buttonText: "Découvrir nos cabinets",
+    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
   },
   {
     Image: BannerImage2,
     subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Expertise for <span>your next chapter</span> Build with Confidence",
-    buttonText: "Explore Our Firms",
-    text: "Six firms bringing together audit, consulting and training to support your next steps.",
+    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
+    buttonText: "Découvrir nos cabinets",
+    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
   },
   {
     Image: BannerImage3,
     subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Expertise for <span>your next chapter</span> Build with Confidence",
-    buttonText: "Explore Our Firms",
-    text: "Six firms bringing together audit, consulting and training to support your next steps.",
+    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
+    buttonText: "Découvrir nos cabinets",
+    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
   },
 ];
 
@@ -104,7 +104,7 @@ function Banner() {
       <div className="sec-shape">
         <img src={BannerShapeImage2} alt="Shape" />
       </div>
-      <button aria-label="Discover the group" className="goBottom-btn" onClick={handleScrollToAbout}>
+      <button aria-label="Découvrir le groupe" className="goBottom-btn" onClick={handleScrollToAbout}>
         <svg
           className="animation__arryUpDown"
           width="16"

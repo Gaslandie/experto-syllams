@@ -7,22 +7,22 @@ import ChooseImage1 from '../../assets/images/experto/professionnel.webp';
 import CounterUp from '../../lib/CounterUp';
 
 const progressData = [
-  { value: 100, percent: 6, title: "Group Firms" },
-  { value: 100, percent: 3, title: "Core Activities" },
+  { value: 100, percent: 6, title: "Cabinets du groupe" },
+  { value: 100, percent: 3, title: "Domaines d’activité" },
 ];
 
 const tabData = {
   about: {
-    title: "About Us",
-    content: "Six firms, one group: explore our audit, consulting and training activities. Institutional information is being prepared.",
+    title: "À propos",
+    content: "Six cabinets, un groupe : découvrez nos activités d’audit, de conseil et de formation. La présentation institutionnelle est en préparation.",
   },
   mission: {
-    title: "Our Mission",
-    content: "Provisional mission: bring together complementary expertise to support organisations and professional development. To be validated by the group.",
+    title: "Notre mission",
+    content: "Mission provisoire : réunir des expertises complémentaires pour accompagner les organisations et le développement professionnel. À valider par le groupe.",
   },
   vision: {
-    title: "Our Vision",
-    content: "Provisional vision: create lasting connections between business expertise and the development of skills. To be validated by the group.",
+    title: "Notre vision",
+    content: "Vision provisoire : créer des liens durables entre expertise professionnelle et développement des compétences. À valider par le groupe.",
   },
 };
 
@@ -81,9 +81,9 @@ function Choose() {
           <div className="col-xl-6 content-column">
             <div className="inner-column">
               <div className="sec-title mb-30">
-                <h6 className="sub-title wow fadeInUp">Mission & Vision</h6>
+                <h6 className="sub-title wow fadeInUp">Mission et vision</h6>
                 <h2 className="title wow splt-txt" data-splitting>
-                  Bringing our expertise together to support your next steps.
+                  Réunir nos expertises pour accompagner vos projets.
                 </h2>
               </div>
               <div className="choose-tab">
@@ -109,15 +109,15 @@ function Choose() {
                     <p className="text">{tabData[activeTab].content}</p>
                     <div className="list mt-30 mb-50 d-flex flex-wrap gap-4">
                       <ul className="list-unstyled">
-                        <li><i className="fa-solid fa-check"></i> Audit Activities</li>
-                        <li><i className="fa-solid fa-check"></i> Business Consulting</li>
+                        <li><i className="fa-solid fa-check"></i> Activités d’audit</li>
+                        <li><i className="fa-solid fa-check"></i> Conseil aux entreprises</li>
                       </ul>
                       <ul className="list-unstyled">
-                        <li><i className="fa-solid fa-check"></i> Professional Training</li>
-                        <li><i className="fa-solid fa-check"></i> Certification Programmes</li>
+                        <li><i className="fa-solid fa-check"></i> Formation professionnelle</li>
+                        <li><i className="fa-solid fa-check"></i> Programmes de certification</li>
                       </ul>
                     </div>
-                    <Link to="/page-about" className="btn-two">Discover More</Link>
+                    <Link to="/page-about" className="btn-two">En savoir plus</Link>
                   </div>
                 </div>
               </div>

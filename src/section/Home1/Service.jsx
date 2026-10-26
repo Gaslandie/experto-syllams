@@ -47,10 +47,10 @@ function Service() {
       <div className="container">
 
         <div className="sec-title mb-50">
-          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Our Expertise</h6>
+          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Nos expertises</h6>
           <div className="flex-content">
-            <h2 className="title wow splt-txt" data-splitting>Supporting Your Business <br /> Developing Your Skills</h2>
-            <Link className="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" to="/page-services">All Services</Link>
+            <h2 className="title wow splt-txt" data-splitting>Accompagner vos projets <br /> Développer vos compétences</h2>
+            <Link className="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" to="/page-services">Tous les services</Link>
             <figure className="arry wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
               <img className="animation__arryLeftRight" src={ServiceImage3} alt="Image" />
             </figure>
@@ -79,7 +79,7 @@ function Service() {
                   <div className="content">
                     <span className="number">01</span>
                     <h4 className="title"><Link to="/page-services">Audit</Link></h4>
-                    <p className="text">Explore our audit activities and the firms behind them.</p>
+                    <p className="text">Découvrez nos activités d’audit et les cabinets qui les portent.</p>
                   </div>
                 </div>
                 <div className="image-box">
@@ -121,8 +121,8 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Consulting</Link></h4>
-                    <p className="text">Discover our consulting activities and specialist firms.</p>
+                    <h4 className="title"><Link to="/page-services">Conseil</Link></h4>
+                    <p className="text">Découvrez nos activités de conseil et nos cabinets spécialisés.</p>
                   </div>
                 </div>
                 <div className="image-box">
@@ -149,8 +149,8 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Training & Certifications</Link></h4>
-                    <p className="text">Programmes and certification details to be confirmed.</p>
+                    <h4 className="title"><Link to="/page-services">Formation et certifications</Link></h4>
+                    <p className="text">Programmes et modalités de certification à confirmer.</p>
                   </div>
                 </div>
                 <div className="image-box">
@@ -181,7 +181,7 @@ function Service() {
                   <div className="content">
                     <span className="number">01</span>
                     <h4 className="title"><Link to="/page-services">Audit</Link></h4>
-                    <p className="text">Explore our audit activities and the firms behind them.</p>
+                    <p className="text">Découvrez nos activités d’audit et les cabinets qui les portent.</p>
                   </div>
                 </div>
                 <div className="image-box">
@@ -223,8 +223,8 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Consulting</Link></h4>
-                    <p className="text">Discover our consulting activities and specialist firms.</p>
+                    <h4 className="title"><Link to="/page-services">Conseil</Link></h4>
+                    <p className="text">Découvrez nos activités de conseil et nos cabinets spécialisés.</p>
                   </div>
                 </div>
                 <div className="image-box">
@@ -251,8 +251,8 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Training & Certifications</Link></h4>
-                    <p className="text">Programmes and certification details to be confirmed.</p>
+                    <h4 className="title"><Link to="/page-services">Formation et certifications</Link></h4>
+                    <p className="text">Programmes et modalités de certification à confirmer.</p>
                   </div>
                 </div>
                 <div className="image-box">

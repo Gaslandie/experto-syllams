@@ -17,13 +17,13 @@ function About() {
           <div className="col-lg-6 image-column">
             <div className="inner-column">
               <div className="image1 overlay-anim">
-                <img src={AboutImage1} alt="Team Discussion" />
+                <img src={AboutImage1} alt="Discussion en équipe" />
               </div>
               <div className="info animation__arryLeftRight">
-                <img src={AboutImage2} alt="About Info Graphic" />
+                <img src={AboutImage2} alt="Illustration" />
               </div>
               <div className="image2 overlay-anim">
-                <img src={AboutImage3} alt="Office Environment" />
+                <img src={AboutImage3} alt="Environnement de travail" />
               </div>
             </div>
           </div>
@@ -33,11 +33,11 @@ function About() {
             <div className="inner-column">
               <div className="content-box">
                 <div className="sec-title">
-                  <h6 className="sub-title">ABOUT US</h6>
-                  <h2 className="title">Six Firms, One Shared Vision for Your Business</h2>
+                  <h6 className="sub-title">QUI SOMMES-NOUS</h6>
+                  <h2 className="title">Six cabinets, une vision commune pour vos projets</h2>
                   <p className="text">
-                    GROUPE EXPERTO-SYLLAMS brings together <strong>PANAUDEX</strong>, <strong>LIFE-PARTNERS</strong>,
-                    {' '}<strong>Syllams Expertise</strong>, <strong>NOVEO</strong>, <strong>FIDEXIE</strong> and <strong>AFRIC CONSEIL</strong>.
+                    GROUPE EXPERTO-SYLLAMS réunit <strong>PANAUDEX</strong>, <strong>LIFE-PARTNERS</strong>,
+                    {' '}<strong>Syllams Expertise</strong>, <strong>NOVEO</strong>, <strong>FIDEXIE</strong> et <strong>AFRIC CONSEIL</strong>.
                   </p>
                 </div>
 
@@ -52,10 +52,9 @@ function About() {
                       </svg>
                     </div>
                     <div className="content">
-                      <h4 className="title">Audit & Consulting</h4>
+                      <h4 className="title">Audit et conseil</h4>
                       <p className="text">
-                        Explore the group’s audit and consulting activities. Detailed service
-                        descriptions will be confirmed by each firm.
+                        Découvrez les activités d’audit et de conseil du groupe. Le détail des services sera confirmé par chaque cabinet.
                       </p>
                     </div>
                   </div>
@@ -71,10 +70,9 @@ function About() {
                       </svg>
                     </div>
                     <div className="content">
-                      <h4 className="title">Training & Certifications</h4>
+                      <h4 className="title">Formation et certifications</h4>
                       <p className="text">
-                        Discover our future training and certification catalogue. Programmes,
-                        dates and registration details are being prepared.
+                        Découvrez notre futur catalogue de formations et de certifications. Les programmes, dates et modalités d’inscription sont en préparation.
                       </p>
                     </div>
                   </div>
@@ -83,21 +81,21 @@ function About() {
 
               {/* Progress Bar */}
               <div className="progress mt-30">
-                <ProgressBar title="Illustrative template graphic" targetPercentage={80} />
+                <ProgressBar title="Graphique illustratif" targetPercentage={80} />
               </div>
 
               {/* Footer info */}
               <div className="info mt-50">
                 <Link to="/nos-cabinets" className="btn-two">
-                  Our Firms
+                  Nos cabinets
                 </Link>
                 <div className="user">
                   <div className="image">
-                    <img src={AboutImage4} alt="Team portrait placeholder" />
+                    <img src={AboutImage4} alt="Portrait à venir" />
                   </div>
                   <div>
-                    <img src={AboutImage5} alt="Signature placeholder" />
-                    <p className="sub-title">Name to be confirmed</p>
+                    <img src={AboutImage5} alt="Signature à venir" />
+                    <p className="sub-title">Nom à confirmer</p>
                   </div>
                 </div>
               </div>

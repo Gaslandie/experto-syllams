@@ -8,26 +8,26 @@ import TeamImage4 from '../../assets/images/team/team-image4.jpg';
 
 	const teamMembers = [
 	{
-		name: "Name to Be Confirmed",
-		role: "Profile Coming Soon",
+		name: "Nom à confirmer",
+		role: "Profil à venir",
 		image: TeamImage1,
 		delay: "0ms",
 	},
 	{
-		name: "Name to Be Confirmed",
-		role: "Profile Coming Soon",
+		name: "Nom à confirmer",
+		role: "Profil à venir",
 		image: TeamImage2,
 		delay: "200ms",
 	},
 	{
-		name: "Name to Be Confirmed",
-		role: "Profile Coming Soon",
+		name: "Nom à confirmer",
+		role: "Profil à venir",
 		image: TeamImage3,
 		delay: "400ms",
 	},
 	{
-		name: "Name to Be Confirmed",
-		role: "Profile Coming Soon",
+		name: "Nom à confirmer",
+		role: "Profil à venir",
 		image: TeamImage4,
 		delay: "600ms",
 	},
@@ -37,12 +37,12 @@ function Team (){
 	return (
 		<section className="team-section pt-120 pb-120">
 			<div className="team-shape wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" >
-				<img className="sway__animation" src={TeamShapeImage} alt="Team Shape" />
+				<img className="sway__animation" src={TeamShapeImage} alt="Illustration" />
 			</div>
 			<div className="container">
 				<div className="sec-title center mb-50">
-					<h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Our People</h6>
-					<h2 className="title wow splt-txt" data-wow-delay="200ms" data-wow-duration="1500ms" data-splitting >Meet the People Behind <br /> Our Group — Coming Soon</h2>
+					<h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Notre équipe</h6>
+					<h2 className="title wow splt-txt" data-wow-delay="200ms" data-wow-duration="1500ms" data-splitting >Découvrez les personnes derrière <br /> notre groupe — bientôt disponible</h2>
 				</div>
 				<div className="row g-4">
 					{teamMembers.map((member, index) => (

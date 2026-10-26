@@ -6,24 +6,24 @@ import FaqsImage2 from '../../assets/images/shape/faq-map.png';
 
 const accordionData = [
   {
-    title: "Which Firms Make Up the Group?",
-    content: "The group brings together PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE and AFRIC CONSEIL.",
+    title: "Quels cabinets composent le groupe ?",
+    content: "Le groupe réunit PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE et AFRIC CONSEIL.",
   },
   {
-    title: "What Are the Group’s Areas of Activity?",
-    content: "The group presents its audit, consulting and training activities. Detailed services will be confirmed by each firm.",
+    title: "Quels sont les domaines d’activité du groupe ?",
+    content: "Le groupe présente ses activités d’audit, de conseil et de formation. Le détail des services sera confirmé par chaque cabinet.",
   },
   {
-    title: "When Will Training Registration Open?",
-    content: "Registration will open once the programmes, dates and practical details have been confirmed.",
+    title: "Quand ouvriront les inscriptions aux formations ?",
+    content: "Les inscriptions ouvriront après confirmation des programmes, des dates et des modalités pratiques.",
   },
   {
-    title: "Where Can I Find the Firm Websites?",
-    content: "NOVEO, FIDEXIE and AFRIC CONSEIL will link to their existing websites once the addresses have been confirmed.",
+    title: "Où trouver les sites des cabinets ?",
+    content: "Les liens vers les sites de NOVEO, FIDEXIE et AFRIC CONSEIL seront ajoutés après confirmation de leurs adresses.",
   },
   {
-    title: "How Can I Contact the Group?",
-    content: "The contact page is being prepared. You can call +224 628 21 69 75 or email manager@experto-syllams.com. The group is based in Guinée, Conakry.",
+    title: "Comment contacter le groupe ?",
+    content: "La page de contact est en préparation. Appelez le +224 628 21 69 75 ou écrivez à manager@experto-syllams.com. Le groupe est situé en Guinée, à Conakry.",
   },
 ];
 
@@ -74,18 +74,18 @@ function Faqs() {
         <div className="col-xl-8 content-column">
           <div className="inner-column">
             <div className="map-shape">
-              <img src={FaqsImage2} alt="Map Shape" loading="lazy" />
+              <img src={FaqsImage2} alt="Illustration" loading="lazy" />
             </div>
             <div className="row g-5 align-items-center">
               <div className="col-lg-5">
                 <div className="sec-title">
                   <h6 className="sub-title wow fadeInUp">FAQ’S</h6>
-                  <h2 className="title text-white wow splt-txt">Frequently Asked Questions</h2>
+                  <h2 className="title text-white wow splt-txt">Questions fréquentes</h2>
                   <p className="text text-white wow fadeInUp">
-                    Find your way around GROUPE EXPERTO-SYLLAMS, its firms and its upcoming training programmes.
+                    Découvrez le GROUPE EXPERTO-SYLLAMS, ses cabinets et ses futurs programmes de formation.
                   </p>
                   <Link className="btn-one-light border-0 wow fadeInUp rounded-0 mt-50" to="/page-contact">
-                    Get a quote
+                    Nous contacter
                   </Link>
                 </div>
               </div>

@@ -5,26 +5,26 @@ import ProcessImage1 from '../../assets/images/shape/dual-circle.png';
 const processingSteps = [
   {
     number: "01",
-    title: "Discover the Group",
-    text: "Learn about the group and its areas of activity.",
+    title: "Découvrir le groupe",
+    text: "Découvrez le groupe et ses domaines d’activité.",
     delay: "00ms",
   },
   {
     number: "02",
-    title: "Explore Our Firms",
-    text: "Find the six firms that make up our group.",
+    title: "Découvrir nos cabinets",
+    text: "Découvrez les six cabinets qui composent notre groupe.",
     delay: "200ms",
   },
   {
     number: "03",
-    title: "Develop Your Skills",
-    text: "Explore upcoming training and certification programmes.",
+    title: "Développer vos compétences",
+    text: "Découvrez les futurs programmes de formation et de certification.",
     delay: "400ms",
   },
   {
     number: "04",
-    title: "Start a Conversation",
-    text: "Call +224 628 21 69 75 or email manager@experto-syllams.com.",
+    title: "Nous contacter",
+    text: "Appelez le +224 628 21 69 75 ou écrivez à manager@experto-syllams.com.",
     delay: "600ms",
   },
 ];
@@ -35,8 +35,8 @@ const Processing = () => {
       <div className="shape"><img src={ProcessImage1} alt="Decorative rotating dual circle" className="animation__rotate" /></div>
       <div className="container">
         <div className="sec-title center mb-50">
-          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">How It Works</h6>
-          <h2 className="title wow splt-txt" data-splitting>Discover, Connect, & Build <br /> Your Next Steps with Us.</h2>
+          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Votre parcours</h6>
+          <h2 className="title wow splt-txt" data-splitting>Découvrez, échangez et construisez <br /> vos projets avec nous.</h2>
         </div>
         <div className="outer-box">
           <div className="row g-0">
@@ -54,8 +54,8 @@ const Processing = () => {
           </div>
         </div>
         <h5 className="sec-text mt-50 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
-          Explore our group, our firms and our upcoming programmes.
-          <Link to="/page-contact">Consult Now</Link>
+          Découvrez notre groupe, nos cabinets et nos futurs programmes.
+          <Link to="/page-contact">Nous contacter</Link>
         </h5>
       </div>
     </section>

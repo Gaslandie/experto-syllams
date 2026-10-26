@@ -5,12 +5,12 @@ import Layout from "./layouts/Layout";
 import PageTitle from "./section/PageTitle";
 
 function Construction() {
-  return <div className="page-wrapper"><Layout><PageTitle pageName="Under construction" /><section className="pt-120 pb-120"><div className="container text-center"><h2>En construction / Under construction</h2><p className="mt-20 mb-30">This page is being prepared. Discover GROUPE EXPERTO-SYLLAMS on our home page.</p><Link className="btn-two" to="/">Back to Home</Link></div></section></Layout></div>;
+  return <div className="page-wrapper"><Layout><PageTitle pageName="En construction" /><section className="pt-120 pb-120"><div className="container text-center"><h2>En construction</h2><p className="mt-20 mb-30">Cette page est en préparation. Découvrez le GROUPE EXPERTO-SYLLAMS sur notre page d’accueil.</p><Link className="btn-two" to="/">Retour à l’accueil</Link></div></section></Layout></div>;
 }
 function SiteRoutes() {
   const { pathname } = useLocation();
   useEffect(() => {
-    document.title = `${pathname === "/" ? "Home" : "Under construction"} | GROUPE EXPERTO-SYLLAMS`;
+    document.title = `${pathname === "/" ? "Accueil" : "En construction"} | GROUPE EXPERTO-SYLLAMS`;
     document.body.classList.remove("mobile-menu-visible");
     window.scrollTo(0, 0);
   }, [pathname]);

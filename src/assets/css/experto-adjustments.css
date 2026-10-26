@@ -1,0 +1,31 @@
+/* Keep service text and photographs balanced regardless of source image size. */
+.service-section .service-block .content-box {
+  flex: 1 1 56%;
+  min-width: 0;
+  padding: 30px;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.service-section .service-block .image-box {
+  flex: 0 0 44%;
+  min-width: 0;
+  width: 44%;
+}
+.service-section .service-block .image-box .image {
+  height: 100%;
+  margin: 0;
+}
+.service-section .service-block .image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+.service-section .service-block .arry-btn { right: calc(44% - 32px); }
+@media (max-width: 575.98px) {
+  .service-section .service-block .content-box { width: 100%; }
+  .service-section .service-block .image-box { flex: none; width: 100%; height: 240px; }
+  .service-section .service-block .image-box img { min-height: 0; height: 100%; }
+  .service-section .service-block .arry-btn { right: 20px; top: 60px; }
+}

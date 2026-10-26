@@ -35,7 +35,7 @@ function Footer({ handleOpen, searchToggle, }) {
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-phone"/></li>
                             <li>
-                                <span>Call Us:</span>
+                                <span>Téléphone :</span>
                                 <h5 className="title"><a href="tel:+224628216975">+224 628 21 69 75</a></h5>
                             </li>
                             </ul>
@@ -46,7 +46,7 @@ function Footer({ handleOpen, searchToggle, }) {
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-envelope"/></li>
                             <li>
-                                <span>Email Us:</span>
+                                <span>E-mail :</span>
                                 <h5 className="title"><a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></h5>
                             </li>
                             </ul>
@@ -57,8 +57,8 @@ function Footer({ handleOpen, searchToggle, }) {
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-location-dot"/></li>
                             <li>
-                                <span>Hours:</span>
-                                <h5 className="title">To be confirmed</h5>
+                                <span>Horaires :</span>
+                                <h5 className="title">À confirmer</h5>
                             </li>
                             </ul>
                         </div>
@@ -73,10 +73,10 @@ function Footer({ handleOpen, searchToggle, }) {
                             <div className="widget-content">
                             <ul className="user-links">
                                 <li><Link to="/page-services">Audit</Link></li>
-                                <li><Link to="/page-services">Consulting</Link></li>
-                                <li><Link to="/formations">Training</Link></li>
+                                <li><Link to="/page-services">Conseil</Link></li>
+                                <li><Link to="/formations">Formation</Link></li>
                                 <li><Link to="/formations">Certifications</Link></li>
-                                <li><Link to="/nos-cabinets">Our Firms</Link></li>
+                                <li><Link to="/nos-cabinets">Nos cabinets</Link></li>
                             </ul>
                             </div>
                         </div>
@@ -86,29 +86,29 @@ function Footer({ handleOpen, searchToggle, }) {
                             <h4 className="widget-title">Pages</h4>
                             <div className="widget-content">
                             <ul className="user-links">
-                                <li><Link to="/actualites">Group News</Link></li>
-                                <li><Link to="/nos-cabinets">Our Firms</Link></li>
-                                <li><Link to="/affiliations-partenaires">Our Partners</Link></li>
-                                <li><Link to="/contacts">Contact Us</Link></li>
-                                <li><Link to="/qui-sommes-nous">About Us</Link></li>
+                                <li><Link to="/actualites">Actualités du groupe</Link></li>
+                                <li><Link to="/nos-cabinets">Nos cabinets</Link></li>
+                                <li><Link to="/affiliations-partenaires">Nos partenaires</Link></li>
+                                <li><Link to="/contacts">Nous contacter</Link></li>
+                                <li><Link to="/qui-sommes-nous">À propos</Link></li>
                             </ul>
                             </div>
                         </div>
                         </div>
                         <div className="col-lg-4 footer-column">
                         <div className="footer-widget links-widget">
-                            <h4 className="widget-title">Group Updates</h4>
+                            <h4 className="widget-title">Actualités du groupe</h4>
                             <div className="input-field">
-                            <label htmlFor="email" className="sr-only">Email Address</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="Newsletter coming soon" readOnly 
+                            <label htmlFor="email" className="sr-only">Adresse e-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Lettre d’information à venir" readOnly
                                 autoComplete="email"
                             />
                             <Link className="btn-one-rounded" to="/newsletter">
-                                Coming soon <i className="fa-regular fa-angle-right" />
+                                À venir <i className="fa-regular fa-angle-right" />
                             </Link>
                             </div>
                             <ul className="footer-nav">
@@ -122,16 +122,15 @@ function Footer({ handleOpen, searchToggle, }) {
                     </div>
                     </div>
                     <div className="footer-bottom">
-                    <p className="copyright-text">© 2026. All rights reserved by <Link to="/">GROUPE EXPERTO-SYLLAMS</Link></p>
+                    <p className="copyright-text">© 2026. Tous droits réservés par <Link to="/">GROUPE EXPERTO-SYLLAMS</Link></p>
                     </div>
                 </div>
                 <div className="col-xl-4 right-column order-1 order-xl-2">
                     <div className="inner-column">
-                    <h3 className="title">Have a Project in
-                        your Mind?</h3>
-                    <Link className="circle-btn" to="/page-contact">Contact Us <i className="fa-regular fa-arrow-up-right"/></Link>
+                    <h3 className="title">Vous avez un projet ?</h3>
+                    <Link className="circle-btn" to="/page-contact">Nous contacter <i className="fa-regular fa-arrow-up-right"/></Link>
                     <div className="mt-10">
-                        <h5 className="time">Hours to be confirmed</h5>
+                        <h5 className="time">Horaires à confirmer</h5>
                         <h5 className="date">Guinée, Conakry</h5>
                     </div>
                     </div>

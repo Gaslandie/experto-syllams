@@ -27,12 +27,12 @@ const swiperOptions = {
 
 // Case study data
 const caseItems = [
-    { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Group Firm", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
-    { id: 2, img: CaseImage2, category: "Group Firm", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
-    { id: 3, img: CaseImage3, category: "Group Firm", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
-    { id: 4, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Website Link to Be Confirmed", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
-    { id: 5, img: CaseImage1, category: "Website Link to Be Confirmed", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
-    { id: 6, img: CaseImage4, category: "Website Link to Be Confirmed", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
+    { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Cabinet du groupe", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
+    { id: 2, img: CaseImage2, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
+    { id: 3, img: CaseImage3, category: "Cabinet du groupe", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
+    { id: 4, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Lien du site à confirmer", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
+    { id: 5, img: CaseImage1, category: "Lien du site à confirmer", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
+    { id: 6, img: CaseImage4, category: "Lien du site à confirmer", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
 ];
 
 function Case ({className}){
@@ -40,8 +40,8 @@ function Case ({className}){
         <section className={`case-section have-combine pt-120 pb-120 ${className || ''}`}>
             <div className="outer-box">
                 <div className="sec-title center mb-50">
-                    <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Our Firms</h6>
-                    <h2 className="title wow splt-txt" data-splitting>Six Firms, Shared Expertise <br />Discover Our Group.</h2>
+                    <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Nos cabinets</h6>
+                    <h2 className="title wow splt-txt" data-splitting>Six cabinets, des expertises complémentaires <br />Découvrez notre groupe.</h2>
                 </div>
                 <div className="swiper case-slider">
                     <Swiper {...swiperOptions}>
@@ -50,7 +50,7 @@ function Case ({className}){
                             <div className="case-block">
                                 <div className="inner-box">
                                     <figure className="image">
-                                        <img src={item.img} alt={item.logo ? `${item.title} logo` : `${item.title} — template placeholder`} style={item.logo ? { aspectRatio: "440 / 540", objectFit: "contain", backgroundColor: "white" } : undefined}/>
+                                        <img src={item.img} alt={item.logo ? `${item.title} logo` : `${item.title} — illustration provisoire`} style={item.logo ? { aspectRatio: "440 / 540", objectFit: "contain", backgroundColor: "white" } : undefined}/>
                                     </figure>
                                     <div className="content-box">
                                         <span className="sub-title">{item.category}</span>

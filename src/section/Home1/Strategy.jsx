@@ -5,20 +5,20 @@ import StrategyImage3 from '../../assets/images/strategy/strategy-info.png';
 
 const accordionData = [
     {
-    title: "Audit & Consulting",
-    content: "Explore the group’s activities. Detailed service information will be confirmed by the firms.",
+    title: "Audit et conseil",
+    content: "Découvrez les activités du groupe. Le détail des services sera confirmé par les cabinets.",
   },
   {
-    title: "Our Six Firms",
-    content: "PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE and AFRIC CONSEIL.",
+    title: "Nos six cabinets",
+    content: "PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE et AFRIC CONSEIL.",
   },
   {
-    title: "Training & Certifications",
-    content: "The catalogue is being prepared. Programmes, dates and fees will be confirmed before registration opens.",
+    title: "Formation et certifications",
+    content: "Le catalogue est en préparation. Les programmes, dates et tarifs seront confirmés avant l’ouverture des inscriptions.",
   },
   {
-    title: "Affiliations & Partners",
-    content: "Affiliations and partner logos will be added after confirmation by the group.",
+    title: "Affiliations et partenaires",
+    content: "Les affiliations et logos des partenaires seront ajoutés après confirmation par le groupe.",
   },
 ];
 
@@ -39,7 +39,7 @@ function Strategy (){
                 <div className="col-xl-6 image-column">
                     <div className="inner-column">
                         <figure className="image tm-gsap-img-parallax">
-                            <img src={StrategyImage2} alt="Strategy Visual" />
+                            <img src={StrategyImage2} alt="Illustration de nos activités" />
                             <div className="info"><img src={StrategyImage3} alt="Info Overlay" /></div>
                         </figure>
                     </div>
@@ -47,9 +47,9 @@ function Strategy (){
                 <div className="col-xl-6 content-column">
                     <div className="inner-column">
                         <div className="sec-title mb-30">
-                        <h6 className="sub-title wow fadeInUp">Complementary Expertise</h6>
+                        <h6 className="sub-title wow fadeInUp">Des expertises complémentaires</h6>
                         <h2 className="title wow splt-txt">
-                            A Shared Space for Our Firms, Expertise and Programmes.
+                            Un espace commun pour nos cabinets, nos expertises et nos programmes.
                         </h2>
                         </div>
 

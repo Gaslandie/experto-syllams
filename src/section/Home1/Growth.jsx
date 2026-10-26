@@ -8,20 +8,20 @@ import GrowthImage2 from '../../assets/images/shape/growth-shape.png';
 const growthData = [
   {
     value: 6,
-    title: "Group Firms",
-    text: "Six firms presented within one group.",
+    title: "Cabinets du groupe",
+    text: "Six cabinets réunis au sein d’un groupe.",
     delay: "00ms",
   },
   {
     value: 3,
-    title: "Dedicated Firm Pages",
-    text: "PANAUDEX, LIFE-PARTNERS and Syllams Expertise.",
+    title: "Pages dédiées aux cabinets",
+    text: "PANAUDEX, LIFE-PARTNERS et Syllams Expertise.",
     delay: "200ms",
   },
   {
     value: 3,
-    title: "Existing Firm Websites",
-    text: "NOVEO, FIDEXIE and AFRIC CONSEIL. Links to be confirmed.",
+    title: "Sites des cabinets existants",
+    text: "NOVEO, FIDEXIE et AFRIC CONSEIL. Liens à confirmer.",
     delay: "400ms",
   },
 ];
@@ -127,10 +127,10 @@ function Growth({className}){
       </div>
       <div className="container">
         <div className="sec-title pb-50 mb-50">
-          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms"> Our Group at a Glance</h6>
+          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms"> Le groupe en bref</h6>
           <div className="flex-content">
-            <h2 className="title text-white wow splt-txt" data-splitting="true" >Connecting Expertise <br />Opening New Perspectives.</h2>
-            <Link to="/page-about" className="btn-one-light border-0 rounded-0 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Discover More</Link>
+            <h2 className="title text-white wow splt-txt" data-splitting="true" >Réunir les expertises <br />Ouvrir de nouvelles perspectives.</h2>
+            <Link to="/page-about" className="btn-one-light border-0 rounded-0 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">En savoir plus</Link>
           </div>
         </div>
 

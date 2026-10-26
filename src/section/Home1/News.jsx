@@ -13,40 +13,40 @@ const blogData = [
     id: 1,
     image: BlogImage1,
     author: 'GROUPE EXPERTO-SYLLAMS',
-    comments: 'Coming Soon',
-    title: 'News from Our Group — Coming Soon',
+    comments: 'À venir',
+    title: 'Actualités du groupe — à venir',
     link: '/news-details',
   },
   {
     id: 2,
     image: BlogImage2,
     author: 'GROUPE EXPERTO-SYLLAMS',
-    comments: 'Coming Soon',
-    title: 'Discover Our Firms — Updates Coming Soon',
+    comments: 'À venir',
+    title: 'Découvrez nos cabinets — actualités à venir',
     link: '/news-details',
   },
   {
     id: 3,
     image: BlogImage3,
     author: 'GROUPE EXPERTO-SYLLAMS',
-    comments: 'Coming Soon',
-    title: 'Training & Certifications — Programmes to Come',
+    comments: 'À venir',
+    title: 'Formation et certifications — programmes à venir',
     link: '/news-details',
   },
   {
     id: 4,
     image: BlogImage2,
     author: 'GROUPE EXPERTO-SYLLAMS',
-    comments: 'Coming Soon',
-    title: 'Discover Our Firms — Updates Coming Soon',
+    comments: 'À venir',
+    title: 'Découvrez nos cabinets — actualités à venir',
     link: '/news-details',
   },
   {
     id: 5,
     image: BlogImage3,
     author: 'GROUPE EXPERTO-SYLLAMS',
-    comments: 'Coming Soon',
-    title: 'Training & Certifications — Programmes to Come',
+    comments: 'À venir',
+    title: 'Formation et certifications — programmes à venir',
     link: '/news-details',
   },
 ];
@@ -74,10 +74,10 @@ function News ({className}){
     <section id="news" className={`blog-section pb-120 ${className || ''}`}>
       <div className="container">
         <div className="sec-title mb-50">
-          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">News & Updates</h6>
+          <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Actualités</h6>
           <div className="flex-content">
-            <h2 className="title wow splt-txt" data-splitting>Our News & Blogs</h2>
-            <Link to="/news-grid" className="btn-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">All News & Blogs</Link>
+            <h2 className="title wow splt-txt" data-splitting>Nos actualités</h2>
+            <Link to="/news-grid" className="btn-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Toutes les actualités</Link>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ function News ({className}){
                         <li><Link to="/actualites">{comments}</Link></li>
                       </ul>
                       <h4 className="title"><Link to={link}>{title}</Link></h4>
-                      <Link to={link} className="arry-btn">Read More</Link>
+                      <Link to={link} className="arry-btn">En savoir plus</Link>
                     </div>
                   </div>
                 </div>

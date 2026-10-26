@@ -40,8 +40,8 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
 
                 <div className="top-right">
                     <ul className="useful-links">
-                    <li><Link to="/page-about">About</Link></li>
-                    <li><Link to="/page-faq">Faqs</Link></li>
+                    <li><Link to="/page-about">À propos</Link></li>
+                    <li><Link to="/page-faq">FAQ</Link></li>
                     <li><Link to="/page-contact">Contact</Link></li>
                     </ul>
                     <ul className="top-social-icon">
@@ -76,11 +76,11 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <div className="call-info">
                         <i className="fa-solid fa-phone ring__animation"/>
                         <div>
-                            <h6 className="title">Phone:</h6>
+                            <h6 className="title">Téléphone :</h6>
                             <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                         </div>
-                        <Link className="btn-two" to="/page-contact">Contact Now</Link>
+                        <Link className="btn-two" to="/page-contact">Nous contacter</Link>
                     </div>
                     <div className="mobile-nav-toggler d-block d-lg-none" onClick={handleOpen}><i className="icon lnr-icon-bars"/></div>
                     {/* Mobile Nav toggler */}
@@ -99,29 +99,29 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     <MobileMenu/>
                 </ul>
                 <div className="content-box d-none d-lg-block">
-                    <h4 className="title">About Us</h4>
-                    <p className="text">GROUPE EXPERTO-SYLLAMS brings together six firms in audit, consulting and training.</p>
+                    <h4 className="title">À propos</h4>
+                    <p className="text">Le GROUPE EXPERTO-SYLLAMS réunit six cabinets en audit, conseil et formation.</p>
                 </div>
                     <ul className="contact-list-one">
                     <li>
                         <div className="contact-info-box">
                         <i className="icon lnr-icon-phone-handset"/>
-                        <span className="title">Call Now</span>
+                        <span className="title">Appelez-nous</span>
                         <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                     </li>
                     <li>
                         <div className="contact-info-box">
                         <span className="icon lnr-icon-envelope1"></span>
-                        <span className="title">Send Email</span>
+                        <span className="title">Écrivez-nous</span>
                         <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
                         </div>
                     </li>
                     <li>
                         <div className="contact-info-box">
                         <span className="icon lnr-icon-clock"></span>
-                        <span className="title">Opening Hours</span>
-                        Opening hours: to be confirmed
+                        <span className="title">Horaires</span>
+                        Horaires à confirmer
                         </div>
                     </li>
                     </ul>
@@ -139,7 +139,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <div className="search-inner">
                     <form onSubmit={event => { event.preventDefault(); window.location.assign(`${import.meta.env.BASE_URL}recherche`); }}>
                         <div className="form-group">
-                            <input type="search" name="search-field" placeholder="Search..." required=""/>
+                            <input type="search" name="search-field" placeholder="Rechercher..." required=""/>
                             <button type="submit"><i className="fa fa-search"/></button>
                         </div>
                     </form>
