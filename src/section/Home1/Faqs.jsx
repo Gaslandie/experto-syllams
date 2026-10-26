@@ -23,7 +23,7 @@ const accordionData = [
   },
   {
     title: "How Can I Contact the Group?",
-    content: "The contact page is being prepared. You can call +224 628 21 69 75 or email manager@experto-syllams.com. The address is to be confirmed.",
+    content: "The contact page is being prepared. You can call +224 628 21 69 75 or email manager@experto-syllams.com. The group is based in Guinée, Conakry.",
   },
 ];
 

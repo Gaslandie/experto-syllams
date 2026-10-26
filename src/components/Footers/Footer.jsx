@@ -132,7 +132,7 @@ function Footer({ handleOpen, searchToggle, }) {
                     <Link className="circle-btn" to="/page-contact">Contact Us <i className="fa-regular fa-arrow-up-right"/></Link>
                     <div className="mt-10">
                         <h5 className="time">Hours to be confirmed</h5>
-                        <h5 className="date">Address to be confirmed</h5>
+                        <h5 className="date">Guinée, Conakry</h5>
                     </div>
                     </div>
                     <div className="shape">

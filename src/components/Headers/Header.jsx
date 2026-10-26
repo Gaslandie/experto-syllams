@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
-const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
-const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
-const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
-const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
+const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
+const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
+const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
+const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -34,7 +34,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     <ul className="info-list">
                     <li><i className="fa-solid fa-envelope"/> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
                     </li>
-                    <li><i className="fa-solid fa-location-dot"/> Address: to be confirmed</li>
+                    <li><i className="fa-solid fa-location-dot"/> Guinée, Conakry</li>
                     </ul>
                 </div>
 
@@ -60,7 +60,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <div className="logo-box">
                     <div className="logo">
                         <Link to="/">
-                            <img src={isDarkMode ? DarkLogo : MainLogo} alt="Groupe Experto-Syllams" title="GROUPE EXPERTO-SYLLAMS" style={{ width: 220, height: 60, objectFit: "contain", backgroundColor: "white" }}/>
+                            <img src={isDarkMode ? DarkLogo : MainLogo} alt="Groupe Experto-Syllams" title="GROUPE EXPERTO-SYLLAMS" fetchPriority="high" style={{ width: 220, height: 60, objectFit: "contain", backgroundColor: "white" }}/>
                         </Link>
                     </div>
                 </div>
