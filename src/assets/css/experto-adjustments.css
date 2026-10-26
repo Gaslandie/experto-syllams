@@ -76,3 +76,22 @@
   height: 120px;
   object-fit: contain;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .header-style-one .main-box .logo img,
+  .header-style-one .sticky-header .logo img {
+    transition: transform 180ms ease;
+  }
+  .header-style-one .main-box .logo a:hover img,
+  .header-style-one .sticky-header .logo a:hover img,
+  .header-style-one .main-box .logo a:focus-visible img,
+  .header-style-one .sticky-header .logo a:focus-visible img {
+    transform: translateX(-24px) scale(1.20);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-style-one .main-box .logo img,
+  .header-style-one .sticky-header .logo img {
+    transition: none;
+  }
+}
