@@ -9,9 +9,6 @@ function Footer({ handleOpen, searchToggle, }) {
         <footer id="contact" className={`main-footer footer-style-one ${searchToggle ? "moblie-search-active" : ""}`}>
             <div className="outer-box">
                 <div className="footer-left">
-                <div className="logo">
-                    <Link to="/"><img src={FooterLogo} alt="Groupe Experto-Syllams" style={{ width: 170, height: 60, objectFit: "contain", backgroundColor: "white" }}/></Link>
-                </div>
                 <button className="back-top-btn mobile-nav-toggler" onClick={handleOpen}>
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="1.5" cy="1.5" r="1.5" fill="white" />
@@ -29,6 +26,11 @@ function Footer({ handleOpen, searchToggle, }) {
                 <div className="row g-0 w-100">
                 <div className="col-xl-8 left-column order-2 order-xl-1">
                     <div className="footer-top">
+                    <div className="footer-brand">
+                        <Link to="/" aria-label="Accueil — Groupe Experto-Syllams">
+                            <img src={FooterLogo} alt="Groupe Experto-Syllams" />
+                        </Link>
+                    </div>
                     <div className="row g-4">
                         <div className="col-lg-4">
                         <div className="info-item">

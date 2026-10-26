@@ -47,3 +47,32 @@
   font-weight: 800;
   color: #142b20;
 }
+
+/* Keep the side panel readable, including on narrow screens. */
+.mobile-menu {
+  width: min(380px, 100vw);
+}
+.mobile-menu-visible .mobile-menu .content-box .text {
+  max-width: none;
+}
+.mobile-menu .contact-info-box a,
+.footer-style-one .footer-top .info-item a {
+  overflow-wrap: anywhere;
+}
+
+/* Show the supplied square logo upright in the footer content. */
+.footer-style-one .footer-brand {
+  margin-bottom: 30px;
+}
+.footer-style-one .footer-brand a {
+  display: inline-flex;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+}
+.footer-style-one .footer-brand img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
