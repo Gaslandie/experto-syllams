@@ -181,3 +181,20 @@
   line-height: 1.2;
 }
 .testimonial-placeholder i { font-size: 32px; }
+
+/* On smaller screens, keep the statistics card in normal flow below the text and photo. */
+@media (max-width: 1199.98px) {
+  .choose-section .image-column {
+    margin-top: 40px;
+  }
+  .choose-section .image-column .inner-column .image {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .choose-section .image-column .inner-column .image .outer-box {
+    position: static;
+    max-width: 100%;
+    margin-top: 16px !important;
+  }
+}
