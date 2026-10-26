@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-26",
+  "sources": [
+    {
+      "file": "src/assets/images/about/about-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/about-image1-CMBlmVtX.jpg",
+      "changed": true,
+      "size": 69963
+    },
+    {
+      "file": "src/assets/images/about/about-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/about-image2-C9jgLCYf.jpg",
+      "changed": true,
+      "size": 26090
+    },
+    {
+      "file": "src/assets/images/about/about-info.png",
+      "source": "https://consultez-vite.vercel.app/assets/about-info-DuwPF2sr.png",
+      "changed": false,
+      "size": 5547
+    },
+    {
+      "file": "src/assets/images/banner/banner-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/banner-image1-DUZAXyIk.jpg",
+      "changed": true,
+      "size": 124227
+    },
+    {
+      "file": "src/assets/images/banner/banner-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/banner-image2-BpXvi-ES.jpg",
+      "changed": true,
+      "size": 126648
+    },
+    {
+      "file": "src/assets/images/banner/banner-image3.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/banner-image3-ekSacwR2.jpg",
+      "changed": true,
+      "size": 173232
+    },
+    {
+      "file": "src/assets/images/bg/page-title-bg.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/page-title-bg-BdIArT-r.jpg",
+      "changed": true,
+      "size": 96041
+    },
+    {
+      "file": "src/assets/images/blog/blog-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/blog-image1-B1a5bJnL.jpg",
+      "changed": true,
+      "size": 24206
+    },
+    {
+      "file": "src/assets/images/blog/blog-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/blog-image2-BC3wqDke.jpg",
+      "changed": true,
+      "size": 30648
+    },
+    {
+      "file": "src/assets/images/blog/blog-image3.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/blog-image3-C0aluSx7.jpg",
+      "changed": true,
+      "size": 31884
+    },
+    {
+      "file": "src/assets/images/case/case-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/case-image1-2ziR62kz.jpg",
+      "changed": true,
+      "size": 50685
+    },
+    {
+      "file": "src/assets/images/case/case-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/case-image2-BobLojXG.jpg",
+      "changed": true,
+      "size": 41715
+    },
+    {
+      "file": "src/assets/images/case/case-image3.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/case-image3-BGfGGTf2.jpg",
+      "changed": true,
+      "size": 29175
+    },
+    {
+      "file": "src/assets/images/case/case-image4.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/case-image4-gbG2Gd5C.jpg",
+      "changed": true,
+      "size": 43581
+    },
+    {
+      "file": "src/assets/images/choose/choose-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/choose-image1-Cdvh-CgT.jpg",
+      "changed": true,
+      "size": 71759
+    },
+    {
+      "file": "src/assets/images/faq/faq-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/faq-image1-CpbUjMFZ.jpg",
+      "changed": true,
+      "size": 393330
+    },
+    {
+      "file": "src/assets/images/service/service-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/service-image1-aGy8QuGJ.jpg",
+      "changed": true,
+      "size": 33236
+    },
+    {
+      "file": "src/assets/images/service/service-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/service-image2-DjoB4tRe.jpg",
+      "changed": true,
+      "size": 29199
+    },
+    {
+      "file": "src/assets/images/service/service-image3.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/service-image3-BPhtLMzI.jpg",
+      "changed": true,
+      "size": 188943
+    },
+    {
+      "file": "src/assets/images/strategy/strategy-image.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/strategy-image-C0mVqhCo.jpg",
+      "changed": true,
+      "size": 57386
+    },
+    {
+      "file": "src/assets/images/strategy/strategy-info.png",
+      "source": "https://consultez-vite.vercel.app/assets/strategy-info-C9DeiJ7P.png",
+      "changed": false,
+      "size": 4298
+    },
+    {
+      "file": "src/assets/images/team/team-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/team-image1-DXpm8Rkz.jpg",
+      "changed": true,
+      "size": 41699
+    },
+    {
+      "file": "src/assets/images/team/team-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/team-image2-W-TYKeUU.jpg",
+      "changed": true,
+      "size": 50778
+    },
+    {
+      "file": "src/assets/images/team/team-image3.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/team-image3-CL1vR0bZ.jpg",
+      "changed": true,
+      "size": 42443
+    },
+    {
+      "file": "src/assets/images/team/team-image4.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/team-image4-DS84QPxW.jpg",
+      "changed": true,
+      "size": 48036
+    },
+    {
+      "file": "src/assets/images/testimonial/testimonial-image1.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/testimonial-image1-DUDbk_80.jpg",
+      "changed": true,
+      "size": 15831
+    },
+    {
+      "file": "src/assets/images/testimonial/testimonial-image2.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/testimonial-image2-AGOoO0Jb.jpg",
+      "changed": true,
+      "size": 16017
+    },
+    {
+      "file": "src/assets/images/bg/growth-bg.jpg",
+      "source": "https://consultez-vite.vercel.app/assets/growth-bg-D4aERucp.jpg",
+      "changed": true,
+      "size": 121089
+    }
+  ]
+}
