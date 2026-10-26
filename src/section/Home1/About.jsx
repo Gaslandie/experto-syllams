@@ -5,8 +5,6 @@ import ProgressBar from "../../lib/ProgressBar";
 import AboutImage1 from "../../assets/images/experto/collaboration.webp";
 import AboutImage2 from "../../assets/images/about/about-info.png";
 import AboutImage3 from "../../assets/images/experto/collegues.webp";
-import AboutImage4 from "../../assets/images/about/about-user.png";
-import AboutImage5 from "../../assets/images/about/signature.png";
 
 function About() {
   return (
@@ -89,15 +87,6 @@ function About() {
                 <Link to="/nos-cabinets" className="btn-two">
                   Nos cabinets
                 </Link>
-                <div className="user">
-                  <div className="image">
-                    <img src={AboutImage4} alt="Portrait à venir" />
-                  </div>
-                  <div>
-                    <img src={AboutImage5} alt="Signature à venir" />
-                    <p className="sub-title">Nom à confirmer</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

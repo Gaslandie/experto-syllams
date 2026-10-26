@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import PageTitleBG from '../assets/images/bg/page-title-bg.jpg';
+import PageTitleBG from '../assets/images/experto/collegues.webp';
 
 
 const PageTitle = (props) => {
