@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StrategyImage1 from '../../assets/images/shape/stategy-globe.png';
-import StrategyImage2 from '../../assets/images/strategy/strategy-image.jpg';
+import StrategyImage2 from '../../assets/images/experto/analyse.webp';
 import StrategyImage3 from '../../assets/images/strategy/strategy-info.png';
 
 const accordionData = [

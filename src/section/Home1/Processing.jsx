@@ -24,7 +24,7 @@ const processingSteps = [
   {
     number: "04",
     title: "Start a Conversation",
-    text: "Contact details and enquiry options will be available soon.",
+    text: "Call +224 628 21 69 75 or email manager@experto-syllams.com.",
     delay: "600ms",
   },
 ];

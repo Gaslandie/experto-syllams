@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import BlogImage1 from '../../assets/images/blog/blog-image1.jpg';
-import BlogImage2 from '../../assets/images/blog/blog-image2.jpg';
-import BlogImage3 from '../../assets/images/blog/blog-image3.jpg';
+import BlogImage1 from '../../assets/images/experto/equipe.webp';
+import BlogImage2 from '../../assets/images/experto/collegues.webp';
+import BlogImage3 from '../../assets/images/experto/formation.webp';
 
 const blogData = [
   {

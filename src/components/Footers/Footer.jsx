@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-const FooterLogo = "/images/experto-syllams.jpeg";
+const FooterLogo = `${import.meta.env.BASE_URL}images/experto-syllams.jpeg`;
 import FooterShapeImage from '../../assets/images/shape/footer-one-shape.png';
 
 function Footer({ handleOpen, searchToggle, }) {
@@ -36,7 +36,7 @@ function Footer({ handleOpen, searchToggle, }) {
                             <li><i className="fa-sharp fa-solid fa-phone"/></li>
                             <li>
                                 <span>Call Us:</span>
-                                <h5 className="title">To be confirmed</h5>
+                                <h5 className="title"><a href="tel:+224628216975">+224 628 21 69 75</a></h5>
                             </li>
                             </ul>
                         </div>
@@ -47,7 +47,7 @@ function Footer({ handleOpen, searchToggle, }) {
                             <li><i className="fa-sharp fa-solid fa-envelope"/></li>
                             <li>
                                 <span>Email Us:</span>
-                                <h5 className="title">To be confirmed</h5>
+                                <h5 className="title"><a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></h5>
                             </li>
                             </ul>
                         </div>

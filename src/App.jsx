@@ -16,4 +16,4 @@ function SiteRoutes() {
   }, [pathname]);
   return <Routes><Route path="/" element={<Home1 />} /><Route path="*" element={<Construction />} /></Routes>;
 }
-export default function App() { return <BrowserRouter><SiteRoutes /></BrowserRouter>; }
+export default function App() { return <BrowserRouter basename={import.meta.env.BASE_URL}><SiteRoutes /></BrowserRouter>; }

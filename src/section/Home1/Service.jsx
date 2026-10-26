@@ -7,9 +7,9 @@ import ServiceImage1 from '../../assets/images/shape/service-shape.png';
 import ServiceImage2 from '../../assets/images/shape/service-line.png';
 import ServiceImage3 from '../../assets/images/shape/service-arry.png';
 import ServiceImage4 from '../../assets/images/shape/service-item-shape.png';
-import ServiceImage5 from '../../assets/images/service/service-image1.jpg';
-import ServiceImage6 from '../../assets/images/service/service-image2.jpg';
-import ServiceImage7 from '../../assets/images/service/service-image3.jpg';
+import ServiceImage5 from '../../assets/images/experto/analyse.webp';
+import ServiceImage6 from '../../assets/images/experto/collaboration.webp';
+import ServiceImage7 from '../../assets/images/experto/formation.webp';
 
 const swiperOptions = {
     modules: [Autoplay],

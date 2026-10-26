@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ProgressBar from "../../lib/ProgressBar";
 
-import AboutImage1 from "../../assets/images/about/about-image1.jpg";
+import AboutImage1 from "../../assets/images/experto/collaboration.webp";
 import AboutImage2 from "../../assets/images/about/about-info.png";
-import AboutImage3 from "../../assets/images/about/about-image2.jpg";
+import AboutImage3 from "../../assets/images/experto/collegues.webp";
 import AboutImage4 from "../../assets/images/about/about-user.png";
 import AboutImage5 from "../../assets/images/about/signature.png";
 

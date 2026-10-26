@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
-const MainLogo = "/images/experto-syllams.jpeg";
-const DarkLogo = "/images/experto-syllams.jpeg";
-const StickyLogo = "/images/experto-syllams.jpeg";
-const MobileLogo = "/images/experto-syllams.jpeg";
+const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
+const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
+const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
+const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.png`;
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -32,7 +32,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <div className="top-left">
                     {/* Info List */}
                     <ul className="info-list">
-                    <li><i className="fa-solid fa-envelope"/> <Link to="/contacts">Email: to be confirmed</Link>
+                    <li><i className="fa-solid fa-envelope"/> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
                     </li>
                     <li><i className="fa-solid fa-location-dot"/> Address: to be confirmed</li>
                     </ul>
@@ -60,7 +60,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <div className="logo-box">
                     <div className="logo">
                         <Link to="/">
-                            <img src={isDarkMode ? DarkLogo : MainLogo} alt="Groupe Experto-Syllams" title="GROUPE EXPERTO-SYLLAMS" style={{ width: 170, height: 60, objectFit: "contain" }}/>
+                            <img src={isDarkMode ? DarkLogo : MainLogo} alt="Groupe Experto-Syllams" title="GROUPE EXPERTO-SYLLAMS" style={{ width: 220, height: 60, objectFit: "contain", backgroundColor: "white" }}/>
                         </Link>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <i className="fa-solid fa-phone ring__animation"/>
                         <div>
                             <h6 className="title">Phone:</h6>
-                            <Link to="/contacts">To be confirmed</Link>
+                            <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                         </div>
                         <Link className="btn-two" to="/page-contact">Contact Now</Link>
@@ -92,7 +92,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <div className="menu-backdrop" onClick={handleRemove} />
                 <nav className="menu-box">
                     <div className="upper-box">
-                    <div className="nav-logo"><Link to="/"><img src={MobileLogo} alt="Groupe Experto-Syllams" style={{ width: 150, height: 50, objectFit: "contain" }}/></Link></div>
+                    <div className="nav-logo"><Link to="/"><img src={MobileLogo} alt="Groupe Experto-Syllams" style={{ width: 200, height: 55, objectFit: "contain", backgroundColor: "white" }}/></Link></div>
                     <div className="close-btn" onClick={handleRemove}><i className="icon fa fa-times"/></div>
                     </div>
                 <ul className="navigation clearfix d-block d-lg-none">
@@ -107,14 +107,14 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <div className="contact-info-box">
                         <i className="icon lnr-icon-phone-handset"/>
                         <span className="title">Call Now</span>
-                        <Link to="/contacts">To be confirmed</Link>
+                        <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                     </li>
                     <li>
                         <div className="contact-info-box">
                         <span className="icon lnr-icon-envelope1"></span>
                         <span className="title">Send Email</span>
-                        <Link to="/contacts">To be confirmed</Link>
+                        <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
                         </div>
                     </li>
                     <li>
@@ -137,7 +137,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 <span className="search-back-drop" onClick={handleToggle}></span>
                 <button className="close-search" onClick={handleToggle}><span className="fa fa-times"></span></button>
                 <div className="search-inner">
-                    <form onSubmit={event => { event.preventDefault(); window.location.assign("/recherche"); }}>
+                    <form onSubmit={event => { event.preventDefault(); window.location.assign(`${import.meta.env.BASE_URL}recherche`); }}>
                         <div className="form-group">
                             <input type="search" name="search-field" placeholder="Search..." required=""/>
                             <button type="submit"><i className="fa fa-search"/></button>
@@ -153,7 +153,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     <div className="inner-container">
                     <div className="logo">
                         <Link to="/">
-                            <img src={isDarkMode ? DarkLogo : StickyLogo} alt="Groupe Experto-Syllams" style={{ width: 170, height: 40, objectFit: "contain" }}/>
+                            <img src={isDarkMode ? DarkLogo : StickyLogo} alt="Groupe Experto-Syllams" style={{ width: 200, height: 48, maxHeight: 48, objectFit: "contain", backgroundColor: "white" }}/>
                         </Link>
                     </div>
                     <div className="nav-outer">

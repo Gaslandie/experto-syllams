@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import FaqsImage1 from '../../assets/images/faq/faq-image1.jpg';
+import FaqsImage1 from '../../assets/images/experto/formation.webp';
 import FaqsImage2 from '../../assets/images/shape/faq-map.png';
 
 const accordionData = [
@@ -23,7 +23,7 @@ const accordionData = [
   },
   {
     title: "How Can I Contact the Group?",
-    content: "The contact page is being prepared. The group’s address, telephone number and email will be added after confirmation.",
+    content: "The contact page is being prepared. You can call +224 628 21 69 75 or email manager@experto-syllams.com. The address is to be confirmed.",
   },
 ];
 

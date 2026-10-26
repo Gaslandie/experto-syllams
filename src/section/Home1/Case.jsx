@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import CaseImage1 from '../../assets/images/case/case-image1.jpg';
-import CaseImage2 from '../../assets/images/case/case-image2.jpg';
-import CaseImage3 from '../../assets/images/case/case-image3.jpg';
-import CaseImage4 from '../../assets/images/case/case-image4.jpg';
+import CaseImage1 from '../../assets/images/experto/analyse.webp';
+import CaseImage2 from '../../assets/images/experto/collegues.webp';
+import CaseImage3 from '../../assets/images/experto/collaboration.webp';
+import CaseImage4 from '../../assets/images/experto/equipe.webp';
 
 // Swiper settings
 const swiperOptions = {
@@ -27,10 +27,10 @@ const swiperOptions = {
 
 // Case study data
 const caseItems = [
-    { id: 1, img: "/images/panaudex.jpeg", category: "Group Firm", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
+    { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Group Firm", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
     { id: 2, img: CaseImage2, category: "Group Firm", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
     { id: 3, img: CaseImage3, category: "Group Firm", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
-    { id: 4, img: "/images/noveo.jpeg", category: "Website Link to Be Confirmed", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
+    { id: 4, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Website Link to Be Confirmed", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
     { id: 5, img: CaseImage1, category: "Website Link to Be Confirmed", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
     { id: 6, img: CaseImage4, category: "Website Link to Be Confirmed", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
 ];

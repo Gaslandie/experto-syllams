@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import ChooseImage1 from '../../assets/images/choose/choose-image1.jpg';
+import ChooseImage1 from '../../assets/images/experto/professionnel.webp';
 import CounterUp from '../../lib/CounterUp';
 
 const progressData = [
