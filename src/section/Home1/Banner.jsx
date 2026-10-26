@@ -16,23 +16,26 @@ const slides = [
   {
     Image: BannerImage1,
     subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
+    title: "Six cabinets, <span>une même ambition</span> pour vos projets",
     buttonText: "Découvrir nos cabinets",
-    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
+    link: "/nos-cabinets",
+    text: "Des expertises complémentaires réunies au sein d’un même groupe.",
   },
   {
     Image: BannerImage2,
-    subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
-    buttonText: "Découvrir nos cabinets",
-    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
+    subtitle: "AUDIT ET CONSEIL",
+    title: "Une expertise <span>à vos côtés</span> pour avancer",
+    buttonText: "Nos activités",
+    link: "/page-services",
+    text: "Découvrez les activités d’audit et de conseil des cabinets du groupe.",
   },
   {
     Image: BannerImage3,
-    subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Une expertise pour <span>vos projets</span> Construisons en confiance",
-    buttonText: "Découvrir nos cabinets",
-    text: "Six cabinets réunissant audit, conseil et formation pour accompagner vos projets.",
+    subtitle: "FORMATION ET CERTIFICATIONS",
+    title: "Développons <span>vos compétences</span> ensemble",
+    buttonText: "Découvrir les formations",
+    link: "/formations",
+    text: "Les programmes et les modalités de formation sont en cours de préparation.",
   },
 ];
 
@@ -64,7 +67,7 @@ function BannerSlide({ slide, isActive }) {
                   style={{ animationDelay: ".5s" }}
                   dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(slide.title) }}
                 />
-                <Link className="btn-one animated fadeInUp" style={{ animationDelay: ".8s" }} to="/nos-cabinets">
+                <Link className="btn-one animated fadeInUp" style={{ animationDelay: ".8s" }} to={slide.link}>
                   {slide.buttonText}
                 </Link>
               </div>
