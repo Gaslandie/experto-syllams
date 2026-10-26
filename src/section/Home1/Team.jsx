@@ -1,78 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import TeamShapeImage from '../../assets/images/shape/team-shape.png';
-import TeamImage1 from '../../assets/images/team/team-image1.jpg';
-import TeamImage2 from '../../assets/images/team/team-image2.jpg';
-import TeamImage3 from '../../assets/images/team/team-image3.jpg';
-import TeamImage4 from '../../assets/images/team/team-image4.jpg';
+import TeamShapeImage from "../../assets/images/shape/team-shape.png";
 
-	const teamMembers = [
-	{
-		name: "Nom à confirmer",
-		role: "Profil à venir",
-		image: TeamImage1,
-		delay: "0ms",
-	},
-	{
-		name: "Nom à confirmer",
-		role: "Profil à venir",
-		image: TeamImage2,
-		delay: "200ms",
-	},
-	{
-		name: "Nom à confirmer",
-		role: "Profil à venir",
-		image: TeamImage3,
-		delay: "400ms",
-	},
-	{
-		name: "Nom à confirmer",
-		role: "Profil à venir",
-		image: TeamImage4,
-		delay: "600ms",
-	},
-];
-
-function Team (){
-	return (
-		<section className="team-section pt-120 pb-120">
-			<div className="team-shape wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" >
-				<img className="sway__animation" src={TeamShapeImage} alt="Illustration" />
-			</div>
-			<div className="container">
-				<div className="sec-title center mb-50">
-					<h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Notre équipe</h6>
-					<h2 className="title wow splt-txt" data-wow-delay="200ms" data-wow-duration="1500ms" data-splitting >Découvrez les personnes derrière <br /> notre groupe — bientôt disponible</h2>
-				</div>
-				<div className="row g-4">
-					{teamMembers.map((member, index) => (
-					<div className="col-md-6 col-xl-3 wow fadeInUp" key={index} data-wow-delay={member.delay} data-wow-duration="1500ms" >
-						<div className="team-block">
-							<div className="inner-box">
-								<figure className="image">
-									<img src={member.image} alt={member.name} />
-								</figure>
-								<div className="socials">
-									<i className="fa-solid fa-plus" />
-									<ul>
-										<li><Link to="/contacts"><i className="fa-brands fa-facebook-f" /></Link></li>
-										<li><Link to="/contacts"><i className="fa-brands fa-instagram" /></Link></li>
-										<li><Link to="/contacts"><i className="fa-brands fa-linkedin-in" /></Link></li>
-										<li><Link to="/contacts"><i className="fa-brands fa-behance" /></Link></li>
-									</ul>
-								</div>
-								<div className="content-box">
-									<h4 className="title"><Link to="/page-team-details">{member.name}</Link></h4>
-									<p className="sub-title">{member.role}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-};
+function Team() {
+  return (
+    <section className="team-section pt-120 pb-120">
+      <div className="team-shape wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+        <img className="sway__animation" src={TeamShapeImage} alt="" />
+      </div>
+      <div className="container">
+        <div className="sec-title center mb-50">
+          <h6 className="sub-title">Notre équipe</h6>
+          <h2 className="title">Découvrez les personnes derrière <br /> notre groupe — bientôt disponible</h2>
+        </div>
+        <div className="row g-4">
+          {[0, 1, 2, 3].map((slot) => (
+            <div className="col-md-6 col-xl-3" key={slot}>
+              <div className="team-placeholder">
+                <div className="team-placeholder-photo">
+                  <i className="fa-regular fa-user" aria-hidden="true" />
+                  <span>Photo de l’équipe à venir</span>
+                </div>
+                <div className="team-placeholder-content">
+                  <h4>Nom à confirmer</h4>
+                  <p>Fonction à confirmer</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default Team;

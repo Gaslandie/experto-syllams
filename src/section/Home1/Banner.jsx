@@ -53,7 +53,7 @@ const swiperOptions = {
 
 function BannerSlide({ slide, isActive }) {
   return (
-    <div className={`slide-bg ${isActive ? 'active' : ''}`} style={{ backgroundImage: `url(${slide.Image})` }}>
+    <div className={`slide-bg ${isActive ? 'active' : ''}`} style={{ "--hero-image": `url(${slide.Image})` }}>
       <div className="container">
         <div className="outer-box">
           <div className="row g-0 align-items-end">

@@ -95,3 +95,89 @@
     transition: none;
   }
 }
+
+/* Animate only the background, keeping banner text within the screen. */
+.banner-section .banner-slider .slide-bg,
+.banner-section .banner-slider .swiper-slide-active .slide-bg {
+  transform: none;
+  overflow: hidden;
+}
+.banner-section .banner-slider .slide-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1);
+  transition: transform 8s ease-out;
+}
+.banner-section .banner-slider .swiper-slide-active .slide-bg::after {
+  transform: scale(1.12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner-section .banner-slider .slide-bg::after {
+    transition: none;
+  }
+  .banner-section .banner-slider .swiper-slide-active .slide-bg::after {
+    transform: none;
+  }
+}
+
+/* Keep the list and its button separated when the columns wrap. */
+.choose-section .content-column .inner-column .content-box .list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px 24px;
+  margin-bottom: 36px;
+}
+.choose-section .content-box .list ul { margin: 0; }
+@media (max-width: 575.98px) {
+  .choose-section .content-column .inner-column .content-box .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-placeholder {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
+}
+.team-placeholder-photo {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 24px;
+  background: #f0f4f1;
+  color: #35564b;
+  text-align: center;
+  font-weight: 600;
+}
+.team-placeholder-photo i { font-size: 52px; }
+.team-placeholder-content { padding: 20px 24px; }
+.team-placeholder-content h4 { margin-bottom: 4px; }
+.team-placeholder-content p { margin: 0; }
+
+.testimonial-placeholder {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50%;
+  background: #eef3ef;
+  color: #35564b;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.testimonial-placeholder i { font-size: 32px; }

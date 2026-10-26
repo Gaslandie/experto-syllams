@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import testimonialsImage1 from '../../assets/images/testimonial/testimonial-image1.jpg';
-import testimonialsImage2 from '../../assets/images/testimonial/testimonial-image2.jpg';
 import testimonialsShapeImg from '../../assets/images/shape/testimonial-shape.png';
 
 const swiperOptions = {
@@ -25,14 +23,12 @@ const swiperOptions = {
 const testimonials = [
   {
     id: 1,
-    image: testimonialsImage1,
     name: 'Avis clients',
     role: 'À venir',
     text: `Cet espace présentera les avis des clients après leur collecte et leur validation. Le contenu affiché est provisoire.`,
   },
   {
     id: 2,
-    image: testimonialsImage2,
     name: 'Avis clients',
     role: 'À venir',
     text: `Cet espace présentera les avis des clients après leur collecte et leur validation. Le contenu affiché est provisoire.`,
@@ -48,7 +44,7 @@ const Testimonial = () => {
         </figure>
         <div className="testimonial-slider">
           <Swiper {...swiperOptions} className="swiper-wrapper">
-            {testimonials.map(({ id, image, name, role, text }) => (
+            {testimonials.map(({ id, name, role, text }) => (
               <SwiperSlide key={id}>
                 <div className="testimonial-block">
                   <div className="inner-box">
@@ -61,9 +57,10 @@ const Testimonial = () => {
                           />
                         </svg>
                       </div>
-                      <figure className="image">
-                        <img src={image} alt={name} width={120} height={120} />
-                      </figure>
+                      <div className="testimonial-placeholder">
+                        <i className="fa-regular fa-user" aria-hidden="true" />
+                        <span>Photo à venir</span>
+                      </div>
                       <div className="star" aria-label="Décoration : aucune note client publiée">
                         {[...Array(5)].map((_, i) => (
                           <i key={i} className="fa-solid fa-star" />
