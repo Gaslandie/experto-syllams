@@ -36,8 +36,8 @@ function About() {
                   <h6 className="sub-title">ABOUT US</h6>
                   <h2 className="title">Six Firms, One Shared Vision for Your Business</h2>
                   <p className="text">
-                    GROUPE EXPERTO-SYLLAMS brings together PANAUDEX, LIFE-PARTNERS,
-                    Syllams Expertise, NOVEO, FIDEXIE and AFRIC CONSEIL.
+                    GROUPE EXPERTO-SYLLAMS brings together <strong>PANAUDEX</strong>, <strong>LIFE-PARTNERS</strong>,
+                    {' '}<strong>Syllams Expertise</strong>, <strong>NOVEO</strong>, <strong>FIDEXIE</strong> and <strong>AFRIC CONSEIL</strong>.
                   </p>
                 </div>
 
