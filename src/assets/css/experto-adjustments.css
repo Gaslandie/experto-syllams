@@ -33,7 +33,7 @@
 /* Enlarge the header logo without changing the navigation layout or link spacing. */
 .header-style-one .main-box .logo img,
 .header-style-one .sticky-header .logo img {
-  transform: translateX(-8px) scale(1.14);
+  transform: translateX(-24px) scale(1.14);
   transform-origin: left center;
 }
 @media (max-width: 575.98px) {
