@@ -153,7 +153,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     <div className="inner-container">
                     <div className="logo">
                         <Link to="/">
-                            <img src={isDarkMode ? DarkLogo : StickyLogo} alt="Groupe Experto-Syllams"/>
+                            <img src={isDarkMode ? DarkLogo : StickyLogo} alt="Groupe Experto-Syllams" style={{ width: 170, height: 40, objectFit: "contain" }}/>
                         </Link>
                     </div>
                     <div className="nav-outer">
