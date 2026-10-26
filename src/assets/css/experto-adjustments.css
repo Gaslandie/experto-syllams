@@ -29,3 +29,16 @@
   .service-section .service-block .image-box img { min-height: 0; height: 100%; }
   .service-section .service-block .arry-btn { right: 20px; top: 60px; }
 }
+
+/* Enlarge the header logo without changing the navigation layout or link spacing. */
+.header-style-one .main-box .logo img,
+.header-style-one .sticky-header .logo img {
+  transform: translateX(-8px) scale(1.14);
+  transform-origin: left center;
+}
+@media (max-width: 575.98px) {
+  .header-style-one .main-box .logo img,
+  .header-style-one .sticky-header .logo img {
+    transform: translateX(-4px) scale(1.08);
+  }
+}
