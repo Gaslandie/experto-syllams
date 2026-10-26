@@ -33,7 +33,7 @@ function About() {
                 <div className="sec-title">
                   <h6 className="sub-title">QUI SOMMES-NOUS</h6>
                   <h2 className="title">Six cabinets, une vision commune pour vos projets</h2>
-                  <p className="text">
+                  <p className="text group-firms">
                     GROUPE EXPERTO-SYLLAMS réunit <strong>PANAUDEX</strong>, <strong>LIFE-PARTNERS</strong>,
                     {' '}<strong>Syllams Expertise</strong>, <strong>NOVEO</strong>, <strong>FIDEXIE</strong> et <strong>AFRIC CONSEIL</strong>.
                   </p>

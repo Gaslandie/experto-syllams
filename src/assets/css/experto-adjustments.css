@@ -42,3 +42,8 @@
     transform: translateX(-4px) scale(1.08);
   }
 }
+
+.about-section .group-firms strong {
+  font-weight: 800;
+  color: #142b20;
+}
