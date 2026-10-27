@@ -16,7 +16,7 @@ const slides = [
   {
     Image: BannerImage1,
     subtitle: "GROUPE EXPERTO-SYLLAMS",
-    title: "Six cabinets, <span>une même ambition</span> pour vos projets",
+    title: "Un groupe de cabinets, <span>une même ambition</span> pour vos projets",
     buttonText: "Découvrir nos cabinets",
     link: "/nos-cabinets",
     text: "Des expertises complémentaires réunies au sein d’un même groupe.",
