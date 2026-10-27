@@ -27,24 +27,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
     return (
         <>
             <header className={`main-header header-style-one ${scroll ? "fixed-header" : ""} ${searchToggle ? "moblie-search-active" : ""}`}>
-            <div className="header-top">
-                <div className="auto-container">
-                    <div className="top-right">
-                        <ul className="useful-links">
-                            <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
-                            <li><Link to="/page-faq">FAQ</Link></li>
-                            <li><Link to="/contacts">Contact</Link></li>
-                        </ul>
-                        <ul className="top-social-icon">
-                            <li><Link to="/contacts" aria-label="Facebook — contact"><i className="fa-brands fa-facebook-f"/></Link></li>
-                            <li><Link to="/contacts" aria-label="Instagram — contact"><i className="fa-brands fa-instagram"/></Link></li>
-                            <li><Link to="/contacts" aria-label="X — contact"><i className="fa-brands fa-x-twitter"/></Link></li>
-                            <li><Link to="/contacts" aria-label="LinkedIn — contact"><i className="fa-brands fa-linkedin-in"/></Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             {/* <!-- Main box --> */}
             <div className="main-box">
                 <div className="logo-box">
