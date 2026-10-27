@@ -47,10 +47,10 @@ function Case ({className}){
                     <Swiper {...swiperOptions}>
                         {caseItems.concat(caseItems).map((item, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="case-block">
+                            <div className={`case-block ${item.logo ? "case-block--logo" : "case-block--photo"}`}>
                                 <div className="inner-box">
                                     <figure className="image">
-                                        <img src={item.img} alt={item.logo ? `${item.title} logo` : `${item.title} — illustration provisoire`} style={item.logo ? { aspectRatio: "440 / 540", objectFit: "contain", backgroundColor: "white" } : undefined}/>
+                                        <img src={item.img} alt={item.logo ? `Logo ${item.title}` : `${item.title} — illustration provisoire`} />
                                     </figure>
                                     <div className="content-box">
                                         <span className="sub-title">{item.category}</span>

@@ -198,3 +198,48 @@
     margin-top: 16px !important;
   }
 }
+
+/* Use a consistent card size and keep logos clear of labels in every state. */
+.case-section .case-block .inner-box {
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+}
+.case-section .case-block .inner-box .image {
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  background: #fff;
+  overflow: hidden;
+}
+.case-section .case-block .inner-box .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.case-section .case-block--logo .inner-box .image img {
+  object-fit: contain;
+  padding: 16px;
+}
+.case-section .case-block .inner-box .content-box,
+.case-section .case-block .inner-box:hover .content-box {
+  position: static;
+  transform: none;
+  width: 100%;
+  min-height: 130px;
+  padding: 22px 26px;
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: none;
+}
+.case-section .case-block .inner-box::after,
+.case-section .case-block .inner-box .hover-content,
+.case-section .case-block .inner-box .arry-btn {
+  display: none;
+}
+.case-section .case-block .inner-box:hover .image img {
+  filter: none;
+}
+.case-section .case-block .inner-box .content-box .title {
+  overflow-wrap: anywhere;
+}
