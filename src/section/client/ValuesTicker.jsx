@@ -12,12 +12,14 @@ const phrases = [
   "LA SATISFACTION DE NOS CLIENTS",
 ];
 
+const markedValues = new Set(phrases.slice(4, 8));
+
 export default function ValuesTicker() {
   const [paused, setPaused] = useState(false);
   return <section className="values-ticker" aria-label="Les valeurs du groupe">
     <div className={`values-ticker-track ${paused ? "is-paused" : ""}`}>
       {[0, 1].map((copy) => <div className="values-ticker-items" key={copy} aria-hidden={copy === 1 ? true : undefined}>
-        {phrases.map((phrase) => <span key={phrase}>{phrase}</span>)}
+        {phrases.map((phrase) => <span key={phrase} className={phrase === "Nos Valeurs pour y arriver :" ? "values-ticker-heading" : undefined}>{markedValues.has(phrase) && <i className="value-diamond" aria-hidden="true">❖</i>}{phrase}</span>)}
       </div>)}
     </div>
     <button type="button" className="values-ticker-toggle" onClick={() => setPaused(!paused)} aria-label={paused ? "Reprendre le défilement des valeurs" : "Mettre en pause le défilement des valeurs"}>{paused ? "Reprendre" : "Pause"}</button>

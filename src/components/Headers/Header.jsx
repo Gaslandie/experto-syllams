@@ -1,12 +1,12 @@
+import ValuesTicker from '../../section/client/ValuesTicker';
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
-import ValuesTicker from '../../section/client/ValuesTicker';
-const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
-const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
-const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
-const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
+const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
+const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
+const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
+const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -52,7 +52,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                             <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                         </div>
-                        <Link className="btn-two" to="/contacts">Nous contacter</Link>
                     </div>
                     <div className="mobile-nav-toggler d-block d-lg-none" onClick={handleOpen}><i className="icon lnr-icon-bars"/></div>
                     {/* Mobile Nav toggler */}

@@ -1,50 +1,14 @@
-import React from "react";
 import Layout from '../layouts/Layout';
 import Banner from '../section/Home1/Banner';
-import About from '../section/Home1/About';
-import ClientIntro from '../section/client/ClientIntro';
-import Service from "../section/Home1/Service";
-import Choose from "../section/Home1/Choose";
-import Growth from "../section/Home1/Growth";
-import Processing from "../section/Home1/Processing";
-import Case from "../section/Home1/Case";
-import Strategy from "../section/Home1/Strategy";
-import Team from "../section/Home1/Team";
-import Faqs from "../section/Home1/Faqs";
-import Testimonial from "../section/Home1/Testimonial";
-import News from "../section/Home1/News";
+import PartnerShowcase from '../section/client/PartnerShowcase';
+import ClientGroup from '../section/client/ClientGroup';
+import ClientAbout from '../section/client/ClientAbout';
 
-import ClientServices from '../section/client/ClientServices';
-import ClientContactBanner from '../section/client/ClientContactBanner';
-
-import PartnerShowcase from "../section/client/PartnerShowcase";
-
-function Home1() {
-    return (
-        <>
-
-        <div className="page-wrapper">
-            <Layout>
-                <Banner />
-                <About />
-                <ClientIntro />
-                <Service />
-                <ClientServices />
-                <Choose />
-                <Growth />
-                <Processing />
-                <Case />
-                <Strategy />
-                <Team />
-                <Faqs />
-                <Testimonial />
-                <PartnerShowcase />
-                <News />
-                <ClientContactBanner />
-            </Layout>
-        </div>
-
-        </>
-    );
+export default function Home1() {
+  return <div className="page-wrapper"><Layout>
+    <Banner />
+    <PartnerShowcase />
+    <ClientGroup />
+    <ClientAbout />
+  </Layout></div>;
 }
-export default Home1;

@@ -8,7 +8,7 @@ export const clientServices = [
 export default function ClientServices() {
   return <section className="client-services pt-120 pb-120" aria-labelledby="client-services-title">
     <div className="container">
-      <div className="sec-title mb-50"><h6 className="sub-title">Nos services</h6><h2 id="client-services-title" className="title">Une expertise complète à votre disposition</h2></div>
+      <div className="sec-title mb-50"><p className="client-services-label">Nos services</p><h3 id="client-services-title" className="client-group-subtitle">Une expertise complète à votre disposition</h3></div>
       <div className="client-request-grid">{clientServices.map(([title, text]) => <article className="client-request-card" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
     </div>
   </section>;

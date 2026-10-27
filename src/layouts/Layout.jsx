@@ -25,7 +25,7 @@ import Header6Single from "../components/Headers/Header6Single";
 import Header7 from "../components/Headers/Header7";
 import Header7Single from "../components/Headers/Header7Single";
 
-const Layout = ({ children, HeaderStyle, FooterStyle, styleMode }) => {
+const Layout = ({ children, HeaderStyle, FooterStyle, styleMode, hideFooter = false }) => {
     const [searchToggle, setSearchToggled] = useState(false);
     const [scroll, setScroll] = useState(0);
     const handleToggle = () => setSearchToggled(!searchToggle);
@@ -88,7 +88,7 @@ const Layout = ({ children, HeaderStyle, FooterStyle, styleMode }) => {
         <>
             {renderHeader()}
             {children}
-            {renderFooter()}
+            {!hideFooter && renderFooter()}
             <BackToTop />
         </>
     );

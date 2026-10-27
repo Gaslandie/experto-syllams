@@ -1,22 +1,28 @@
-import { useState } from "react";
-
 // No client or partner identities have been supplied for this strip yet.
 // The supplied cabinet logos belong to the group and must not be used here.
 const placeholders = ["Client — référence nationale", "Client — référence internationale", "Partenaire", "Affiliation"];
 
 export default function PartnerShowcase() {
-  const [paused, setPaused] = useState(false);
-  return <section className="partner-showcase" aria-labelledby="partner-showcase-title">
+  return <section id="client-references" className="partner-showcase" aria-labelledby="partner-showcase-title">
     <div className="container">
-      <div className="sec-title mb-30"><h6 className="sub-title">Clients & partenaires</h6><h2 className="title" id="partner-showcase-title">Ils nous font confiance</h2><p>Les logos et références seront ajoutés après leur transmission et leur validation par le groupe.</p></div>
+      <div className="partner-panel">
+      <div className="sec-title partner-introduction">
+        <h2 className="title" id="partner-showcase-title">Nos clients sont nos meilleures références</h2>
+        <div className="partner-introduction-copy">
+        <p>Cabinets d’audit, Compagnies d’assurance, institutions de retraite ; Banques, Entreprises industrielles et commerciales ; Fonds de capital Investissement.</p>
+        <p>Ils ont fait confiance au Groupe Experto-Syllams pour les accompagner dans la résolution de problématiques aux enjeux importants.</p>
+        <p className="partner-invitation">Découvrez ici quelques-unes de nos références clients.</p>
+        </div>
+      </div>
+      <hr className="partner-divider" />
       <div className="partner-strip" tabIndex={0} aria-label="Emplacements des futurs logos de clients et partenaires">
-        <div className={`partner-track${paused ? " is-paused" : ""}`}>
+        <div className="partner-track">
           {[0, 1].map(copy => <div className="partner-items" key={copy} aria-hidden={copy === 1 ? true : undefined}>
             {placeholders.map(label => <div className="partner-logo-card" key={label}><div className="partner-logo-slot">Logo à fournir</div><div className="partner-logo-caption"><strong>{label}</strong><span>À venir</span></div></div>)}
           </div>)}
         </div>
       </div>
-      <button type="button" className="partner-pause" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Reprendre le défilement" : "Mettre en pause le défilement"}</button>
+      </div>
     </div>
   </section>;
 }

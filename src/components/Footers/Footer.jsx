@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-const FooterLogo = `${import.meta.env.BASE_URL}images/experto-syllams.jpeg`;
+const FooterLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
 import FooterShapeImage from '../../assets/images/shape/footer-one-shape.png';
 
 function Footer({ handleOpen, searchToggle, }) {

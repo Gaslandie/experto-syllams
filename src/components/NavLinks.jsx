@@ -17,15 +17,21 @@ export const navigation = [
     { title: "Audits & expertise", to: "/audits-expertise" },
   ] },
   { title: "Nos cabinets", to: "/nos-cabinets", children: firms.map(([slug, title]) => ({ title, to: `/nos-cabinets/${slug}` })) },
+  { title: "Contacts", to: "/contacts", children: [
+    { title: "Email", to: "mailto:manager@experto-syllams.com", external: true },
+    { title: "WhatsApp", to: "https://wa.me/224628216975", external: true },
+    { title: "Adresse", to: "/contacts#adresse" },
+  ] },
   { title: "Affiliations & partenaires", to: "/affiliations-partenaires", children: [
+    { title: "Nous font confiance", to: "/references" },
     { title: "Nationales", to: "/references/nationales" },
     { title: "Internationales", to: "/references/internationales" },
   ] },
 ];
 
 function MenuItems({ items }) {
-  return items.map(({ title, to, children }) => <li key={to} className={children ? "dropdown" : undefined}>
-    <Link to={to}>{title}</Link>
+  return items.map(({ title, to, children, external }) => <li key={to} className={children ? "dropdown" : undefined}>
+    {external ? <a href={to}>{title}</a> : <Link to={to}>{title}</Link>}
     {children && <><div className="dropdown-btn" aria-hidden="true"><i className="fa fa-angle-down" /></div><ul><MenuItems items={children} /></ul></>}
   </li>);
 }

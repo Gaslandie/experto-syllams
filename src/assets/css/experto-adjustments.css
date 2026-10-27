@@ -60,7 +60,7 @@
   overflow-wrap: anywhere;
 }
 
-/* Show the supplied square logo upright in the footer content. */
+/* Display the horizontal group logo on a light surface. */
 .footer-style-one .footer-brand {
   margin-bottom: 30px;
 }
@@ -72,8 +72,9 @@
 }
 .footer-style-one .footer-brand img {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -531,18 +532,30 @@
 .main-menu .navigation > li:last-child > ul { left: auto; right: 0; }
 .main-menu .navigation > li:last-child > ul > li > ul { left: auto; right: 100%; }
 .mobile-menu .navigation .sub-menu .sub-menu a { padding-left: 42px; }
-.partner-showcase { padding: 80px 0; }
-.partner-showcase .sec-title p { margin-top: 20px; }
-.partner-strip { overflow: hidden; border-block: 1px solid #dce5df; padding: 28px 0; }
+.partner-showcase { padding: 90px 0; background: linear-gradient(180deg, #fff 0%, #f3f7f4 100%); }
+.partner-introduction { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: clamp(32px, 5vw, 80px); margin-bottom: 0; }
+.partner-introduction .title { margin: 0; max-width: 560px; }
+.partner-introduction-copy { min-width: 0; }
+.partner-introduction-copy p { margin: 0 0 20px; }
+.partner-introduction-copy .partner-invitation { margin-bottom: 0; color: #1a4137; font-weight: 600; }
+.partner-divider { margin: 40px 0 0; border: 0; border-top: 1px solid #cbd9d0; opacity: 1; }
+.partner-strip { overflow: hidden; padding: 32px 0 24px; mask-image: linear-gradient(to right, transparent, #000 24px, #000 calc(100% - 24px), transparent); }
 .partner-track { display: flex; width: max-content; animation: partner-scroll 35s linear infinite; }
 .partner-items { display: flex; flex-shrink: 0; gap: 24px; padding-right: 24px; }
-.partner-logo-card { width: 250px; background: #fff; border: 1px solid #dce5df; border-radius: 8px; overflow: hidden; }
-.partner-logo-slot { display: grid; place-items: center; height: 150px; color: #586761; background: #f7f9f7; }
-.partner-logo-caption { display: grid; gap: 6px; padding: 18px; border-top: 1px solid #dce5df; }
-.partner-logo-caption span { color: #586761; }
-.partner-track.is-paused, .partner-strip:hover .partner-track, .partner-strip:focus-within .partner-track { animation-play-state: paused; }
-.partner-pause { display: block; margin-top: 18px; padding: 10px 16px; border: 1px solid #163839; border-radius: 4px; color: #163839; background: #fff; }
-.partner-strip:focus-visible, .partner-pause:focus-visible { outline: 2px solid #176560; outline-offset: 4px; }
+.partner-logo-card { width: 270px; background: #fff; border: 1px solid #dce5df; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(22, 56, 57, .04); transition: border-color .2s ease, box-shadow .2s ease; }
+.partner-logo-card:hover { border-color: #99b3a5; box-shadow: 0 8px 22px rgba(22, 56, 57, .09); }
+.partner-logo-slot { display: grid; place-items: center; height: 160px; margin: 16px; border-radius: 8px; color: #65756c; background: #f5f8f5; }
+.partner-logo-caption { display: grid; gap: 10px; padding: 0 20px 22px; }
+.partner-logo-caption strong { color: #1a4137; }
+.partner-logo-caption span { justify-self: start; padding: 2px 10px; border-radius: 30px; color: #536b5d; background: #edf3ee; }
+.partner-strip:hover .partner-track, .partner-strip:focus-within .partner-track { animation-play-state: paused; }
+.partner-strip:focus-visible { outline: 2px solid #176560; outline-offset: 4px; }
+@media (max-width: 767.98px) {
+  .partner-showcase { padding: 56px 0; }
+  .partner-introduction { grid-template-columns: 1fr; gap: 24px; }
+  .partner-logo-card { width: 240px; }
+  .partner-divider { margin-top: 28px; }
+}
 .client-page .partner-showcase { padding-top: 0; }
 .client-page .partner-showcase > .container { padding-inline: 0; }
 @keyframes partner-scroll { to { transform: translateX(-50%); } }
@@ -552,3 +565,303 @@
   .partner-strip { overflow-x: auto; }
   .partner-pause { display: none; }
 }
+
+/* Locally hosted Manrope for body text and interface labels. */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/manrope-variable.ttf") format("truetype");
+}
+:root { --text-font: "Manrope", sans-serif; }
+.header-style-one .main-menu .navigation li > a,
+.mobile-menu .navigation li > a,
+.btn-one, .btn-two, .btn-one-light, .btn-one-rounded,
+.footer-style-one .user-links a,
+.values-ticker, .values-ticker-toggle, .partner-pause {
+  font-family: var(--text-font);
+}
+.header-style-one .main-menu .navigation li > a,
+.mobile-menu .navigation li > a {
+  font-weight: 600;
+  letter-spacing: .015em;
+  text-transform: none;
+}
+
+.values-ticker-items .value-diamond { display: inline-block; margin-right: 10px; font-style: normal; }
+
+.values-ticker-items .values-ticker-heading { color: #c6d936; font-weight: 700; }
+
+/* One continuous group section, following the client's supplied composition. */
+.client-group { padding: 64px 0; background: #f5f7f5; }
+.client-group .client-intro { padding: 0; background: transparent; }
+.client-group .client-intro-panel { padding: 0; background: transparent; }
+
+.client-group .client-intro-benefits { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; gap: 24px; margin-top: 32px; }
+.client-group .client-intro-benefits .client-request-card { padding: 24px; }
+.client-group-values { padding: 8px 0; }
+.client-group-values p { margin-bottom: 16px; }
+.client-group-values .client-group-motto { color: #87421f; font-weight: 700; }
+.client-group-values h3 { font-size: var(--body-font-size); line-height: var(--body-line-height); margin-bottom: 8px; color: #176560; }
+.client-group-values ul { list-style: none; margin: 0; padding: 0; }
+.client-group-values li { display: flex; align-items: baseline; gap: 10px; }
+.client-group-values li span { flex-shrink: 0; }
+.client-group .client-services { padding: 40px 0 0 !important; background: transparent; }
+.client-group .client-services .sec-title { margin-bottom: 24px !important; }
+.client-group .service-section { margin-block: 40px; padding: 0 !important; background: transparent; }
+.client-group .service-section::after { display: none; }
+.client-group .service-section > .sec-shape,
+.client-group .service-section > .sec-line,
+.client-group .service-section .sec-title { display: none; }
+.client-group .client-contact-banner { max-width: 1320px; margin: 0 auto; border-radius: 12px; padding: 36px 24px; }
+@media (max-width: 1199.98px) {
+  .client-group .client-intro-benefits { grid-template-columns: 1fr 1fr; }
+  .client-group-values { grid-column: 1 / -1; grid-row: 2; }
+  .client-group .client-contact-banner { margin-inline: 12px; }
+}
+@media (max-width: 767.98px) {
+  .client-group { padding: 40px 0; }
+  .client-group .client-intro-benefits { grid-template-columns: 1fr; }
+  .client-group-values { grid-column: auto; grid-row: auto; }
+  .client-group .client-contact-banner { padding: 28px 12px; }
+}
+
+/* Consistent hierarchy and shared alignment throughout the group block. */
+.client-group-content > * > .container { max-width: none; padding-inline: 0; }
+.client-group .client-intro-panel { max-width: none; margin: 0; }
+.client-group #client-group-title { margin: 0 0 20px; }
+.client-group .client-group-subtitle { margin: 0 0 24px; }
+.client-group .client-intro-copy { margin-top: 0; gap: 28px; }
+.client-group .client-intro-copy p { margin-bottom: 0; }
+.client-group .client-intro-benefits { align-items: center; gap: 28px; }
+.client-group .client-intro-benefits .client-request-card { border-radius: 12px; padding: 24px; }
+.client-group-values { padding: 24px 0; }
+.client-group .client-services .client-request-card { border-radius: 12px; padding: 24px; }
+.client-group .client-contact-banner { max-width: none; margin: 0; padding: 32px; }
+.client-group .client-contact-banner > .container { padding: 0; }
+@media (max-width: 767.98px) {
+  .client-group .client-contact-banner { padding: 24px; }
+  .client-group-values { padding: 0; }
+}
+
+/* A single enclosing surface makes the whole group section read as one block. */
+.client-group { background: #e9efec; padding: 56px 0; }
+.client-group-content {
+  padding: clamp(24px, 3vw, 44px);
+  background: #fff;
+  border: 1px solid #cbd9d1;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(22, 56, 57, .06);
+}
+.client-group .client-intro-panel { border-radius: 0; }
+.client-group .client-intro-benefits {
+  padding: 28px;
+  background: #f2f6f3;
+  border-radius: 12px;
+}
+.client-group .client-services { margin-top: 32px; border-top: 1px solid #dce5df; padding-top: 32px !important; }
+
+@media (max-width: 767.98px) {
+  .client-group { padding: 32px 0; }
+  .client-group-content { padding: 20px; border-radius: 14px; }
+  .client-group .client-intro-benefits { padding: 16px; gap: 24px; }
+}
+
+.client-group-values .client-group-promises { font-weight: 600; text-align: center; }
+
+@media (max-width: 767.98px) {
+  .client-group .service-section { margin-block: 28px; }
+}
+
+/* Shared visual treatment for group subheadings and information cards. */
+.client-group .client-group-subtitle {
+  font-size: clamp(21px, 2vw, 27px);
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--headings-color);
+  margin: 0 0 24px;
+}
+.client-group .client-services-label { margin: 0 0 12px; color: #176560; font-weight: 600; }
+.client-group .client-request-card {
+  background: #fff;
+  border: 1px solid #dce5df;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: none;
+}
+.client-group .client-request-card h3 {
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--headings-color);
+  margin: 0 0 16px;
+}
+.client-group .client-request-card p { margin: 0; }
+
+.client-about { padding: 0 0 56px; background: #e9efec; }
+.client-about-panel { padding: clamp(24px, 3vw, 44px); background: #fff; border: 1px solid #cbd9d1; border-radius: 20px; box-shadow: 0 12px 36px rgba(22, 56, 57, .06); }
+.client-about-panel h2 { font-size: clamp(28px, 3vw, 40px); line-height: 1.25; margin: 0 0 24px; }
+.client-about-panel p { margin: 0 0 20px; }
+.client-about-panel p:last-child { margin-bottom: 0; }
+.client-about-panel strong { font-weight: 700; color: var(--headings-color); }
+@media (max-width: 767.98px) {
+  .client-about { padding-bottom: 32px; }
+  .client-about-panel { padding: 20px; border-radius: 14px; }
+}
+
+/* Light, consistent frames for the three main content sections. */
+.partner-panel,
+.client-group-content,
+.client-about-panel {
+  background: #fff;
+  border: 0.5px solid #edf0ee;
+  border-radius: 14px;
+  box-shadow: none;
+}
+.partner-panel { padding: clamp(24px, 3vw, 44px); }
+@media (max-width: 767.98px) {
+  .partner-panel { padding: 20px; }
+  .partner-panel, .client-group-content, .client-about-panel { border-radius: 12px; }
+}
+
+/* Quiet refinement: shared surfaces, measured spacing, and readable text. */
+.partner-showcase, .client-group, .client-about {
+  --section-surface: #f5f7f5;
+  --section-ink: #183d32;
+  background: var(--section-surface);
+}
+.partner-showcase { padding: 64px 0 0; }
+.client-group { padding: 36px 0; }
+.client-about { padding-bottom: 64px; }
+.partner-panel, .client-group-content, .client-about-panel {
+  padding: clamp(24px, 4vw, 52px);
+  border-color: #edf0ee;
+}
+.partner-introduction .title, .client-group #client-group-title, .client-about-panel h2 {
+  color: #183d32;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.partner-introduction-copy p, .client-intro-copy p, .client-about-panel p {
+  text-wrap: pretty;
+}
+.partner-introduction { gap: clamp(32px, 4vw, 56px); }
+.partner-divider { margin-top: 36px; border-color: #e5ebe7; }
+.partner-logo-card { border-color: #e6ece8; box-shadow: none; }
+.partner-logo-slot { background: #f7f9f7; }
+.client-group .client-intro-copy { column-gap: 40px; }
+.client-group .client-intro-benefits { margin-top: 36px; background: #f5f8f5; }
+.client-group .client-request-card { border-color: #e5ebe7; padding: 28px; }
+.client-group .client-intro-benefits .client-request-card,
+.client-group .client-services .client-request-card { padding: 28px; }
+.client-group .client-request-card > i {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #edf4ef;
+  color: #176560;
+  margin-bottom: 20px;
+}
+.client-group .client-services { margin-top: 40px; padding-top: 36px !important; border-color: #e5ebe7; }
+.client-group .client-services-label { letter-spacing: .035em; }
+.client-group .client-contact-banner { padding: 36px; background: #183d32; }
+.client-group .client-contact-banner h2 { text-wrap: balance; letter-spacing: -.02em; }
+.client-group .client-contact-banner .btn-one-light { border-radius: 8px; }
+.client-about-panel > p { max-width: 1000px; line-height: 1.85; margin-bottom: 24px; }
+.client-about-panel > p:first-of-type { color: #304b40; }
+.client-about-panel > p:last-child { margin-bottom: 0; }
+@media (max-width: 767.98px) {
+  .partner-showcase { padding-top: 32px; }
+  .client-group { padding-block: 24px; }
+  .client-about { padding-bottom: 32px; }
+  .partner-panel, .client-group-content, .client-about-panel { padding: 22px; }
+  .client-group .client-intro-benefits { margin-top: 28px; padding: 16px; }
+  .client-group .client-intro-benefits .client-request-card,
+  .client-group .client-services .client-request-card { padding: 20px; }
+  .client-group .client-contact-banner { padding: 24px; }
+}
+
+/* Simplify the benefits row while retaining the client's three-column layout. */
+.client-group .client-intro-benefits {
+  padding: 32px 0 0;
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid #edf0ee;
+  gap: 32px;
+}
+.client-group .client-intro-benefits .client-request-card {
+  border-color: #edf0ee;
+  background: #fff;
+}
+.client-group-values { padding: 0; }
+.client-group-values .client-group-promises { margin-bottom: 20px; text-wrap: balance; }
+.client-group-values .client-group-motto {
+  color: #183d32;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 28px;
+  text-wrap: balance;
+}
+.client-values-list { padding-top: 24px; border-top: 1px solid #edf0ee; }
+.client-values-list h3 { margin-bottom: 14px; }
+.client-values-list li { padding-block: 5px; line-height: 1.6; }
+.client-values-list li span { color: #176560; }
+@media (max-width: 767.98px) {
+  .client-group .client-intro-benefits { padding: 24px 0 0; gap: 28px; }
+}
+
+/* Align the introductory lines with the values heading below. */
+.client-group-values .client-group-promises,
+.client-group-values .client-group-motto {
+  text-align: left;
+  text-wrap: wrap;
+}
+
+/* Subtle paragraph emphasis without shifting the surrounding layout. */
+.client-about-panel > p {
+  transition: transform .22s ease, color .22s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .client-about-panel > p:hover {
+    transform: translateX(-6px);
+    color: #102d24;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .client-about-panel > p { transition: none; }
+  .client-about-panel > p:hover { transform: none; }
+}
+
+#client-references { scroll-margin-top: 110px; }
+@media (prefers-reduced-motion: reduce) {
+  .goBottom-btn .animation__arryUpDown { animation: none; }
+}
+
+/* Keep the complete scroll indicator inside the hero's visible area. */
+.banner-section .goBottom-btn {
+  bottom: 72px;
+  height: 76px;
+  line-height: normal;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  background: rgba(16, 41, 48, .3);
+}
+.banner-section .goBottom-btn svg { display: block; margin: auto; }
+@media (min-width: 768px) {
+  .banner-section .goBottom-btn { display: flex; }
+}
+
+/* Give Manrope more presence throughout body copy while retaining heading hierarchy. */
+:root {
+  --body-font-weight: 500;
+  --text-color: #48534d;
+}
+.header-style-one .main-menu .navigation li > a,
+.mobile-menu .navigation li > a,
+.footer-style-one .user-links a { font-weight: 650; }
