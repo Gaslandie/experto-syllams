@@ -321,13 +321,6 @@
   .client-page { padding: 55px 0; }
   .client-service-grid { grid-template-columns: 1fr; }
 }
-/* Fit the expanded client menu on medium-width desktops. */
-@media (min-width: 992px) {
-  .header-style-one .main-box .nav-outer .nav .navigation > li { margin-right: 18px; }
-  .header-style-one .main-menu .navigation > li > a { font-size: 14px; }
-  .header-style-one .sticky-header .main-menu .navigation > li { margin-left: 18px; }
-  .header-style-one .outer-box .info-box .call-info { display: none; }
-}
 .values-ticker { position: relative; padding-right: 86px; }
 .values-ticker-track.is-paused { animation-play-state: paused; }
 .values-ticker-toggle {
@@ -365,3 +358,32 @@
 .client-intro h2 { font-size: clamp(28px, 3vw, 40px); line-height: 1.25; margin-bottom: 20px; }
 .client-intro h3 { font-size: clamp(21px, 2vw, 27px); line-height: 1.35; margin-bottom: 24px; }
 .client-intro p { margin-bottom: 18px; }
+
+/* Give the navigation more of the screen and reserve space for submenu arrows. */
+.header-style-one .header-top .auto-container { max-width: none; }
+.header-style-one .header-top .top-right { margin-left: auto; }
+@media (min-width: 1200px) {
+  .header-style-one .main-box { max-width: none; padding-inline: clamp(24px, 2.5vw, 48px); }
+  .header-style-one .main-box .nav-outer { flex: 1 1 auto; min-width: 0; margin-inline: 20px; }
+  .header-style-one .main-box .nav-outer .nav { display: block; }
+  .header-style-one .main-menu .navigation { display: flex; align-items: center; justify-content: space-evenly; gap: 18px; }
+  .header-style-one .main-box .nav-outer .nav .navigation > li,
+  .header-style-one .sticky-header .main-menu .navigation > li { float: none; margin: 0; }
+  .header-style-one .main-menu .navigation > li > a { white-space: nowrap; font-size: 14px; }
+  .header-style-one .main-menu .navigation > li.dropdown { padding-right: 18px; }
+  .header-style-one .main-menu .navigation > li.dropdown > .dropdown-btn { right: 0; }
+  .header-style-one .outer-box .info-box .call-info { display: none; }
+  .header-style-one .outer-box .info-box .btn-two { margin-left: 0; }
+  .header-style-one .sticky-header .auto-container { max-width: none; padding-inline: clamp(24px, 2.5vw, 48px); }
+  .header-style-one .sticky-header .nav-outer { flex: 1 1 auto; min-width: 0; margin-left: 20px; }
+}
+/* Use the mobile menu when the full list no longer fits comfortably. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header-style-one .main-menu { display: none; }
+  .header-style-one .main-box { justify-content: space-between; }
+  .header-style-one .main-box .mobile-nav-toggler,
+  .header-style-one .sticky-header .mobile-nav-toggler { display: block !important; }
+  .header-style-one .mobile-menu .navigation.d-lg-none { display: block !important; }
+}
+/* Keep the client's wording and display every value consistently. */
+.values-ticker-items span { text-transform: uppercase; }
