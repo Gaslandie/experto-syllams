@@ -18,10 +18,8 @@ export const navigation = [
   ] },
   { title: "Nos cabinets", to: "/nos-cabinets", children: firms.map(([slug, title]) => ({ title, to: `/nos-cabinets/${slug}` })) },
   { title: "Affiliations & partenaires", to: "/affiliations-partenaires", children: [
-    { title: "Ils nous font confiance", to: "/references", children: [
-      { title: "Nationales", to: "/references/nationales" },
-      { title: "Internationales", to: "/references/internationales" },
-    ] },
+    { title: "Nationales", to: "/references/nationales" },
+    { title: "Internationales", to: "/references/internationales" },
   ] },
 ];
 
