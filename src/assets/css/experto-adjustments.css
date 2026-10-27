@@ -525,3 +525,30 @@
   .client-request-grid { grid-template-columns: 1fr; }
   .client-contact-banner-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* Client's menu hierarchy: preserve keyboard access and keep the last submenu on-screen. */
+.main-menu .navigation li:focus-within > ul { opacity: 1; visibility: visible; transform: none; display: block; }
+.main-menu .navigation > li:last-child > ul { left: auto; right: 0; }
+.main-menu .navigation > li:last-child > ul > li > ul { left: auto; right: 100%; }
+.mobile-menu .navigation .sub-menu .sub-menu a { padding-left: 42px; }
+.partner-showcase { padding: 80px 0; }
+.partner-showcase .sec-title p { margin-top: 20px; }
+.partner-strip { overflow: hidden; border-block: 1px solid #dce5df; padding: 28px 0; }
+.partner-track { display: flex; width: max-content; animation: partner-scroll 35s linear infinite; }
+.partner-items { display: flex; flex-shrink: 0; gap: 24px; padding-right: 24px; }
+.partner-logo-card { width: 250px; background: #fff; border: 1px solid #dce5df; border-radius: 8px; overflow: hidden; }
+.partner-logo-slot { display: grid; place-items: center; height: 150px; color: #586761; background: #f7f9f7; }
+.partner-logo-caption { display: grid; gap: 6px; padding: 18px; border-top: 1px solid #dce5df; }
+.partner-logo-caption span { color: #586761; }
+.partner-track.is-paused, .partner-strip:hover .partner-track, .partner-strip:focus-within .partner-track { animation-play-state: paused; }
+.partner-pause { display: block; margin-top: 18px; padding: 10px 16px; border: 1px solid #163839; border-radius: 4px; color: #163839; background: #fff; }
+.partner-strip:focus-visible, .partner-pause:focus-visible { outline: 2px solid #176560; outline-offset: 4px; }
+.client-page .partner-showcase { padding-top: 0; }
+.client-page .partner-showcase > .container { padding-inline: 0; }
+@keyframes partner-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .partner-track { animation: none; }
+  .partner-items[aria-hidden="true"] { display: none; }
+  .partner-strip { overflow-x: auto; }
+  .partner-pause { display: none; }
+}

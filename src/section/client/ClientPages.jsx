@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../../layouts/Layout";
 import PageTitle from "../PageTitle";
+import PartnerShowcase from "./PartnerShowcase";
 import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
@@ -43,4 +44,8 @@ export function ReferencesPage({ category }) {
   const title = category === "nationales" ? "Références nationales" : category === "internationales" ? "Références internationales" : "Ils nous font confiance";
   const categories = category ? [category] : ["nationales", "internationales"];
   return <Page title={title}><div className="client-page-copy"><h2>Nos références</h2><p>Les références nationales et internationales seront ajoutées après leur transmission et leur validation par le groupe.</p><div className="client-service-grid">{categories.map((item) => <article key={item}><h3>Références {item}</h3><p>À venir</p></article>)}</div></div></Page>;
+}
+
+export function AffiliationsPage() {
+  return <Page title="Affiliations & partenaires"><PartnerShowcase /><Link className="btn-two" to="/references">Découvrir nos références</Link></Page>;
 }

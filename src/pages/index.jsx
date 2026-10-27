@@ -17,6 +17,8 @@ import News from "../section/Home1/News";
 import ClientServices from '../section/client/ClientServices';
 import ClientContactBanner from '../section/client/ClientContactBanner';
 
+import PartnerShowcase from "../section/client/PartnerShowcase";
+
 function Home1() {
     return (
         <>
@@ -36,6 +38,7 @@ function Home1() {
                 <Team />
                 <Faqs />
                 <Testimonial />
+                <PartnerShowcase />
                 <News />
                 <ClientContactBanner />
             </Layout>

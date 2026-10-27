@@ -1,21 +1,36 @@
 import { Link } from "react-router-dom";
 
 export const firms = [
-  ["panaudex", "PANAUDEX"],
-  ["syllams-expertise", "SYLLAMS EXPERTISE"],
-  ["panaudit", "PANAUDIT"],
   ["aces-guinea", "ACES-GUINEA"],
   ["life-partners", "LIFE-PARTNERS"],
+  ["panaudex", "PANAUDEX"],
   ["noveo", "NOVEO BJ & GN"],
+  ["syllams-expertise", "SYLLAMS EXPERTISE"],
+  ["panaudit", "PANAUDIT"],
 ];
 
+export const navigation = [
+  { title: "Accueil", to: "/" },
+  { title: "Qui sommes-nous", to: "/qui-sommes-nous" },
+  { title: "Nos services", to: "/nos-services", children: [
+    { title: "Formations", to: "/formations" },
+    { title: "Audits & expertise", to: "/audits-expertise" },
+  ] },
+  { title: "Nos cabinets", to: "/nos-cabinets", children: firms.map(([slug, title]) => ({ title, to: `/nos-cabinets/${slug}` })) },
+  { title: "Affiliations & partenaires", to: "/affiliations-partenaires", children: [
+    { title: "Ils nous font confiance", to: "/references", children: [
+      { title: "Nationales", to: "/references/nationales" },
+      { title: "Internationales", to: "/references/internationales" },
+    ] },
+  ] },
+];
+
+function MenuItems({ items }) {
+  return items.map(({ title, to, children }) => <li key={to} className={children ? "dropdown" : undefined}>
+    <Link to={to}>{title}</Link>
+    {children && <><div className="dropdown-btn" aria-hidden="true"><i className="fa fa-angle-down" /></div><ul><MenuItems items={children} /></ul></>}
+  </li>);
+}
 export default function Navigation() {
- return <ul className="navigation">
-  <li><Link to="/">Accueil</Link></li>
-  <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
-  <li className="dropdown"><Link to="/nos-cabinets">Nos cabinets</Link><div className="dropdown-btn"><i className="fa fa-angle-down" /></div><ul>{firms.map(([slug, name]) => <li key={slug}><Link to={`/nos-cabinets/${slug}`}>{name}</Link></li>)}</ul></li>
-  <li className="dropdown"><Link to="/nos-services">Nos services</Link><div className="dropdown-btn"><i className="fa fa-angle-down" /></div><ul><li><Link to="/audits-expertise">Audits & expertise</Link></li><li><Link to="/formations">Formations</Link></li></ul></li>
-  <li><Link to="/affiliations-partenaires">Affiliations & partenaires</Link></li>
-  <li className="dropdown"><Link to="/references">Ils nous font confiance</Link><div className="dropdown-btn"><i className="fa fa-angle-down" /></div><ul><li><Link to="/references/nationales">Nationales</Link></li><li><Link to="/references/internationales">Internationales</Link></li></ul></li>
- </ul>;
+  return <ul className="navigation"><MenuItems items={navigation} /></ul>;
 }
