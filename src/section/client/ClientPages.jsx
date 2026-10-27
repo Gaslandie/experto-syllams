@@ -22,7 +22,7 @@ export function AboutPage() {
 }
 
 export function FirmsPage() {
-  const logos = { panaudex: "panaudex.jpeg", noveo: "noveo.jpeg" };
+  const logos = { panaudex: "panaudex.jpeg", "aces-guinea": "aces-guinea.png", noveo: "noveo.jpeg" };
   return <Page title="Nos cabinets"><div className="client-page-copy"><h2>Un groupe de cabinets</h2><p>Découvrez les cabinets présentés par le Groupe Experto-Syllams. Leurs présentations seront complétées progressivement.</p><div className="client-firms-grid">{firms.map(([slug, name]) => <article className="client-firm" key={slug}>
     <div className="client-firm-logo">{logos[slug] ? <img src={`${import.meta.env.BASE_URL}images/${logos[slug]}`} alt={`Logo ${name}`} /> : <span>Logo à fournir</span>}</div>
     <div className="client-firm-content"><h3>{name}</h3><Link to={`/nos-cabinets/${slug}`}>Présentation à venir</Link></div>

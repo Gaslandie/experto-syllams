@@ -26,7 +26,7 @@ const caseItems = [
     { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Cabinet du groupe", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
     { id: 2, category: "Cabinet du groupe", title: "SYLLAMS EXPERTISE", link: "/nos-cabinets/syllams-expertise" },
     { id: 3, category: "Cabinet du groupe", title: "PANAUDIT", link: "/nos-cabinets/panaudit" },
-    { id: 4, category: "Cabinet du groupe", title: "ACES-GUINEA", link: "/nos-cabinets/aces-guinea" },
+    { id: 4, img: `${import.meta.env.BASE_URL}images/aces-guinea.png`, category: "Cabinet du groupe", title: "ACES-GUINEA", link: "/nos-cabinets/aces-guinea", logo: true },
     { id: 5, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
     { id: 6, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Cabinet du groupe", title: "NOVEO BJ & GN", link: "/nos-cabinets/noveo", logo: true },
 ];
