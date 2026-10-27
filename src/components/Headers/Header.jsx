@@ -29,18 +29,9 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
             {/* Header Top */}
             <div className="header-top">
                 <div className="auto-container">
-                <div className="top-left">
-                    {/* Info List */}
-                    <ul className="info-list">
-                    <li><i className="fa-solid fa-envelope"/> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
-                    </li>
-                    <li><i className="fa-solid fa-location-dot"/> Guinée, Conakry</li>
-                    </ul>
-                </div>
-
                 <div className="top-right">
                     <ul className="useful-links">
-                    <li><Link to="/page-about">À propos</Link></li>
+                    <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
                     <li><Link to="/page-faq">FAQ</Link></li>
                     <li><Link to="/page-contact">Contact</Link></li>
                     </ul>

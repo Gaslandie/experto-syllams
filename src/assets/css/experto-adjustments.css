@@ -288,3 +288,6 @@
   font-weight: 700;
   text-align: center;
 }
+
+/* Keep the remaining upper links aligned after removing contact details. */
+.header-style-one .header-top .top-right { margin-left: auto; }

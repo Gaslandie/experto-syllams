@@ -7,6 +7,5 @@ export default function Navigation() {
   <li className="dropdown"><Link to="/nos-cabinets">Nos cabinets</Link><div className="dropdown-btn"><i className="fa fa-angle-down" /></div><ul>{firms.map(([slug, name]) => <li key={slug}><Link to={`/nos-cabinets/${slug}`}>{name}</Link></li>)}</ul></li>
   <li><Link to="/formations">Formations</Link></li>
   <li><Link to="/affiliations-partenaires">Partenaires</Link></li>
-  <li><Link to="/contacts">Contact</Link></li>
  </ul>;
 }
