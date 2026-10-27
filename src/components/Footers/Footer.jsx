@@ -114,10 +114,10 @@ function Footer({ handleOpen, searchToggle, }) {
                             </Link>
                             </div>
                             <ul className="footer-nav">
-                            <li><Link to="/contacts"><i className="fa-brands fa-facebook-f"/></Link></li>
-                            <li><Link to="/contacts"><i className="fa-solid fa-x"/></Link></li>
-                            <li><Link to="/contacts"><i className="fa-brands fa-vimeo-v"/></Link></li>
-                            <li><Link to="/contacts"><i className="fa-brands fa-pinterest-p"/></Link></li>
+                            <li><Link to="/contacts" aria-label="Facebook — contact"><i className="fa-brands fa-facebook-f"/></Link></li>
+                            <li><Link to="/contacts" aria-label="Instagram — contact"><i className="fa-brands fa-instagram"/></Link></li>
+                            <li><Link to="/contacts" aria-label="X — contact"><i className="fa-brands fa-x-twitter"/></Link></li>
+                            <li><Link to="/contacts" aria-label="LinkedIn — contact"><i className="fa-brands fa-linkedin-in"/></Link></li>
                             </ul>
                         </div>
                         </div>
