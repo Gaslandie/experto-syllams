@@ -7,7 +7,7 @@ import FaqsImage2 from '../../assets/images/shape/faq-map.png';
 const accordionData = [
   {
     title: "Quels cabinets composent le groupe ?",
-    content: "Le groupe réunit PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE et AFRIC CONSEIL.",
+    content: "Le groupe réunit PANAUDEX, SYLLAMS EXPERTISE, PANAUDIT, ACES-GUINEA, LIFE-PARTNERS et NOVEO BJ & GN.",
   },
   {
     title: "Quels sont les domaines d’activité du groupe ?",
@@ -19,7 +19,7 @@ const accordionData = [
   },
   {
     title: "Où trouver les sites des cabinets ?",
-    content: "Les liens vers les sites de NOVEO, FIDEXIE et AFRIC CONSEIL seront ajoutés après confirmation de leurs adresses.",
+    content: "Les liens vers les sites des cabinets seront ajoutés après confirmation de leurs adresses.",
   },
   {
     title: "Comment contacter le groupe ?",

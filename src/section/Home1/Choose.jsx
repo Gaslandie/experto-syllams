@@ -14,7 +14,7 @@ const progressData = [
 const tabData = {
   about: {
     title: "À propos",
-    content: "Six cabinets, un groupe : découvrez nos activités d’audit, de conseil et de formation. La présentation institutionnelle est en préparation.",
+    content: "Un groupe de cabinets à taille humaine, disponible et proche de ses clients. Découvrez nos activités d’audit, de conseil et de formation.",
   },
   mission: {
     title: "Notre mission",

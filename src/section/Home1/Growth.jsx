@@ -9,20 +9,14 @@ const growthData = [
   {
     value: 6,
     title: "Cabinets du groupe",
-    text: "Six cabinets réunis au sein d’un groupe.",
+    text: "Des cabinets réunis au sein d’un groupe.",
     delay: "00ms",
   },
   {
     value: 3,
-    title: "Pages dédiées aux cabinets",
-    text: "PANAUDEX, LIFE-PARTNERS et Syllams Expertise.",
+    title: "Domaines d’activité",
+    text: "Audit, conseil et formation.",
     delay: "200ms",
-  },
-  {
-    value: 3,
-    title: "Sites des cabinets existants",
-    text: "NOVEO, FIDEXIE et AFRIC CONSEIL. Liens à confirmer.",
-    delay: "400ms",
   },
 ];
 

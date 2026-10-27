@@ -129,7 +129,7 @@ function Footer({ handleOpen, searchToggle, }) {
                 </div>
                 <div className="col-xl-4 right-column order-1 order-xl-2">
                     <div className="inner-column">
-                    <h3 className="title">Vous avez un projet ?</h3>
+                    <h3 className="title">Parlons de votre projet</h3>
                     <Link className="circle-btn" to="/page-contact">Nous contacter <i className="fa-regular fa-arrow-up-right"/></Link>
                     <div className="mt-10">
                         <h5 className="date">Guinée, Conakry</h5>

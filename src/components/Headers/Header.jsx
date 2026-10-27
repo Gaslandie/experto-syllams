@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
+import ValuesTicker from '../../section/client/ValuesTicker';
 const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
 const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
 const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-horizontal.webp`;
@@ -26,26 +27,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
     return (
         <>
             <header className={`main-header header-style-one ${scroll ? "fixed-header" : ""} ${searchToggle ? "moblie-search-active" : ""}`}>
-            {/* Header Top */}
-            <div className="header-top">
-                <div className="auto-container">
-                <div className="top-right">
-                    <ul className="useful-links">
-                    <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
-                    <li><Link to="/page-faq">FAQ</Link></li>
-                    <li><Link to="/page-contact">Contact</Link></li>
-                    </ul>
-                    <ul className="top-social-icon">
-                    <li><Link to="/contacts"><i className="fa-brands fa-facebook-f"/></Link></li>
-                    <li><Link to="/contacts"><i className="fa-brands fa-instagram"/></Link></li>
-                    <li><Link to="/contacts"><i className="fa-brands fa-x-twitter"/></Link></li>
-                    <li><Link to="/contacts"><i className="fa-brands fa-linkedin-in"/></Link></li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            {/* <!-- Header Top --> */}
-
             {/* <!-- Main box --> */}
             <div className="main-box">
                 <div className="logo-box">
@@ -77,6 +58,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     {/* Mobile Nav toggler */}
                 </div>
             </div>
+            <ValuesTicker />
             <div className="auto-container">
                 {/* Mobile Menu */}
                 <div className="mobile-menu">
@@ -91,7 +73,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                 </ul>
                 <div className="content-box d-none d-lg-block">
                     <h4 className="title">À propos</h4>
-                    <p className="text">Le GROUPE EXPERTO-SYLLAMS réunit six cabinets en audit, conseil et formation.</p>
+                    <p className="text">Le GROUPE EXPERTO-SYLLAMS réunit des cabinets en audit, conseil et formation.</p>
                 </div>
                     <ul className="contact-list-one">
                     <li>

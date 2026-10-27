@@ -12,7 +12,7 @@ const processingSteps = [
   {
     number: "02",
     title: "Découvrir nos cabinets",
-    text: "Découvrez les six cabinets qui composent notre groupe.",
+    text: "Découvrez les cabinets qui composent notre groupe.",
     delay: "200ms",
   },
   {

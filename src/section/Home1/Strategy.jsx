@@ -9,8 +9,8 @@ const accordionData = [
     content: "Découvrez les activités du groupe. Le détail des services sera confirmé par les cabinets.",
   },
   {
-    title: "Nos six cabinets",
-    content: "PANAUDEX, LIFE-PARTNERS, Syllams Expertise, NOVEO, FIDEXIE et AFRIC CONSEIL.",
+    title: "Nos cabinets",
+    content: "PANAUDEX, SYLLAMS EXPERTISE, PANAUDIT, ACES-GUINEA, LIFE-PARTNERS et NOVEO BJ & GN.",
   },
   {
     title: "Formation et certifications",

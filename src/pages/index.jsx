@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '../layouts/Layout';
 import Banner from '../section/Home1/Banner';
 import About from '../section/Home1/About';
+import ClientIntro from '../section/client/ClientIntro';
 import Service from "../section/Home1/Service";
 import Choose from "../section/Home1/Choose";
 import Growth from "../section/Home1/Growth";
@@ -21,6 +22,7 @@ function Home1() {
             <Layout>
                 <Banner />
                 <About />
+                <ClientIntro />
                 <Service />
                 <Choose />
                 <Growth />

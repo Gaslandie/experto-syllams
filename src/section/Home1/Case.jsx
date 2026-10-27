@@ -24,11 +24,11 @@ const swiperOptions = {
 // Case study data
 const caseItems = [
     { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Cabinet du groupe", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
-    { id: 2, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
-    { id: 3, category: "Cabinet du groupe", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
-    { id: 4, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Lien du site à confirmer", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
-    { id: 5, category: "Lien du site à confirmer", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
-    { id: 6, category: "Lien du site à confirmer", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
+    { id: 2, category: "Cabinet du groupe", title: "SYLLAMS EXPERTISE", link: "/nos-cabinets/syllams-expertise" },
+    { id: 3, category: "Cabinet du groupe", title: "PANAUDIT", link: "/nos-cabinets/panaudit" },
+    { id: 4, category: "Cabinet du groupe", title: "ACES-GUINEA", link: "/nos-cabinets/aces-guinea" },
+    { id: 5, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
+    { id: 6, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Cabinet du groupe", title: "NOVEO BJ & GN", link: "/nos-cabinets/noveo", logo: true },
 ];
 
 function Case ({className}){
@@ -37,7 +37,7 @@ function Case ({className}){
             <div className="outer-box">
                 <div className="sec-title center mb-50">
                     <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Nos cabinets</h6>
-                    <h2 className="title wow splt-txt" data-splitting>Six cabinets, des expertises complémentaires <br />Découvrez notre groupe.</h2>
+                    <h2 className="title wow splt-txt" data-splitting>Un groupe de cabinets, des expertises complémentaires <br />Découvrez notre groupe.</h2>
                 </div>
                 <div className="swiper case-slider">
                     <Swiper {...swiperOptions}>
