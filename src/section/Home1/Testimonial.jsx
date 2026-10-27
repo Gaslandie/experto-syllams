@@ -61,11 +61,6 @@ const Testimonial = () => {
                         <i className="fa-regular fa-user" aria-hidden="true" />
                         <span>Photo à venir</span>
                       </div>
-                      <div className="star" aria-label="Décoration : aucune note client publiée">
-                        {[...Array(5)].map((_, i) => (
-                          <i key={i} className="fa-solid fa-star" />
-                        ))}
-                      </div>
                     </div>
                     <div className="content-box">
                       <h3 className="text">{text}</h3>

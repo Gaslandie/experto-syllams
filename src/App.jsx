@@ -11,11 +11,11 @@ function Construction() {
 function SiteRoutes() {
   const { pathname } = useLocation();
   useEffect(() => {
-    const titles = { "/": "Accueil", "/qui-sommes-nous": "Qui sommes-nous", "/page-about": "Qui sommes-nous", "/nos-cabinets": "Nos cabinets", "/nos-services": "Nos services", "/page-services": "Nos services", "/contacts": "Contact", "/page-contact": "Contact", "/references": "Nos références" };
+    const titles = { "/": "Accueil", "/qui-sommes-nous": "Qui sommes-nous", "/page-about": "Qui sommes-nous", "/nos-cabinets": "Nos cabinets", "/nos-services": "Nos services", "/page-services": "Nos services", "/contacts": "Contact", "/page-contact": "Contact", "/references": "Nos références", "/references/nationales": "Références nationales", "/references/internationales": "Références internationales" };
     document.title = `${titles[pathname] || "En construction"} | GROUPE EXPERTO-SYLLAMS`;
     document.body.classList.remove("mobile-menu-visible");
     window.scrollTo(0, 0);
   }, [pathname]);
-  return <Routes><Route path="/" element={<Home1 />} /><Route path="/qui-sommes-nous" element={<AboutPage />} /><Route path="/page-about" element={<AboutPage />} /><Route path="/nos-cabinets" element={<FirmsPage />} /><Route path="/nos-services" element={<ServicesPage />} /><Route path="/page-services" element={<ServicesPage />} /><Route path="/contacts" element={<ContactPage />} /><Route path="/page-contact" element={<ContactPage />} /><Route path="/references" element={<ReferencesPage />} /><Route path="*" element={<Construction />} /></Routes>;
+  return <Routes><Route path="/" element={<Home1 />} /><Route path="/qui-sommes-nous" element={<AboutPage />} /><Route path="/page-about" element={<AboutPage />} /><Route path="/nos-cabinets" element={<FirmsPage />} /><Route path="/nos-services" element={<ServicesPage />} /><Route path="/page-services" element={<ServicesPage />} /><Route path="/contacts" element={<ContactPage />} /><Route path="/page-contact" element={<ContactPage />} /><Route path="/references" element={<ReferencesPage />} /><Route path="/references/nationales" element={<ReferencesPage category="nationales" />} /><Route path="/references/internationales" element={<ReferencesPage category="internationales" />} /><Route path="*" element={<Construction />} /></Routes>;
 }
 export default function App() { return <BrowserRouter basename={import.meta.env.BASE_URL}><SiteRoutes /></BrowserRouter>; }

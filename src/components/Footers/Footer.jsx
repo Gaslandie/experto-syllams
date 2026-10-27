@@ -31,21 +31,21 @@ function Footer({ handleOpen, searchToggle, }) {
                             <img src={FooterLogo} alt="Groupe Experto-Syllams" />
                         </Link>
                     </div>
-                    <div className="row g-4">
-                        <div className="col-lg-4">
+                    <div className="footer-contact-grid">
+                        <div className="footer-contact-column">
                         <div className="info-item">
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-phone"/></li>
                             <li>
                                 <span>Téléphone :</span>
                                 <h5 className="title"><a href="tel:+224628216975">+224 628 21 69 75</a></h5>
-                                <span>WhatsApp principal : <a href="https://wa.me/224628216975">+224 628 21 69 75</a></span><br />
-                                <span>WhatsApp secondaire : <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></span>
+                                <div className="footer-contact-number"><span>WhatsApp principal :</span><a href="https://wa.me/224628216975">+224 628 21 69 75</a></div>
+                                <div className="footer-contact-number"><span>WhatsApp secondaire :</span><a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></div>
                             </li>
                             </ul>
                         </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="footer-contact-column">
                         <div className="info-item">
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-envelope"/></li>
@@ -56,7 +56,7 @@ function Footer({ handleOpen, searchToggle, }) {
                             </ul>
                         </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="footer-contact-column">
                         <div className="info-item">
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-location-dot"/></li>
@@ -76,8 +76,8 @@ function Footer({ handleOpen, searchToggle, }) {
                             <h4 className="widget-title">Services</h4>
                             <div className="widget-content">
                             <ul className="user-links">
-                                <li><Link to="/page-services">Audit</Link></li>
-                                <li><Link to="/page-services">Conseil</Link></li>
+                                <li><Link to="/nos-services">Audit</Link></li>
+                                <li><Link to="/nos-services">Conseil</Link></li>
                                 <li><Link to="/formations">Formation</Link></li>
                                 <li><Link to="/formations">Certifications</Link></li>
                                 <li><Link to="/nos-cabinets">Nos cabinets</Link></li>
@@ -94,7 +94,7 @@ function Footer({ handleOpen, searchToggle, }) {
                                 <li><Link to="/nos-cabinets">Nos cabinets</Link></li>
                                 <li><Link to="/affiliations-partenaires">Nos partenaires</Link></li>
                                 <li><Link to="/contacts">Nous contacter</Link></li>
-                                <li><Link to="/qui-sommes-nous">À propos</Link></li>
+                                <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
                             </ul>
                             </div>
                         </div>
@@ -116,10 +116,10 @@ function Footer({ handleOpen, searchToggle, }) {
                             </Link>
                             </div>
                             <ul className="footer-nav">
-                            <li><Link to="/contacts" aria-label="Facebook — contact"><i className="fa-brands fa-facebook-f"/></Link></li>
-                            <li><Link to="/contacts" aria-label="Instagram — contact"><i className="fa-brands fa-instagram"/></Link></li>
-                            <li><Link to="/contacts" aria-label="X — contact"><i className="fa-brands fa-x-twitter"/></Link></li>
-                            <li><Link to="/contacts" aria-label="LinkedIn — contact"><i className="fa-brands fa-linkedin-in"/></Link></li>
+                            <li><span title="Facebook — lien à venir" aria-label="Facebook : lien à venir"><i className="fa-brands fa-facebook-f" aria-hidden="true" /></span></li>
+                            <li><span title="Instagram — lien à venir" aria-label="Instagram : lien à venir"><i className="fa-brands fa-instagram" aria-hidden="true" /></span></li>
+                            <li><span title="X — lien à venir" aria-label="X : lien à venir"><i className="fa-brands fa-x-twitter" aria-hidden="true" /></span></li>
+                            <li><span title="LinkedIn — lien à venir" aria-label="LinkedIn : lien à venir"><i className="fa-brands fa-linkedin-in" aria-hidden="true" /></span></li>
                             </ul>
                         </div>
                         </div>
@@ -132,7 +132,7 @@ function Footer({ handleOpen, searchToggle, }) {
                 <div className="col-xl-4 right-column order-1 order-xl-2">
                     <div className="inner-column">
                     <h3 className="title">Parlons de votre projet</h3>
-                    <Link className="circle-btn" to="/page-contact">Nous contacter <i className="fa-regular fa-arrow-up-right"/></Link>
+                    <Link className="circle-btn" to="/contacts">Nous contacter <i className="fa-regular fa-arrow-up-right"/></Link>
                     <div className="mt-10">
                         <h5 className="date">Guinée, Conakry</h5>
                     </div>

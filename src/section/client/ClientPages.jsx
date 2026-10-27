@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../../layouts/Layout";
 import PageTitle from "../PageTitle";
+import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
 function Page({ title, children }) {
@@ -30,21 +31,16 @@ export function FirmsPage() {
 }
 
 export function ServicesPage() {
-  const items = [
-    ["Comptabilité", "Accompagnement en comptabilité et en finances, adapté aux besoins des organisations."],
-    ["Juridique", "Prestations et modalités à confirmer par le groupe."],
-    ["Gestion sociale", "Prestations et modalités à confirmer par le groupe."],
-    ["Gestion et optimisation", "Compétences en gestion, analyse et estimation au service des organisations."],
-    ["Informatique et statistiques", "Expertises en informatique et en statistiques pour accompagner les activités des organisations."],
-    ["Risques financiers", "Analyse, estimation et gestion des risques financiers."],
-  ];
-  return <Page title="Nos services"><div className="client-page-copy"><h2>Nos domaines d’intervention</h2><p>Découvrez les domaines présentés par le groupe. Le détail des prestations sera complété par le client.</p><div className="client-service-grid">{items.map(([title, description]) => <article key={title}><h3>{title}</h3><p>{description}</p></article>)}</div><Link className="btn-two" to="/contacts">Nous contacter</Link></div></Page>;
+  const items = clientServices;
+  return <Page title="Nos services"><div className="client-page-copy"><h2>Nos domaines d’intervention</h2><p>Une expertise complète à votre disposition.</p><div className="client-service-grid">{items.map(([title, description]) => <article key={title}><h3>{title}</h3><p>{description}</p></article>)}</div><Link className="btn-two" to="/contacts">Nous contacter</Link></div></Page>;
 }
 
 export function ContactPage() {
   return <Page title="Nous contacter"><div className="client-page-copy"><h2>Parlons de votre projet</h2><p>Contactez-nous pour échanger sur vos besoins.</p><ul className="client-contact-list"><li><strong>Téléphone :</strong> <a href="tel:+224628216975">+224 628 21 69 75</a></li><li><strong>E-mail :</strong> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></li><li><strong>Localisation :</strong> Guinée, Conakry</li><li><strong>WhatsApp principal :</strong> <a href="https://wa.me/224628216975">+224 628 21 69 75</a></li><li><strong>WhatsApp secondaire :</strong> <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></li></ul></div></Page>;
 }
 
-export function ReferencesPage() {
-  return <Page title="Ils nous font confiance"><div className="client-page-copy"><h2>Nos références</h2><p>Les références nationales et internationales seront ajoutées après leur transmission et leur validation par le groupe.</p><div className="client-service-grid"><article><h3>Références nationales</h3><p>À venir</p></article><article><h3>Références internationales</h3><p>À venir</p></article></div></div></Page>;
+export function ReferencesPage({ category }) {
+  const title = category === "nationales" ? "Références nationales" : category === "internationales" ? "Références internationales" : "Ils nous font confiance";
+  const categories = category ? [category] : ["nationales", "internationales"];
+  return <Page title={title}><div className="client-page-copy"><h2>Nos références</h2><p>Les références nationales et internationales seront ajoutées après leur transmission et leur validation par le groupe.</p><div className="client-service-grid">{categories.map((item) => <article key={item}><h3>Références {item}</h3><p>À venir</p></article>)}</div></div></Page>;
 }

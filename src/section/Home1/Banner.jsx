@@ -26,7 +26,7 @@ const slides = [
     subtitle: "AUDIT ET CONSEIL",
     title: "Une expertise <span>à vos côtés</span> pour avancer",
     buttonText: "Nos activités",
-    link: "/page-services",
+    link: "/nos-services",
     text: "Découvrez les activités d’audit et de conseil des cabinets du groupe.",
   },
   {
@@ -93,13 +93,6 @@ BannerSlide.propTypes = {
 function Banner() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleScrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="home" className="banner-section">
       <div className="arry">
@@ -108,26 +101,6 @@ function Banner() {
       <div className="sec-shape">
         <img src={BannerShapeImage2} alt="Shape" />
       </div>
-      <button aria-label="Découvrir le groupe" className="goBottom-btn" onClick={handleScrollToAbout}>
-        <svg
-          className="animation__arryUpDown"
-          width="16"
-          height="36"
-          viewBox="0 0 16 36"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M13.8328 6.33334C13.8328 5.17961 13.4907 4.0518 12.8497 3.09251C12.2088 2.13322 11.2977 1.38555 10.2318 0.944039C9.16591 0.502527 7.99302 0.387008 6.86146 0.612088C5.72991 0.837169 4.69051 1.39274 3.8747 2.20855C3.0589 3.02435 2.50332 4.06375 2.27824 5.19531C2.05316 6.32686 2.16868 7.49975 2.61019 8.56566C3.05171 9.63156 3.79938 10.5426 4.75867 11.1836C5.71795 11.8245 6.84577 12.1667 7.99949 12.1667C9.54602 12.1648 11.0287 11.5496 12.1222 10.4561C13.2158 9.3625 13.831 7.87986 13.8328 6.33334Z"
-            fill="white"
-          />
-          <path
-            d="M15.2554 27.4108L8.58869 35.2558C8.51133 35.3332 8.41948 35.3946 8.31839 35.4365C8.2173 35.4783 8.10895 35.4999 7.99953 35.4999C7.8901 35.4999 7.78175 35.4783 7.68066 35.4365C7.57957 35.3946 7.48772 35.3332 7.41036 35.2558L0.743692 28.5891"
-            fill="white"
-          />
-        </svg>
-      </button>
-
       <div className="swiper banner-slider">
         <Swiper
           {...swiperOptions}

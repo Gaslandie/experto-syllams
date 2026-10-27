@@ -117,7 +117,7 @@ function Choose() {
                         <li><i className="fa-solid fa-check"></i> Programmes de certification</li>
                       </ul>
                     </div>
-                    <Link to="/page-about" className="btn-two">En savoir plus</Link>
+                    <Link to="/qui-sommes-nous" className="btn-two">En savoir plus</Link>
                   </div>
                 </div>
               </div>

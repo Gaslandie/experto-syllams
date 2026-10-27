@@ -14,6 +14,9 @@ import Faqs from "../section/Home1/Faqs";
 import Testimonial from "../section/Home1/Testimonial";
 import News from "../section/Home1/News";
 
+import ClientServices from '../section/client/ClientServices';
+import ClientContactBanner from '../section/client/ClientContactBanner';
+
 function Home1() {
     return (
         <>
@@ -24,6 +27,7 @@ function Home1() {
                 <About />
                 <ClientIntro />
                 <Service />
+                <ClientServices />
                 <Choose />
                 <Growth />
                 <Processing />
@@ -33,6 +37,7 @@ function Home1() {
                 <Faqs />
                 <Testimonial />
                 <News />
+                <ClientContactBanner />
             </Layout>
         </div>
 

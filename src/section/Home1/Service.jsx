@@ -50,7 +50,7 @@ function Service() {
           <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Nos expertises</h6>
           <div className="flex-content">
             <h2 className="title wow splt-txt" data-splitting>Accompagner vos projets <br /> Développer vos compétences</h2>
-            <Link className="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" to="/page-services">Tous les services</Link>
+            <Link className="btn-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" to="/nos-services">Tous les services</Link>
             <figure className="arry wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
               <img className="animation__arryLeftRight" src={ServiceImage3} alt="Image" />
             </figure>
@@ -61,7 +61,7 @@ function Service() {
           <Swiper {...swiperOptions} className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/nos-services" aria-label="Découvrir les services d’audit"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="84" height="85" viewBox="0 0 84 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">01</span>
-                    <h4 className="title"><Link to="/page-services">Audit</Link></h4>
+                    <h4 className="title"><Link to="/nos-services">Audit</Link></h4>
                     <p className="text">Découvrez nos activités d’audit et les cabinets qui les portent.</p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ function Service() {
 
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/nos-services" aria-label="Découvrir les services de conseil"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="92" height="93" viewBox="0 0 92 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Conseil</Link></h4>
+                    <h4 className="title"><Link to="/nos-services">Conseil</Link></h4>
                     <p className="text">Découvrez nos activités de conseil et nos cabinets spécialisés.</p>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ function Service() {
 
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/formations" aria-label="Découvrir les formations"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +151,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Formation et certifications</Link></h4>
+                    <h4 className="title"><Link to="/formations">Formation et certifications</Link></h4>
                     <p className="text">Programmes et modalités de certification à confirmer.</p>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ function Service() {
 
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/nos-services" aria-label="Découvrir les services d’audit"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="84" height="85" viewBox="0 0 84 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +183,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">01</span>
-                    <h4 className="title"><Link to="/page-services">Audit</Link></h4>
+                    <h4 className="title"><Link to="/nos-services">Audit</Link></h4>
                     <p className="text">Découvrez nos activités d’audit et les cabinets qui les portent.</p>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ function Service() {
 
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/nos-services" aria-label="Découvrir les services de conseil"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="92" height="93" viewBox="0 0 92 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +227,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">02</span>
-                    <h4 className="title"><Link to="/page-services">Conseil</Link></h4>
+                    <h4 className="title"><Link to="/nos-services">Conseil</Link></h4>
                     <p className="text">Découvrez nos activités de conseil et nos cabinets spécialisés.</p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ function Service() {
 
             <SwiperSlide className="swiper-slide">
               <div className="service-block">
-                <Link className="arry-btn" to="/page-service-details"><i className="fa-regular fa-arrow-up-right"></i></Link>
+                <Link className="arry-btn" to="/formations" aria-label="Découvrir les formations"><i className="fa-regular fa-arrow-up-right"></i></Link>
                 <div className="content-box">
                   <div className="icon">
                     <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,7 +256,7 @@ function Service() {
                   </figure>
                   <div className="content">
                     <span className="number">03</span>
-                    <h4 className="title"><Link to="/page-services">Formation et certifications</Link></h4>
+                    <h4 className="title"><Link to="/formations">Formation et certifications</Link></h4>
                     <p className="text">Programmes et modalités de certification à confirmer.</p>
                   </div>
                 </div>

@@ -52,7 +52,7 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                             <a href="tel:+224628216975">+224 628 21 69 75</a>
                         </div>
                         </div>
-                        <Link className="btn-two" to="/page-contact">Nous contacter</Link>
+                        <Link className="btn-two" to="/contacts">Nous contacter</Link>
                     </div>
                     <div className="mobile-nav-toggler d-block d-lg-none" onClick={handleOpen}><i className="icon lnr-icon-bars"/></div>
                     {/* Mobile Nav toggler */}
@@ -106,10 +106,10 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     </li>
                     </ul>
                     <ul className="social-links">
-                    <li><Link to="/"><i className="fab fa-x-twitter"/></Link></li>
-                    <li><Link to="/"><i className="fab fa-facebook-f"/></Link></li>
-                    <li><Link to="/"><i className="fab fa-pinterest"/></Link></li>
-                    <li><Link to="/"><i className="fab fa-instagram"/></Link></li>
+                    <li><span title="X — lien à venir" aria-label="X : lien à venir"><i className="fab fa-x-twitter" aria-hidden="true" /></span></li>
+                    <li><span title="Facebook — lien à venir" aria-label="Facebook : lien à venir"><i className="fab fa-facebook-f" aria-hidden="true" /></span></li>
+                    <li><span title="LinkedIn — lien à venir" aria-label="LinkedIn : lien à venir"><i className="fab fa-linkedin-in" aria-hidden="true" /></span></li>
+                    <li><span title="Instagram — lien à venir" aria-label="Instagram : lien à venir"><i className="fab fa-instagram" aria-hidden="true" /></span></li>
                     </ul>
                 </nav>
                 </div>

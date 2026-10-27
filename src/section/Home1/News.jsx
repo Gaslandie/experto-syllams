@@ -15,7 +15,6 @@ const blogData = [
     author: 'GROUPE EXPERTO-SYLLAMS',
     comments: 'À venir',
     title: 'Actualités du groupe — à venir',
-    link: '/news-details',
   },
   {
     id: 2,
@@ -23,7 +22,6 @@ const blogData = [
     author: 'GROUPE EXPERTO-SYLLAMS',
     comments: 'À venir',
     title: 'Découvrez nos cabinets — actualités à venir',
-    link: '/news-details',
   },
   {
     id: 3,
@@ -31,7 +29,6 @@ const blogData = [
     author: 'GROUPE EXPERTO-SYLLAMS',
     comments: 'À venir',
     title: 'Formation et certifications — programmes à venir',
-    link: '/news-details',
   },
   {
     id: 4,
@@ -39,7 +36,6 @@ const blogData = [
     author: 'GROUPE EXPERTO-SYLLAMS',
     comments: 'À venir',
     title: 'Découvrez nos cabinets — actualités à venir',
-    link: '/news-details',
   },
   {
     id: 5,
@@ -47,7 +43,6 @@ const blogData = [
     author: 'GROUPE EXPERTO-SYLLAMS',
     comments: 'À venir',
     title: 'Formation et certifications — programmes à venir',
-    link: '/news-details',
   },
 ];
 
@@ -77,13 +72,13 @@ function News ({className}){
           <h6 className="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Actualités</h6>
           <div className="flex-content">
             <h2 className="title wow splt-txt" data-splitting>Nos actualités</h2>
-            <Link to="/news-grid" className="btn-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Toutes les actualités</Link>
+            <Link to="/actualites" className="btn-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Actualités à venir</Link>
           </div>
         </div>
 
         <div className="swiper blog-slider">
           <Swiper {...swiperOptions} className="swiper-wrapper">
-            {blogData.map(({ id, image, author, comments, title, link }) => (
+            {blogData.map(({ id, image, author, comments, title }) => (
               <SwiperSlide key={id} className="swiper-slide">
                 <div className="blog-block">
                   <div className="inner-box">
@@ -95,11 +90,10 @@ function News ({className}){
                     </div>
                     <div className="content-box">
                       <ul className="info">
-                        <li><Link to="/actualites">{author}</Link></li>
-                        <li><Link to="/actualites">{comments}</Link></li>
+                        <li><span>{author}</span></li>
+                        <li><span>{comments}</span></li>
                       </ul>
-                      <h4 className="title"><Link to={link}>{title}</Link></h4>
-                      <Link to={link} className="arry-btn">En savoir plus</Link>
+                      <h4 className="title">{title}</h4>
                     </div>
                   </div>
                 </div>

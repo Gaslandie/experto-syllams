@@ -23,7 +23,7 @@ const accordionData = [
   },
   {
     title: "Comment contacter le groupe ?",
-    content: "La page de contact est en préparation. Appelez le +224 628 21 69 75 ou écrivez à manager@experto-syllams.com. Le groupe est situé en Guinée, à Conakry.",
+    content: "Appelez le +224 628 21 69 75 ou écrivez à manager@experto-syllams.com. Le groupe est situé en Guinée, à Conakry.",
   },
 ];
 
@@ -80,12 +80,12 @@ function Faqs() {
             <div className="row g-5 align-items-center">
               <div className="col-lg-5">
                 <div className="sec-title">
-                  <h6 className="sub-title wow fadeInUp">FAQ’S</h6>
+                  <h6 className="sub-title wow fadeInUp">FAQ</h6>
                   <h2 className="title text-white wow splt-txt">Questions fréquentes</h2>
                   <p className="text text-white wow fadeInUp">
                     Découvrez le GROUPE EXPERTO-SYLLAMS, ses cabinets et ses futurs programmes de formation.
                   </p>
-                  <Link className="btn-one-light border-0 wow fadeInUp rounded-0 mt-50" to="/page-contact">
+                  <Link className="btn-one-light border-0 wow fadeInUp rounded-0 mt-50" to="/contacts">
                     Nous contacter
                   </Link>
                 </div>
