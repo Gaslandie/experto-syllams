@@ -85,6 +85,20 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     </li>
                     <li>
                         <div className="contact-info-box">
+                        <i className="icon fa-brands fa-whatsapp" aria-hidden="true" />
+                        <span className="title">WhatsApp principal</span>
+                        <a href="https://wa.me/224628216975">+224 628 21 69 75</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="contact-info-box">
+                        <i className="icon fa-brands fa-whatsapp" aria-hidden="true" />
+                        <span className="title">WhatsApp secondaire</span>
+                        <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="contact-info-box">
                         <span className="icon lnr-icon-envelope1"></span>
                         <span className="title">Écrivez-nous</span>
                         <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>

@@ -42,7 +42,7 @@ export function ServicesPage() {
 }
 
 export function ContactPage() {
-  return <Page title="Nous contacter"><div className="client-page-copy"><h2>Parlons de votre projet</h2><p>Contactez-nous pour échanger sur vos besoins.</p><ul className="client-contact-list"><li><strong>Téléphone :</strong> <a href="tel:+224628216975">+224 628 21 69 75</a></li><li><strong>E-mail :</strong> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></li><li><strong>Localisation :</strong> Guinée, Conakry</li><li><strong>WhatsApp :</strong> numéro à fournir</li></ul></div></Page>;
+  return <Page title="Nous contacter"><div className="client-page-copy"><h2>Parlons de votre projet</h2><p>Contactez-nous pour échanger sur vos besoins.</p><ul className="client-contact-list"><li><strong>Téléphone :</strong> <a href="tel:+224628216975">+224 628 21 69 75</a></li><li><strong>E-mail :</strong> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></li><li><strong>Localisation :</strong> Guinée, Conakry</li><li><strong>WhatsApp principal :</strong> <a href="https://wa.me/224628216975">+224 628 21 69 75</a></li><li><strong>WhatsApp secondaire :</strong> <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></li></ul></div></Page>;
 }
 
 export function ReferencesPage() {

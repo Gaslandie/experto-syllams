@@ -39,6 +39,8 @@ function Footer({ handleOpen, searchToggle, }) {
                             <li>
                                 <span>Téléphone :</span>
                                 <h5 className="title"><a href="tel:+224628216975">+224 628 21 69 75</a></h5>
+                                <span>WhatsApp principal : <a href="https://wa.me/224628216975">+224 628 21 69 75</a></span><br />
+                                <span>WhatsApp secondaire : <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></span>
                             </li>
                             </ul>
                         </div>
