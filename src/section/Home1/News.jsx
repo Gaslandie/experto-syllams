@@ -88,7 +88,8 @@ function News ({className}){
                 <div className="blog-block">
                   <div className="inner-box">
                     <div className="image-box">
-                      <figure className="image">
+                      <figure className="image temporary-image-frame">
+                        <span className="temporary-image-label">Image temporaire</span>
                         <img src={image} alt="Blog" />
                       </figure>
                     </div>

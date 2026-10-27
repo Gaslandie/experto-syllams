@@ -14,13 +14,16 @@ function About() {
           {/* Left column: images */}
           <div className="col-lg-6 image-column">
             <div className="inner-column">
-              <div className="image1 overlay-anim">
+              <div className="image1 overlay-anim temporary-image-frame">
+                <span className="temporary-image-label">Image temporaire</span>
                 <img src={AboutImage1} alt="Discussion en équipe" />
               </div>
-              <div className="info animation__arryLeftRight">
+              <div className="info animation__arryLeftRight temporary-image-frame">
+                <span className="temporary-image-label">Image temporaire</span>
                 <img src={AboutImage2} alt="Illustration" />
               </div>
-              <div className="image2 overlay-anim">
+              <div className="image2 overlay-anim temporary-image-frame">
+                <span className="temporary-image-label">Image temporaire</span>
                 <img src={AboutImage3} alt="Environnement de travail" />
               </div>
             </div>

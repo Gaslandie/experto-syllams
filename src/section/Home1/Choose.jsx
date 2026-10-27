@@ -127,7 +127,8 @@ function Choose() {
           {/* Right Column */}
           <div className="col-xl-6 image-column">
             <div className="inner-column position-relative">
-              <figure className="image">
+              <figure className="image temporary-image-frame">
+                <span className="temporary-image-label">Image temporaire</span>
                 <img className="wow" src={ChooseImage1} alt="Choose Us" loading="lazy" />
                 <div className="outer-box d-flex flex-wrap gap-4 mt-4">
                   {progressData.map((item, index) => (

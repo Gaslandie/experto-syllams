@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import CaseImage1 from '../../assets/images/experto/analyse.webp';
-import CaseImage2 from '../../assets/images/experto/collegues.webp';
-import CaseImage3 from '../../assets/images/experto/collaboration.webp';
-import CaseImage4 from '../../assets/images/experto/equipe.webp';
 
 // Swiper settings
 const swiperOptions = {
@@ -28,11 +24,11 @@ const swiperOptions = {
 // Case study data
 const caseItems = [
     { id: 1, img: `${import.meta.env.BASE_URL}images/panaudex.jpeg`, category: "Cabinet du groupe", title: "PANAUDEX", link: "/nos-cabinets/panaudex", logo: true },
-    { id: 2, img: CaseImage2, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
-    { id: 3, img: CaseImage3, category: "Cabinet du groupe", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
+    { id: 2, category: "Cabinet du groupe", title: "LIFE-PARTNERS", link: "/nos-cabinets/life-partners" },
+    { id: 3, category: "Cabinet du groupe", title: "Syllams Expertise", link: "/nos-cabinets/syllams-expertise" },
     { id: 4, img: `${import.meta.env.BASE_URL}images/noveo.jpeg`, category: "Lien du site à confirmer", title: "NOVEO", link: "/nos-cabinets/noveo", logo: true },
-    { id: 5, img: CaseImage1, category: "Lien du site à confirmer", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
-    { id: 6, img: CaseImage4, category: "Lien du site à confirmer", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
+    { id: 5, category: "Lien du site à confirmer", title: "FIDEXIE", link: "/nos-cabinets/fidexie" },
+    { id: 6, category: "Lien du site à confirmer", title: "AFRIC CONSEIL", link: "/nos-cabinets/afric-conseil" },
 ];
 
 function Case ({className}){
@@ -50,7 +46,7 @@ function Case ({className}){
                             <div className={`case-block ${item.logo ? "case-block--logo" : "case-block--photo"}`}>
                                 <div className="inner-box">
                                     <figure className="image">
-                                        <img src={item.img} alt={item.logo ? `Logo ${item.title}` : `${item.title} — illustration provisoire`} />
+                                        {item.logo ? <img src={item.img} alt={`Logo ${item.title}`} /> : <div className="firm-logo-placeholder">Logo à fournir</div>}
                                     </figure>
                                     <div className="content-box">
                                         <span className="sub-title">{item.category}</span>

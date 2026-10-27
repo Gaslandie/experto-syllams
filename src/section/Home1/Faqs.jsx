@@ -66,7 +66,8 @@ function Faqs() {
       <div className="row g-0">
         <div className="col-xl-4 d-none d-xl-block image-column">
           <div className="inner-column">
-            <figure className="image">
+            <figure className="image temporary-image-frame">
+              <span className="temporary-image-label">Image temporaire</span>
               <img className="wow" src={FaqsImage1} alt="FAQ Visual" loading="lazy" />
             </figure>
           </div>

@@ -83,7 +83,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage5} alt="Image" />
                   </figure>
                 </div>
@@ -126,7 +127,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage6} alt="Image" />
                   </figure>
                 </div>
@@ -154,7 +156,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage7} alt="Image" />
                   </figure>
                 </div>
@@ -185,7 +188,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage5} alt="Image" />
                   </figure>
                 </div>
@@ -228,7 +232,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage6} alt="Image" />
                   </figure>
                 </div>
@@ -256,7 +261,8 @@ function Service() {
                   </div>
                 </div>
                 <div className="image-box">
-                  <figure className="image">
+                  <figure className="image temporary-image-frame">
+                    <span className="temporary-image-label">Image temporaire</span>
                     <img src={ServiceImage7} alt="Image" />
                   </figure>
                 </div>

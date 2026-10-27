@@ -8,6 +8,7 @@ const PageTitle = (props) => {
         <>
 
         <section className="page-title" style={{ backgroundImage: `url(${PageTitleBG})` }}>
+            <span className="temporary-image-label">Image temporaire</span>
             <div className="auto-container">
                 <div className="title-outer">
                     <ul className="page-breadcrumb">

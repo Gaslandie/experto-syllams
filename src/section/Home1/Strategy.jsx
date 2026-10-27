@@ -38,7 +38,8 @@ function Strategy (){
             <div className="row g-5">
                 <div className="col-xl-6 image-column">
                     <div className="inner-column">
-                        <figure className="image tm-gsap-img-parallax">
+                        <figure className="image tm-gsap-img-parallax temporary-image-frame">
+                            <span className="temporary-image-label">Image temporaire</span>
                             <img src={StrategyImage2} alt="Illustration de nos activités" />
                             <div className="info"><img src={StrategyImage3} alt="Info Overlay" /></div>
                         </figure>

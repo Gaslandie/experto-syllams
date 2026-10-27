@@ -122,6 +122,7 @@ function Growth({className}){
   return (
     <>
     <section className={`growth-section pt-120 pb-120 ${className || ''}`} style={{ backgroundImage: `url(${GrowthImage1})` }} >
+      <span className="temporary-image-label">Image temporaire</span>
       <div className="sec-shape">
         <img src={GrowthImage2} alt="Growth Shape" className="sway_Y__animation" />
       </div>
