@@ -117,13 +117,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                         <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a>
                         </div>
                     </li>
-                    <li>
-                        <div className="contact-info-box">
-                        <span className="icon lnr-icon-clock"></span>
-                        <span className="title">Horaires</span>
-                        Horaires à confirmer
-                        </div>
-                    </li>
                     </ul>
                     <ul className="social-links">
                     <li><Link to="/"><i className="fab fa-x-twitter"/></Link></li>

@@ -59,8 +59,8 @@ function Footer({ handleOpen, searchToggle, }) {
                             <ul>
                             <li><i className="fa-sharp fa-solid fa-location-dot"/></li>
                             <li>
-                                <span>Horaires :</span>
-                                <h5 className="title">À confirmer</h5>
+                                <span>Localisation :</span>
+                                <h5 className="title">Guinée, Conakry</h5>
                             </li>
                             </ul>
                         </div>
@@ -132,7 +132,6 @@ function Footer({ handleOpen, searchToggle, }) {
                     <h3 className="title">Vous avez un projet ?</h3>
                     <Link className="circle-btn" to="/page-contact">Nous contacter <i className="fa-regular fa-arrow-up-right"/></Link>
                     <div className="mt-10">
-                        <h5 className="time">Horaires à confirmer</h5>
                         <h5 className="date">Guinée, Conakry</h5>
                     </div>
                     </div>

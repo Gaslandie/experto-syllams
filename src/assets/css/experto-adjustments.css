@@ -243,3 +243,17 @@
 .case-section .case-block .inner-box .content-box .title {
   overflow-wrap: anywhere;
 }
+
+/* Make the mobile cabinet submenu control visible against its dark background. */
+.mobile-menu .navigation li.dropdown button.dropdown-btn {
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+.mobile-menu .navigation li.dropdown button.dropdown-btn:focus-visible {
+  outline: 2px solid #c9dd32;
+  outline-offset: -3px;
+}
+.mobile-menu .navigation li.dropdown button.dropdown-btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
