@@ -31,7 +31,14 @@
 .experto-home-content .temporary-image-label,
 .experto-home-content .home-service-image .temporary-image-label,
 .experto-home-content .benefit-photo .temporary-image-label { font-size: 12px; }
-.banner-section .content-column .inner-column .title { font-size: 108px; line-height: 1.15; }
+.banner-section .content-column .inner-column { container-type: inline-size; }
+.banner-section .content-column .inner-column .title {
+  font-size: clamp(24px, 12cqw, 108px);
+  line-height: 1.15;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
 .banner-section .content-column .inner-column .sub-title { font-size: 19.2px; line-height: 1.5; }
 .banner-section .text { font-size: 24px; line-height: 1.5; }
 .page-wrapper :is(.btn-one,.btn-two,.btn-one-light) { font-size: 19.2px; line-height: 1.5; white-space: normal; min-width: 0; }
@@ -52,15 +59,27 @@
 /* Allow grid/flex children and long addresses to shrink and wrap. */
 .experto-home-content :is(article,section,.home-service-copy,.client-group-values,.about-overview-copy),
 .experto-footer .footer-main > * { min-width: 0; }
-@media (min-width: 992px) and (max-width: 1399.98px) {
-  .header-style-one .main-menu { display: none; }
+/* One shared breakpoint for the normal and sticky navigation. */
+@media (max-width: 1399.98px) {
+  .header-style-one .main-box .nav-outer,
+  .header-style-one .main-box .main-menu,
+  .header-style-one .sticky-header .main-menu { display: none !important; }
   .header-style-one .main-box { justify-content: space-between; }
+  .header-style-one .sticky-header .nav-outer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   .header-style-one .main-box .mobile-nav-toggler,
   .header-style-one .sticky-header .mobile-nav-toggler,
   .header-style-one .mobile-menu .navigation.d-lg-none { display: block !important; }
 }
+@media (min-width: 1400px) {
+  .header-style-one .main-box .mobile-nav-toggler,
+  .header-style-one .sticky-header .mobile-nav-toggler { display: none !important; }
+}
 @media (max-width: 767.98px) {
-  .banner-section .content-column .inner-column .title { font-size: 55.2px; line-height: 1.2; }
+  .banner-section .content-column .inner-column .title { font-size: clamp(24px, 12cqw, 55.2px); line-height: 1.2; }
   .banner-section .text { max-width: 100%; }
   .experto-home-content .client-values-list li { min-width: 0; }
   .experto-footer .footer-main { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
@@ -71,27 +90,52 @@
 }
 
 /* Distinct opening statement, with the client's exact wording preserved. */
+.experto-home-content .client-services .home-service-copy > h3 {
+  margin-bottom: 24px;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #183d32;
+  color: #fff;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .experto-home-content .client-services .home-service-copy > h3:hover {
+    background: #176560;
+    box-shadow: 0 4px 12px rgba(24, 61, 50, .16);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .experto-home-content .client-services .home-service-copy > h3 { transition: none; }
+}
+
+.experto-home-content .client-values-list > h3 { text-align: center; }
+
 .experto-home-content .client-group-statement {
-  background: #eef3ef;
+  background: #183d32;
   border-radius: 10px;
   padding: 24px;
   margin-bottom: 28px;
   text-align: center;
 }
 .experto-home-content .client-intro-benefits .client-group-statement .client-group-promises {
-  color: #183d32;
+  color: #fff;
+  text-align: center;
   font-weight: 650;
   line-height: 1.65;
   margin: 0;
 }
 .experto-home-content .client-intro-benefits .client-group-statement .client-group-motto {
-  color: #24564a;
+  color: #fff;
+  text-align: center;
   font-style: italic;
   font-weight: 500;
   line-height: 1.6;
   margin: 20px 0 0;
   padding-top: 20px;
-  border-top: 1px solid #d2dfd6;
+  border-top: 1px solid rgba(255, 255, 255, .25);
 }
 @media (max-width: 767.98px) {
   .experto-home-content .client-group-statement { padding: 20px 16px; }

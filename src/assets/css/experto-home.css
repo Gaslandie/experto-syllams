@@ -201,21 +201,36 @@
 
 /* Spacious alternating photo/text cards, following the supplied Dalberg example. */
 .experto-home-content .client-services .client-request-grid {
-  grid-template-columns: minmax(0, 1fr); gap: 36px;
+  grid-template-columns: minmax(0, 1fr); gap: 48px;
 }
 .experto-home-content .client-group .client-services .client-request-card {
   display: grid; grid-template-columns: 1fr 1fr; overflow: hidden;
-  border: 1px solid #dce6df; border-radius: 12px; background: #fff;
-  box-shadow: 0 5px 18px rgba(24, 61, 50, .055);
+  border: 1px solid #dce6df; border-radius: 16px; background: #fff;
+  box-shadow: none;
+  transition: box-shadow 350ms ease, border-color 350ms ease;
 }
 .experto-home-content .client-services .client-request-card .home-service-image {
-  grid-column: 1; grid-row: 1; width: 100%; aspect-ratio: auto; min-height: 360px;
+  grid-column: 1; grid-row: 1; width: 100%; aspect-ratio: auto; min-height: 400px;
+  margin: 0; border-radius: 0;
 }
 .experto-home-content .client-services .home-service-image img { height: 100%; min-height: 0; }
 .experto-home-content .client-services .client-request-card .home-service-copy {
-  grid-column: 2; grid-row: 1; padding: clamp(32px, 4vw, 64px);
+  grid-column: 2; grid-row: 1; padding: clamp(32px, 5vw, 72px);
   background: #fff; height: auto; align-self: stretch;
   display: flex; flex-direction: column; justify-content: center;
+}
+.experto-home-content .client-services .home-service-copy > p { max-width: 38ch; }
+@media (hover: hover) and (pointer: fine) {
+  .experto-home-content .client-group .client-services .client-request-card:hover {
+    border-color: #b8cec0;
+    box-shadow: 0 12px 32px rgba(24, 61, 50, .09);
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .experto-home-content .client-services .client-request-card:hover .home-service-image img { transform: scale(1.04); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .experto-home-content .client-group .client-services .client-request-card { transition: none; }
 }
 .experto-home-content .client-services .client-request-card:nth-child(even) .home-service-image { grid-column: 2; }
 .experto-home-content .client-services .client-request-card:nth-child(even) .home-service-copy { grid-column: 1; }
@@ -358,4 +373,85 @@
 @media(prefers-reduced-motion:reduce) {
   .experto-home-content .temporary-image-frame img,
   .experto-home-content .service-block .image-box .image img { transition: none; }
+}
+
+/* Client references: a structured editorial header above the moving logo cards.
+   Adapt the established green/white palette without inventing client identities. */
+.experto-home-content .partner-panel {
+  padding: 0;
+  overflow: hidden;
+  border-color: #d7e2da;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(24, 61, 50, .05);
+}
+.experto-home-content .partner-introduction {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 0;
+  align-items: stretch;
+}
+.experto-home-content .partner-introduction .title {
+  display: flex;
+  align-items: center;
+  max-width: none;
+  margin: 0;
+  padding: clamp(32px, 4vw, 56px);
+  background: #183d32;
+  color: #fff;
+}
+.experto-home-content .partner-introduction-copy {
+  padding: clamp(32px, 4vw, 56px);
+  background: #fff;
+}
+.experto-home-content #partner-showcase-title { color: #fff; }
+.experto-home-content .partner-introduction-copy .partner-invitation {
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid #dce6df;
+  font-weight: 600;
+  color: #183d32;
+}
+.experto-home-content .partner-strip {
+  padding: 40px 0;
+  background: #f3f6f2;
+  border-top: 1px solid #dce6df;
+}
+.experto-home-content .partner-items { gap: 28px; padding-right: 28px; }
+.experto-home-content .partner-logo-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dce6df;
+  border-radius: 12px;
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+}
+.experto-home-content .partner-logo-slot {
+  height: 144px;
+  margin: 20px;
+  background: #f6f8f5;
+  border: 1px solid #e8eee8;
+  border-radius: 8px;
+}
+.experto-home-content .partner-logo-caption {
+  flex: 1;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  padding: 4px 24px 24px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .experto-home-content .partner-logo-card:hover {
+    border-color: #8fac9b;
+    box-shadow: 0 8px 20px rgba(24, 61, 50, .1);
+  }
+}
+@media (max-width: 991.98px) {
+  .experto-home-content .partner-introduction { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 767.98px) {
+  .experto-home-content .partner-introduction .title,
+  .experto-home-content .partner-introduction-copy { padding: 28px 24px; }
+  .experto-home-content .partner-strip { padding-block: 28px; }
+  .experto-home-content .partner-items { gap: 20px; padding-right: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .experto-home-content .partner-logo-card { transition: none; }
 }

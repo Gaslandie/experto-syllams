@@ -9,7 +9,6 @@ import "swiper/css/effect-fade";
 import BannerImage1 from '../../assets/images/experto/equipe.webp';
 import BannerImage2 from '../../assets/images/experto/collegues.webp';
 import BannerImage3 from '../../assets/images/experto/formation.webp';
-import BannerShapeImage from '../../assets/images/shape/banner-arry.png';
 import BannerShapeImage2 from '../../assets/images/shape/banner-shape.png';
 
 const slides = [
@@ -102,9 +101,6 @@ function Banner() {
 
   return (
     <section id="home" className="banner-section">
-      <div className="arry">
-        <img className="animation__arryLeftRight" src={BannerShapeImage} alt="Shape" />
-      </div>
       <div className="sec-shape">
         <img src={BannerShapeImage2} alt="Shape" />
       </div>

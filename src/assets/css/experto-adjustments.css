@@ -375,14 +375,6 @@
   .header-style-one .sticky-header .auto-container { max-width: none; padding-inline: clamp(24px, 2.5vw, 48px); }
   .header-style-one .sticky-header .nav-outer { flex: 1 1 auto; min-width: 0; margin-left: 20px; }
 }
-/* Use the mobile menu when the full list no longer fits comfortably. */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .header-style-one .main-menu { display: none; }
-  .header-style-one .main-box { justify-content: space-between; }
-  .header-style-one .main-box .mobile-nav-toggler,
-  .header-style-one .sticky-header .mobile-nav-toggler { display: block !important; }
-  .header-style-one .mobile-menu .navigation.d-lg-none { display: block !important; }
-}
 /* Keep the client's wording and display every value consistently. */
 .values-ticker-items span { text-transform: uppercase; }
 
