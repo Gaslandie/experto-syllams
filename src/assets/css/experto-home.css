@@ -1,3 +1,212 @@
+/* Client-supplied reference: label, heading, two paragraphs, three equal cards. */
+.experto-home-content .group-introduction { container-type: inline-size; }
+.experto-home-content .group-introduction-label {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #536057;
+}
+.experto-home-content .group-introduction #client-group-title {
+  max-width: none;
+  margin: 0 0 28px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: var(--home-title-size);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  color: #17231d;
+}
+@media (min-width: 768px) {
+  .experto-home-content .group-introduction #client-group-title {
+    font-size: min(2.65cqw, 36px);
+    white-space: nowrap;
+  }
+}
+.experto-home-content .group-introduction-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+.experto-home-content .group-introduction-copy p {
+  margin: 0;
+  font-size: var(--home-body-size);
+  line-height: 1.6;
+  color: #536057;
+}
+.experto-home-content .group-introduction-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+.experto-home-content .group-introduction-card {
+  padding: 28px;
+  border: 1px solid #e2dfda;
+  border-radius: 16px;
+  background: #fff;
+}
+.experto-home-content .group-introduction-card svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 20px;
+  color: #176560;
+}
+.experto-home-content .group-introduction-card h3 {
+  margin: 0 0 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: var(--home-subtitle-size);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #17231d;
+}
+.experto-home-content .group-introduction-card p {
+  margin: 0;
+  font-size: var(--home-body-size);
+  line-height: 1.5;
+  color: #536057;
+}
+@media (max-width: 767.98px) {
+  .experto-home-content .group-introduction-copy,
+  .experto-home-content .group-introduction-cards { grid-template-columns: 1fr; gap: 24px; }
+  .experto-home-content .group-introduction-cards { margin-top: 32px; }
+  .experto-home-content .group-introduction-card { padding: 24px; }
+}
+
+/* Supplied services reference: four text-only cards in reading order. */
+.experto-home-content .services-overview-band { background: #faf7f7; }
+.experto-home-content .services-overview-heading { margin-bottom: 28px; }
+.experto-home-content .services-overview-label {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #536057;
+}
+.experto-home-content .services-overview #client-services-title {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: var(--home-title-size);
+  line-height: 1.2;
+  font-weight: 700;
+  color: #17231d;
+}
+.experto-home-content .services-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+.experto-home-content .services-overview-card {
+  padding: 28px 32px;
+  border: 1px solid #e8e3e3;
+  border-radius: 16px;
+  background: #fff;
+}
+.experto-home-content .services-overview-card h3 {
+  margin: 0 0 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: var(--home-subtitle-size);
+  line-height: 1.3;
+  font-weight: 700;
+  color: #17231d;
+}
+.experto-home-content .services-overview-card p {
+  margin: 0;
+  font-size: var(--home-body-size);
+  line-height: 1.5;
+  color: #536057;
+}
+@media (max-width: 767.98px) {
+  .experto-home-content .services-overview-grid { grid-template-columns: 1fr; }
+  .experto-home-content .services-overview-card { padding: 24px; }
+}
+
+/* Full-width contact band; magenta sampled from "Groupe" in the current logo. */
+.experto-home-content .project-contact {
+  padding: 72px 0;
+  background: #cd01a4;
+  color: #fff;
+}
+.experto-home-content .project-contact > .container {
+  max-width: 1140px;
+  padding-inline: 24px;
+}
+.experto-home-content .project-contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.experto-home-content .project-contact #client-contact-title {
+  margin: 0 0 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(28px, 2.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+.experto-home-content .project-contact p {
+  margin: 0;
+  font-size: var(--home-body-size);
+  line-height: 1.5;
+  color: #fff;
+}
+.experto-home-content .project-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 48px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: #fff;
+  color: #17231d;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.experto-home-content .project-contact-button:hover { background: #f8edf6; }
+.experto-home-content .project-contact-button:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
+@media (max-width: 767.98px) {
+  .experto-home-content .project-contact { padding: 48px 0; }
+  .experto-home-content .project-contact-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+}
+
+/* About: six consecutive paragraphs on a plain white background. */
+.experto-home-content .group-about { padding: 64px 0; background: #fff; }
+.experto-home-content .group-about-frame {
+  padding: 14px 14px 64px;
+  border: 0;
+  background: #fff;
+  color: #161616;
+}
+.experto-home-content .group-about #client-about-title {
+  margin: 0 0 28px;
+  font-family: var(--home-font);
+  font-size: var(--home-title-size);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  color: #161616;
+}
+.experto-home-content .group-about-frame p {
+  margin: 0 0 18px;
+  max-width: none;
+  font-size: var(--home-body-size);
+  line-height: 1.8;
+  text-align: left;
+  color: #161616;
+}
+.experto-home-content .group-about-frame p:last-child { margin-bottom: 0; }
+.experto-home-content .group-about-frame strong { font-weight: 750; }
+@media (max-width: 767.98px) {
+  .experto-home-content .group-about { padding: 40px 0; }
+  .experto-home-content .group-about-frame { padding: 18px 16px 32px; }
+}
+
 /* Home sections only: original hero and carousels retain their own styles. */
 .experto-home-content {
   --home-ink: #183d32;
@@ -20,7 +229,6 @@
 .experto-home-content .partner-introduction .title { max-width: 850px; margin: 0 auto; }
 .experto-home-content .partner-introduction-copy p { margin-bottom: 16px; }
 .experto-home-content .partner-introduction-copy .partner-invitation { margin: 24px 0 0; }
-.experto-home-content .partner-divider { display: none; }
 /* Preserve the existing automatic reference strip. */
 .experto-home-content .partner-strip { padding-top: 36px; }
 .experto-home-content .partner-logo-card { border: 0; border-radius: 6px; box-shadow: none; background: #f6f8f5; }
@@ -375,40 +583,67 @@
   .experto-home-content .service-block .image-box .image img { transition: none; }
 }
 
-/* Client references: a structured editorial header above the moving logo cards.
-   Adapt the established green/white palette without inventing client identities. */
+/* Client reference: compact title and paragraphs stacked above the logo strip. */
 .experto-home-content .partner-panel {
-  padding: 0;
+  padding: 24px;
   overflow: hidden;
-  border-color: #d7e2da;
-  border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(24, 61, 50, .05);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 .experto-home-content .partner-introduction {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-  gap: 0;
-  align-items: stretch;
-}
-.experto-home-content .partner-introduction .title {
-  display: flex;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
   max-width: none;
   margin: 0;
-  padding: clamp(32px, 4vw, 56px);
-  background: #183d32;
-  color: #fff;
+}
+.experto-home-content .partner-introduction .title {
+  display: block;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: var(--home-title-size);
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-wrap: wrap;
 }
 .experto-home-content .partner-introduction-copy {
-  padding: clamp(32px, 4vw, 56px);
-  background: #fff;
+  padding: 0;
+  background: transparent;
 }
-.experto-home-content #partner-showcase-title { color: #fff; }
-.experto-home-content .partner-introduction-copy .partner-invitation {
-  padding-top: 24px;
-  margin-top: 24px;
-  border-top: 1px solid #dce6df;
+.experto-home-content #partner-showcase-title {
+  color: #183d32;
+  font-size: var(--home-title-size);
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+.experto-home-content #client-references .partner-introduction-copy p {
+  font-size: var(--home-body-size);
+  line-height: 1.8;
+  margin: 0 0 12px;
+  text-wrap: wrap;
+}
+.experto-home-content .partner-category {
+  font-size: var(--home-subtitle-size);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.experto-home-content #client-references .partner-introduction-copy .partner-invitation {
+  padding: 0;
+  margin: 0;
+  border: 0;
   font-weight: 600;
   color: #183d32;
+}
+.experto-home-content .partner-divider {
+  display: block;
+  width: 100%;
+  margin: 22px 0 0;
+  border: 0;
+  border-top: 1px solid #8a9990;
+  opacity: 1;
 }
 .experto-home-content .partner-strip {
   padding: 40px 0;
@@ -447,8 +682,7 @@
   .experto-home-content .partner-introduction { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 767.98px) {
-  .experto-home-content .partner-introduction .title,
-  .experto-home-content .partner-introduction-copy { padding: 28px 24px; }
+  .experto-home-content .partner-panel { padding: 20px 0; }
   .experto-home-content .partner-strip { padding-block: 28px; }
   .experto-home-content .partner-items { gap: 20px; padding-right: 20px; }
 }

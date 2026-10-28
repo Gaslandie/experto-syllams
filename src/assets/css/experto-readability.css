@@ -60,7 +60,7 @@
 .experto-home-content :is(article,section,.home-service-copy,.client-group-values,.about-overview-copy),
 .experto-footer .footer-main > * { min-width: 0; }
 /* One shared breakpoint for the normal and sticky navigation. */
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .header-style-one .main-box .nav-outer,
   .header-style-one .main-box .main-menu,
   .header-style-one .sticky-header .main-menu { display: none !important; }
@@ -74,9 +74,18 @@
   .header-style-one .sticky-header .mobile-nav-toggler,
   .header-style-one .mobile-menu .navigation.d-lg-none { display: block !important; }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .header-style-one .main-box .mobile-nav-toggler,
   .header-style-one .sticky-header .mobile-nav-toggler { display: none !important; }
+}
+/* Keep all six links on medium desktop widths, in both header states. */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header-style-one .main-box,
+  .header-style-one .sticky-header .auto-container { padding-inline: 24px; }
+  .header-style-one .main-box .nav-outer { margin-inline: 12px; }
+  .header-style-one .sticky-header .nav-outer { margin-left: 12px; }
+  .header-style-one .main-menu .navigation { gap: 10px; }
+  .header-style-one .main-menu .navigation > li > a { font-size: 14px; }
 }
 @media (max-width: 767.98px) {
   .banner-section .content-column .inner-column .title { font-size: clamp(24px, 12cqw, 55.2px); line-height: 1.2; }

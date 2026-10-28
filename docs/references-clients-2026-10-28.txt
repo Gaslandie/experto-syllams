@@ -1,0 +1,31 @@
+Références clients — 28 octobre 2026
+
+Gassama confirme dans la conversation que le client valide les cinq références
+de sa capture : Deloitte, EY, KPMG, PwC, Mazars.
+Cette confirmation client est la source de la relation commerciale.
+Les sources publiques ci-dessous documentent seulement les logos.
+
+Comparaison et adaptation : la capture client sert de référence pour l'ordre
+vertical (titre, trois paragraphes, séparation, Cabinet d’Audit, logos).
+Les couleurs et la typographie du site sont conservées. La grille sur deux
+lignes de la capture est remplacée par la ligne défilante existante, demandée
+explicitement. Les mentions provisoires Partenaire/Affiliation sont retirées.
+
+Sources des logos consultées le 28 octobre 2026 :
+https://commons.wikimedia.org/wiki/File:Deloitte_old_blue_logo.svg
+https://commons.wikimedia.org/wiki/File:EY_logo_2019.svg
+https://commons.wikimedia.org/wiki/File:KPMG_blue_logo.svg
+https://commons.wikimedia.org/wiki/File:PricewaterhouseCoopers_Logo.svg
+https://commons.wikimedia.org/wiki/File:Mazars_logo.svg
+
+Versions historiques Deloitte bleu, PwC multicolore et Mazars rouge/bleu
+retenues pour suivre la capture fournie, sans substituer les marques récentes.
+Les pages Commons documentent ces marques ; elles ne prouvent aucune relation
+commerciale avec Experto-Syllams. Les fichiers restent des marques de leurs
+propriétaires. Copie locale des SVG : aucune requête tierce au chargement.
+
+Accès : requests Python renvoyait HTTP 403 ; téléchargement curl réussi depuis
+upload.wikimedia.org. Les cinq SVG ont été analysés : aucun script, gestionnaire
+d'événement, foreignObject ou ressource externe active. Ils sont chargés via img.
+Le défilement garde la pause au survol/focus et respecte prefers-reduced-motion.
+Contrôle visuel laissé à Gassama conformément à sa demande.
