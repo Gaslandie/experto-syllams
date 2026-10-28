@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../layouts/Layout";
 import PageTitle from "../PageTitle";
 import PartnerShowcase from "./PartnerShowcase";
+import ClientAbout from "./ClientAbout";
 import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
@@ -11,15 +12,10 @@ function Page({ title, children }) {
 
 export function AboutPage() {
   return <Page title="Qui sommes-nous ?">
-    <div className="client-page-copy">
-      <p>Le Groupe Experto-Syllams, un groupe de cabinet de référence dans toutes les branches du cœur de métiers des entreprises, projets, ONG, GIE, banque, assurance, Institution de Microfinance, bref les organisations qui sont indirectement exposées à des risques économiques, comptables, financiers et informatiques…</p>
-      <p>Nous intervenons auprès des entreprises, des projets, des ONG, des GIE, des Institution de Microfinance, des caisses de retraite et institutions de prévoyance, des compagnies d’assurances et banques, des cabinets d’audit et entreprises industrielles ou commerciales, afin de leur apporter notre compétences et savoir-faire en matière de Comptabilité, de finances, de gestion, d’informatique, de statistiques, d’analyse, d’estimation et de gestion des risques financiers.</p>
-      <h2>Une expertise unique en Afrique de l’Ouest</h2>
-      <p>Notre équipe, constituée de praticiens experts ou non rompu à la tâche en Comptabilité, Finances, Assurances et Statistiques se distinguant par sa proximité avec les clients dans la résolution de problématiques complexes.</p>
-      <p>Le Groupe Experto-Syllams est, sur le plan national et sous-régional, crédité du statut de Cabinet International du fait du cursus académique et de l’expérience professionnelle de ses principaux intervenants d’une part, et de l’approche méthodologique développée lors la réalisation de ses missions dans le strict respect des normes professionnelles, d’éthiques et déontologie applicables à la profession de Conseil et d’Audit.</p>
-      <p>Forts de nos compétences en gestion, en comptabilités techniques, en réglementaires et, le Groupe Experto-Syllams a développé ses propres outils, méthodologies et applications permettant de nous conformer aux spécificités du marché international et celle Africain en particulier. Ces atouts garantissent à nos clients un service professionnel de qualité au même titre que les autres cabinets internationaux, et confèrent une notoriété sous-régionale à notre signature.</p>
-      <Link className="btn-two" to="/contacts">Nous contacter</Link>
+    <div className="experto-home-content">
+      <ClientAbout />
     </div>
+    <Link className="btn-two" to="/contacts">Nous contacter</Link>
   </Page>;
 }
 

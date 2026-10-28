@@ -118,7 +118,7 @@ function Banner() {
   return (
     <section id="home" className="banner-section">
       <aside ref={valuesRef} className="hero-values" aria-label="Nos valeurs">
-        <p className="hero-values-intro">Vous écoutez pour mieux vous Parler<br />Vous comprendre pour mieux Vous Conseillez</p>
+        <p className="hero-values-intro"><span className="hero-values-single-line">Vous écoutez pour mieux vous Parler</span><br /><span className="hero-values-single-line">Vous comprendre pour mieux Vous Conseillez</span></p>
         <p className="hero-values-motto">A Partners for one day Partners forever</p>
         <h2>Nos Valeurs pour y arriver :</h2>
         <ul>

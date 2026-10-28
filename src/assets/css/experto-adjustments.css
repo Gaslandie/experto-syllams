@@ -870,7 +870,12 @@
   font-size: 15px;
   line-height: 1.6;
 }
-.hero-values .hero-values-intro { margin: 0 0 14px; color: inherit; }
+.hero-values .hero-values-intro { margin: 0 0 14px; color: inherit; container-type: inline-size; }
+.hero-values .hero-values-single-line {
+  white-space: nowrap;
+  font-size: inherit;
+  overflow-wrap: normal;
+}
 .hero-values .hero-values-motto { margin: 0 0 18px; color: #ffd0a6; font-weight: 750; }
 .banner-section .hero-values h2 { margin: 0 0 8px; color: inherit; font-size: 17px; line-height: 1.5; }
 .hero-values ul { padding: 0; margin: 0; list-style: none; }

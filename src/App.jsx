@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Link, Route, Routes, useLocation } from "react-router-dom";
 import Home1 from "./pages/index";
 import Layout from "./layouts/Layout";
+import { AboutPage } from "./section/client/ClientPages";
 
 function Construction() {
   return <div className="page-wrapper"><Layout hideFooter>
@@ -15,12 +16,13 @@ function Construction() {
 function SiteRoutes() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    document.title = `${pathname === "/" ? "Accueil" : "En construction"} | GROUPE EXPERTO-SYLLAMS`;
+    document.title = `${pathname === "/" ? "Accueil" : pathname === "/qui-sommes-nous" ? "Qui sommes-nous ?" : "En construction"} | GROUPE EXPERTO-SYLLAMS`;
     document.body.classList.remove("mobile-menu-visible");
     window.scrollTo(0, 0);
   }, [pathname, hash]);
   return <Routes>
     <Route path="/" element={<Home1 />} />
+    <Route path="/qui-sommes-nous" element={<AboutPage />} />
     <Route path="*" element={<Construction />} />
   </Routes>;
 }

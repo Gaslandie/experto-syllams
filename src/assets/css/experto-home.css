@@ -127,6 +127,7 @@
 /* Full-width contact band; magenta sampled from "Groupe" in the current logo. */
 .experto-home-content .project-contact {
   padding: 72px 0;
+  margin-bottom: 64px;
   background: #cd01a4;
   color: #fff;
 }
@@ -171,7 +172,7 @@
 .experto-home-content .project-contact-button:hover { background: #f8edf6; }
 .experto-home-content .project-contact-button:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
 @media (max-width: 767.98px) {
-  .experto-home-content .project-contact { padding: 48px 0; }
+  .experto-home-content .project-contact { padding: 48px 0; margin-bottom: 40px; }
   .experto-home-content .project-contact-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
 }
 
@@ -208,6 +209,10 @@
 }
 
 /* Home sections only: original hero and carousels retain their own styles. */
+.client-page .experto-home-content .group-about { padding: 0 0 32px; }
+.client-page .group-about > .container { max-width: none; padding: 0; }
+.client-page .experto-home-content .group-about-frame { padding: 0; }
+
 .experto-home-content {
   --home-ink: #183d32;
   --home-green: #176560;
