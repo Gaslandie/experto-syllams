@@ -1,0 +1,263 @@
+REVUE VISUELLE LOCALE — 28 octobre 2026
+
+Périmètre : sections de l’accueil après le hero. Aucun texte réécrit,
+aucun push, aucun déploiement. Identité verte et police existantes conservées.
+
+Comparaison consultée avant réalisation :
+- https://gaslandie.github.io/cc2ii/index.html
+  Page et feuille assets/style.css consultées ce jour. Alternance de sections,
+  bandeau coloré, cartes d’expertise avec bordure haute, cartes photo et blocs
+  courts. Adaptation : cartes de services avec pictogrammes, valeurs sur fond
+  vert, deux cartes photo fixes, espacements et arrondis communs.
+  Limite : captures des sections basses de la référence intermittentes dans
+  Chrome ; observations complétées par le DOM et la feuille de styles publique.
+- https://www.nngroup.com/articles/cards-component/
+  Article du 6 novembre 2016, relu ce jour. Regroupement de contenus liés,
+  distinction visuelle et adaptation aux écrans. Principe toujours pertinent
+  pour cette page ; pas une preuve récente de performance du site.
+- https://design-system.service.gov.uk/styles/layout/
+  Consulté ce jour : colonnes adaptées à la largeur et lignes lisibles.
+  Adaptation : une colonne sur mobile, colonnes éditoriales sur ordinateur.
+
+Réalisation :
+- Styles isolés sous .experto-home-content, hors hero/header/footer.
+- Références fixes : les doublons décoratifs du défilement sont masqués.
+- Audit et Conseil fixes : suppression des copies nécessaires à l’ancien
+  carrousel, conservation des deux contenus et de leurs liens existants.
+- Aucun nouveau texte, client, logo, chiffre ou image externe.
+
+Vérifications :
+- npm run build : succès. Avertissements préexistants de ressources de la
+  template (anciens motifs et police EOT) toujours présents.
+- git diff --check : succès.
+- Comparaison des textes JSX et longues chaînes par analyse syntaxique :
+  tous les textes originaux conservés dans les fichiers modifiés.
+- Banner.jsx et experto-adjustments.css inchangés.
+- Captures locales ordinateur et mobile examinées.
+- Largeurs 320, 390 et 768 px : pas de débordement horizontal des sections.
+- Images des sections : chargées sans échec à 390 px.
+- Lien Audit ouvert : /nos-services, page existante En construction.
+- Console du navigateur : aucune erreur relevée.
+
+Sécurité : aucune dépendance ajoutée, aucun secret ou traitement de données,
+aucune modification de droits/session/serveur. DOM et liens React conservés.
+Serveur de prévisualisation limité à 127.0.0.1:5174. Pas de test de droits
+multi-comptes : cette modification est une présentation statique sans comptes.
+La vérification visuelle ne constitue pas une certification d’accessibilité.
+
+MISE À JOUR — référence Invest Africa, même journée
+Cette version remplace les décisions précédentes sur les cartes fixes :
+les deux carrousels d'origine sont conservés, y compris Audit / Conseil.
+Source : https://www.investafrica.com/ consultée dans Chrome et par lecture web.
+Observation réelle : introduction sur fond blanc, section de services sur fond
+clair avec photo / titre / paragraphe, très peu de cadres, titres centrés.
+Adaptation : fonds blanc et vert doux, photographies locales, quatre services
+sur ordinateur, deux sur tablette et une colonne sur petit téléphone.
+Aucun texte, chiffre, lien ou cabinet ajouté. Mentions Image temporaire et
+alternatives descriptives des photos ajoutées pour identifier les illustrations.
+Hero et sources des carrousels inchangés (comparaison git).
+Photos réencodées en WebP, métadonnées non copiées, sans chargement externe.
+Aucun changement de sécurité, de dépendance ou de traitement de données.
+Les originaux de Downloads ne sont pas modifiés.
+
+Photographies de Downloads utilisées :
+- businessmen-teamwork-and-collaboration-stacking-ha-2026-09-21-02-15-17-utc.jpg
+- two-men-in-suits-fist-bumping-in-office-2026-09-22-16-42-30-utc.jpg
+- business-professionals-discussing-data-charts-in-a-2026-09-21-06-30-00-utc.jpg
+- business-professionals-talking-outside-office-buil-2026-09-24-05-24-53-utc.jpg
+- business-professionals-collaborating-at-modern-off-2026-09-24-13-39-43-utc.jpg
+- business-professionals-discussing-pie-chart-during-2026-09-21-15-18-04-utc.jpg
+
+Contrôles : build réussi, git diff --check réussi, comparaison syntaxique des
+textes ClientIntro/ClientAbout/ClientServices identique (hors indication photo),
+capture ordinateur et téléphone examinées, six photos chargées.
+Le build signale encore les ressources anciennes de la template et la taille
+du bundle JavaScript. Aucun push ni déploiement réalisé.
+
+COMPLÉMENT DALBERG — 28 octobre 2026
+Source : https://dalberg.com/ (page et captures consultées dans Chrome).
+Observations : grandes compositions photo/texte adjacentes, alternance de
+positions, fonds blancs, titres colorés et blocs de contact contrastés.
+Adaptation : services disposés en panneaux photo/texte sur deux colonnes,
+alternance sur la seconde rangée, présentation du groupe sur fond blanc,
+contact sur fond vert. Aucun contenu repris de Dalberg, aucune nouvelle action.
+Les vidéos de Dalberg indiquaient Unable to play media : aucune conclusion
+sur leur lecture. Hero, footer et défilements Experto conservés.
+Validation : compilation et git diff --check réussis ; captures ordinateur
+et 390 px examinées, pas de débordement de page à 390 et 768 px.
+Cette adaptation ajoute uniquement du CSS et un conteneur autour des textes
+existants des services. Pas de dépendance, de collecte ou d'accès ajouté.
+
+Comparaison AFC — 28 octobre 2026
+Source : https://www.africafc.org/fr
+Observation directe dans Chrome : la section « Notre objectif panafricain »,
+« Nos partenaires, notre personnel, notre planète » et « Saisir les opportunités »
+présente trois cartes avec photos alignées au-dessus de panneaux gris clair,
+sans bordure décorative, des titres visibles et des marges généreuses.
+Les hauteurs de texte varient. Les boutons biseautés appartiennent à leur identité.
+Pertinence pour Experto : conserver des photos de dimensions cohérentes,
+des panneaux sobres et une hiérarchie claire. Ces principes sont déjà présents
+dans l'adaptation locale Invest Africa / Dalberg ; pas de nouvelle variante de
+carte ajoutée pour éviter de multiplier les styles. Aucun texte, bouton,
+chiffre, visuel AFC ou élément du hero repris. Footer simple conservé.
+Cette comparaison seule ne nécessite aucune modification fonctionnelle.
+Aucune publication, aucun formulaire soumis, aucune donnée du projet transmise.
+
+Comparaison Delphos — 28 octobre 2026
+Source : https://delphos.co/
+Observation directe : accueil consulté dans Chrome, capture de la page entière.
+Les sections reposent sur de larges marges blanches, des titres de tailles
+nettement distinctes, des blocs image/texte côte à côte et des rangées de
+cartes avec des flèches latérales. Le footer est un aplat bleu avec peu de
+colonnes. Certaines images et certains formulaires étaient encore vides ou
+en chargement dans la capture : leur rendu final n'est pas évalué.
+À retenir pour Experto : espacement régulier, image et texte bien alignés,
+hiérarchie des titres et sobriété du footer. Ces principes complètent les
+références précédentes sans nécessiter une nouvelle variante visuelle.
+Ne pas reprendre les séparateurs pointillés, cercles statistiques ou cadres
+bleus : ils ne correspondent pas à la sobriété et à l'identité déjà retenues.
+Aucun changement de code pour cette comparaison ; textes, hero, carrousels
+et footer existants conservés. Aucune publication ni soumission de formulaire.
+
+Fonds alternés — demande explicite du 28 octobre 2026
+Application des fonds sobres observés dans les références déjà comparées :
+références clients blanc ; groupe vert très clair ; services blanc ;
+carrousel expertises vert très clair ; zone contact blanc avec son panneau
+vert foncé ; présentation du groupe vert très clair ; footer vert foncé.
+Bandes sur toute la largeur, avec une largeur de contenu commune.
+Textes et sources hero/carrousel inchangés. Aucun ajout de dépendance,
+de traitement de données ou de transmission. Build réussi ; contrôle
+visuel bureau et mobile, pas de débordement horizontal à 390 px.
+
+Footer CrossBoundary — 28 octobre 2026
+Référence : capture fournie directement par Gassama dans la conversation.
+Observation : logo à gauche, quatre colonnes alignées en haut, fond uni,
+copyright en bas à gauche et réseaux sociaux à droite, sans séparateur.
+Adaptation : même organisation, vert Experto #183d32, logo original,
+contacts existants, Services, Pages et Actualités du groupe. Tous les liens,
+numéros et contenus existants conservés ; titre de colonne Contacts ajouté.
+Newsletter toujours en lecture seule ; réseaux sans URL toujours non cliquables.
+Aucun formulaire activé, aucune dépendance ajoutée et aucune publication.
+Vérification visuelle bureau et 390 px ; pas de débordement horizontal mobile.
+
+CrossBoundary accueil — 28 octobre 2026
+Source : https://crossboundary.com/ ; consultation directe Chrome.
+Observations : Our Virtues et Latest News and Insights utilisent des titres
+alignés à gauche et beaucoup d'espace. Our Virtues distingue un petit titre
+de section et une grande phrase. Le panneau de projet utilise un bouton
+Read More en contour arrondi. La grille d'actualités aligne de grandes photos.
+Adaptation ciblée : titres des sections Experto alignés à gauche, intitulé
+Nos services distinct du titre principal, introduction des références sur
+deux colonnes sur bureau, bouton contact en contour arrondi. Les valeurs
+passent de 12 à 14 px pour améliorer la lecture. Fonds alternés conservés.
+Textes, hero, composants carrousels et footer non modifiés. Aucune carte,
+statistique, animation ou contenu CrossBoundary copié. Aucun ajout de
+script externe, dépendance ou traitement de données ; aucune publication.
+
+Uniformité typographique — 28 octobre 2026
+Demande : mêmes styles par niveau, tout en permettant des cartes différentes.
+La comparaison CrossBoundary effectuée ce jour reste pertinente pour la
+hiérarchie ; les variantes de tailles accumulées sont remplacées par une
+échelle commune : Manrope, titres 40 px (30 px mobile), sous-titres 24 px
+(22 px mobile), paragraphes 16 px / interligne 1,8. Titres et sous-titres
+à graisse 600, paragraphes 400. Hero exclu conformément à la consigne.
+Les dispositions de cartes restent variées ; aucun texte ni comportement
+modifié. Vérification des styles calculés, rendu bureau/mobile et build OK.
+Modification CSS seulement, sans effet sur données, droits ou publication.
+
+Correction hauteur hero — 28 octobre 2026
+Signalement : fond plus court selon la slide, indicateur visible sur fond blanc.
+Cause CSS : hauteur intrinsèque différente des slides et fonds. Correction
+par étirement flex de toutes les slides sur la hauteur du contenu le plus
+long, sans hauteur fixe et sans couper le texte. Référence : capture du bug
+fournie par le client ; aucune nouvelle conception ou copie de référence.
+Textes, images, animations et temporisation du carrousel conservés.
+Aucun changement JavaScript, dépendance ou protection de sécurité.
+
+Cartes services plus distinctes — 28 octobre 2026
+Référence directe : capture et demande de Gassama ; conserve le principe
+photo/texte des références AFC et Invest Africa déjà comparées.
+Deux cartes par ligne, écart de 40 px, contour fin uniforme, coins 12 px,
+très légère ombre, photo au-dessus du texte. Une colonne et écart 28 px
+sur mobile. Aucune barre colorée supérieure. Texte et typographie conservés.
+Vérification visuelle bureau/mobile, grille calculée 2 colonnes puis 1,
+pas de débordement horizontal mobile, build et diff --check réussis.
+CSS seulement : aucun changement de données, sécurité ou publication.
+
+Cartes aérées en alternance — 28 octobre 2026
+Référence : nouvelle capture Dalberg fournie par Gassama. Blocs larges avec
+image et texte côte à côte, inversés sur la ligne suivante. Application :
+une carte complète par ligne, deux panneaux égaux, marges de texte jusqu'à
+64 px et intervalle 36 px. Contour et arrondi discrets conservés. Sur mobile,
+image puis texte dans toutes les cartes. Texte et échelle typographique inchangés.
+Rendu bureau/mobile vérifié, aucun débordement à 390 px ; build et diff check OK.
+Changement CSS uniquement, aucune dépendance, donnée ou publication concernée.
+
+Qui sommes-nous — 28 octobre 2026
+Réutilisation pertinente des références Dalberg (photo/texte adjacents) et
+CrossBoundary (groupes éditoriaux aérés) observées ce jour. Introduction :
+photo à gauche, deux paragraphes dans un panneau blanc à droite. Puis
+paragraphe sur l'équipe, deux colonnes sur les compétences et méthodes,
+et phrase finale sur fond vert. Aucun titre ni fait ajouté.
+Les six paragraphes ont été comparés strictement avant/après, même ordre.
+Typographie commune conservée. Build et diff check OK ; rendu bureau et
+mobile contrôlé, six paragraphes présents, aucun débordement à 390 px.
+Modification de présentation seulement, aucune donnée ni sécurité modifiée,
+aucune publication.
+
+Sous-sections Qui sommes-nous en cartes — 28 octobre 2026
+Demande et capture de Gassama : les trois paragraphes ciblés sont présentés
+en cartes blanches, reprenant le contour, les arrondis 12 px et l'ombre
+légère des cartes services validées. Une carte pleine largeur puis deux
+colonnes, espacées de 36 px ; une colonne et 28 px sur mobile.
+Référence visuelle : cartes existantes issues des comparaisons précédentes,
+pertinentes pour conserver l'uniformité demandée. Texte inchangé, CSS seul.
+Build et diff check réussis. Rendu bureau/mobile contrôlé, aucun débordement
+à 390 px. Aucune donnée, protection ou publication modifiée.
+
+Trois cartes avantages/valeurs — 28 octobre 2026
+Demande et capture de Gassama : trois cartes, côtés centrés verticalement
+sur la carte des valeurs. Réemploi du style de cartes validé : fond blanc,
+contour fin, arrondis 12 px, ombre légère et espacement 32 px. CSS seulement.
+Centres verticaux mesurés identiques sur bureau. Une colonne sur mobile,
+rendu vérifié sans débordement à 390 px. Textes et typographie inchangés.
+Build et diff check OK ; aucune donnée, protection ou publication modifiée.
+
+Carte parente références — 28 octobre 2026
+Référence : capture et demande explicite du client, cohérence avec les cartes
+validées. Le panneau existant englobe titre, texte et sous-cartes avec fond
+blanc, bordure fine, arrondi 16 px et marges 48 px (réduites sur mobile).
+Sous-cartes conservées avec contour discret ; source et animation du
+carrousel inchangées. Textes et typographie conservés. CSS uniquement.
+Build/diff check OK, rendu bureau/mobile contrôlé, sans débordement à 390 px.
+Aucune donnée, protection ou publication modifiée.
+
+Scintillement menu — 28 octobre 2026
+Diagnostic réel : panneau mobile avec transition all 400 ms retardée de
+200 ms, fond sans ce retard et bouton fermer animé séparément. Remplacés
+par glissement transform et fondu du fond synchronisés sur 240 ms, panneau
+opaque dès le début. Fermeture symétrique, interactions désactivées fermé,
+préférence de mouvement réduit respectée. Sous-menus bureau : suppression
+des déplacements de marge et transform à l'apparition, fondu seul.
+Vérifié : ouverture, sous-menu Nos services, fermeture, seconde ouverture ;
+délai calculé 0s, panneau opaque, état fermé masqué. Build et diff check OK.
+Correction du comportement existant, aucun texte ni flux de données changé.
+Aucune publication. Ne constitue pas un audit de toutes les animations du site.
+
+Photos des avantages et survol uniforme — 28 octobre 2026
+Deux derniers JPG de Downloads vérifiés visuellement : téléphone QR code,
+professionnel tendant la main. Copies WebP 1200 px sans modifier les originaux.
+Chaque carte latérale contient texte puis photo, ensemble aligné en haut et
+en bas avec la carte centrale (trois hauteurs mesurées identiques : 441,98 px).
+Référence : demande et capture du client, même style que les cartes validées.
+Toutes les photos de contenu partagent un zoom 1,04 / 350 ms, sans filtre
+noir et blanc ; effet réservé aux pointeurs précis et mouvement non réduit.
+Hero animé conservé ; logos et icônes exclus. Styles calculés vérifiés,
+survol QR effectivement mesuré à 1,04 ; mobile sans débordement ; build OK.
+Images locales uniquement, QR non ouvert, aucun formulaire ni publication.
+
+Lisibilite — 28 octobre 2026
+Reference verifiee : W3C/WAI, Understanding Reflow, https://www.w3.org/WAI/WCAG22/Understanding/reflow.html
+Observation : les textes agrandis doivent revenir a la ligne, y compris a 320 px ; empiler les colonnes est pertinent sur mobile.
+Adaptation : echelle de texte augmentee de 20 %, paragraphes plus fonces, titres coherents, menu hamburger avant compression des liens, footer en une colonne sous 375 px. Aucun contenu modifie, aucune donnee ou protection touchee.
+Controle technique navigateur : largeurs 320 et 390 px, largeur document identique a la fenetre, aucun debordement interne des titres et paragraphes. Couleur paragraphes #293c34 et taille 19.2 px confirmees. Rendu esthetique laisse au client.

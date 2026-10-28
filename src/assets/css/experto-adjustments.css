@@ -865,3 +865,69 @@
 .header-style-one .main-menu .navigation li > a,
 .mobile-menu .navigation li > a,
 .footer-style-one .user-links a { font-weight: 650; }
+
+/* Equal-height hero slides: the tallest text determines the shared height.
+   Keep backgrounds stretched to that height through every fade transition. */
+.banner-section .banner-slider .swiper-wrapper { align-items: stretch; }
+.banner-section .banner-slider .swiper-slide { height: auto; display: flex; }
+.banner-section .banner-slider .slide-bg { height: auto; display: flex; align-items: center; }
+.banner-section .banner-slider .slide-bg > .container { width: 100%; }
+
+/* Keep opening and closing menus in one animation, without a delayed content flash. */
+html { scrollbar-gutter: stable; }
+.header-style-one .mobile-menu {
+  opacity: 1; visibility: hidden; pointer-events: none;
+  transition: visibility 0s linear 240ms;
+}
+.mobile-menu-visible .header-style-one .mobile-menu {
+  visibility: visible; pointer-events: auto; transition-delay: 0s;
+}
+.header-style-one .mobile-menu .menu-box {
+  opacity: 1; visibility: visible; transform: translateX(101%);
+  transition: transform 240ms ease; overscroll-behavior: contain;
+}
+.mobile-menu-visible .header-style-one .mobile-menu .menu-box { transform: translateX(0); }
+.header-style-one .mobile-menu .menu-backdrop {
+  visibility: visible; opacity: 0; transition: opacity 240ms ease;
+}
+.mobile-menu-visible .header-style-one .mobile-menu .menu-backdrop { opacity: 1; }
+.header-style-one .mobile-menu .close-btn,
+.mobile-menu-visible .header-style-one .mobile-menu .close-btn { transform: none; transition: background-color 150ms ease; }
+.header-style-one .main-menu .navigation li.dropdown > ul,
+.header-style-one .main-menu .navigation li.dropdown:hover > ul,
+.header-style-one .main-menu .navigation li.dropdown:focus-within > ul {
+  margin-top: 0; transform: none; transition: opacity 150ms ease;
+}
+@media(prefers-reduced-motion: reduce) {
+  .header-style-one .mobile-menu,
+  .header-style-one .mobile-menu .menu-box,
+  .header-style-one .mobile-menu .menu-backdrop,
+  .header-style-one .main-menu .navigation li.dropdown > ul { transition: none; }
+}
+
+/* Animate submenu height without display:none or a guessed maximum height. */
+.mobile-menu .mobile-submenu-reveal {
+  display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden;
+  transition: grid-template-rows 260ms ease, opacity 200ms ease, visibility 0s linear 260ms;
+}
+.mobile-menu .mobile-submenu-reveal.is-open {
+  grid-template-rows: 1fr; opacity: 1; visibility: visible;
+  transition: grid-template-rows 260ms ease, opacity 200ms ease, visibility 0s;
+}
+.mobile-menu .mobile-submenu-inner { min-height: 0; overflow: hidden; }
+.mobile-menu .mobile-submenu-inner > .sub-menu { display: block; margin: 0; }
+.mobile-menu .mobile-submenu-inner > .sub-menu > li { padding-left: 20px; }
+.mobile-menu .dropdown-btn i { transition: transform 260ms ease; }
+.header-style-one .main-menu .navigation li.dropdown > ul {
+  transition: opacity 200ms ease, visibility 0s linear 200ms;
+}
+.header-style-one .main-menu .navigation li.dropdown:hover > ul,
+.header-style-one .main-menu .navigation li.dropdown:focus-within > ul {
+  transition: opacity 200ms ease, visibility 0s;
+}
+@media(prefers-reduced-motion:reduce) {
+  .mobile-menu .mobile-submenu-reveal,
+  .mobile-menu .mobile-submenu-reveal.is-open,
+  .mobile-menu .dropdown-btn i,
+  .header-style-one .main-menu .navigation li.dropdown > ul { transition: none; }
+}

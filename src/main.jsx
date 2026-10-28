@@ -5,4 +5,6 @@ import "./assets/css/bootstrap.min.css";
 import "./assets/css/style.css";
 import "./assets/css/style-dark.css";
 import "./assets/css/experto-adjustments.css";
+import "./assets/css/experto-home.css";
+import "./assets/css/experto-readability.css";
 ReactDOM.createRoot(document.getElementById("root")).render(<React.StrictMode><App /></React.StrictMode>);

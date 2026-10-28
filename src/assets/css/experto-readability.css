@@ -1,0 +1,98 @@
+/* Readability trial: text +20%, keeping the existing hierarchy and content. */
+:root {
+  --body-font-size: 21.6px;
+  --body-line-height: 1.8;
+  --text-color: #293c34;
+  --text-color2: #293c34;
+  --text-color3: #34493f;
+  --h1-font-size: 108px;
+  --h2-font-size: 57.6px;
+  --h3-font-size: 38.4px;
+  --h4-font-size: 28.8px;
+  --h5-font-size: 21.6px;
+  --h6-font-size: 16.8px;
+}
+.page-wrapper :is(h1,h2,h3,h4,h5,h6,p,a,button) { overflow-wrap: anywhere; }
+.page-wrapper :is(h1,h2,h3,h4,h5,h6) { line-height: 1.3; }
+.experto-home-content {
+  --home-title-size: clamp(36px, 3.6vw, 48px);
+  --home-subtitle-size: clamp(26.4px, 2.4vw, 28.8px);
+  --home-body-size: 19.2px;
+  color: #293c34;
+}
+.experto-home-content :is(.partner-introduction-copy,.client-intro-copy,.client-intro-benefits,.client-services,.client-about-panel) p {
+  color: #293c34; font-weight: 500;
+}
+.experto-home-content .about-closing p { color: #fff; }
+.experto-home-content .client-values-list li { color: #293c34; overflow-wrap: anywhere; }
+.experto-home-content .partner-logo-slot { font-size: 16.8px; color: #34493f; }
+.experto-home-content .partner-logo-caption strong { font-size: 18px; color: #183d32; }
+.experto-home-content .partner-logo-caption span { font-size: 14.4px; color: #34493f; }
+.experto-home-content .temporary-image-label,
+.experto-home-content .home-service-image .temporary-image-label,
+.experto-home-content .benefit-photo .temporary-image-label { font-size: 12px; }
+.banner-section .content-column .inner-column .title { font-size: 108px; line-height: 1.15; }
+.banner-section .content-column .inner-column .sub-title { font-size: 19.2px; line-height: 1.5; }
+.banner-section .text { font-size: 24px; line-height: 1.5; }
+.page-wrapper :is(.btn-one,.btn-two,.btn-one-light) { font-size: 19.2px; line-height: 1.5; white-space: normal; min-width: 0; }
+.header-style-one .main-menu .navigation > li > a { font-size: 16.8px; }
+.header-style-one .main-menu .navigation li > ul > li > a { font-size: 19.2px; line-height: 1.5; white-space: normal; }
+.header-style-one .main-menu .navigation li > ul { width: 280px; }
+.header-style-one .mobile-menu .navigation li > a { font-size: 19.2px; line-height: 1.5; padding-right: 58px; }
+.header-style-one .mobile-menu .menu-box { max-width: 100%; }
+.header-style-one .mobile-menu .contact-list-one a { font-size: 19.2px; }
+.values-ticker-items span { font-size: 16.8px; }
+.values-ticker-toggle { font-size: 15.6px; }
+.experto-footer .widget-title { font-size: 20.4px; }
+.experto-footer .user-links a,
+.experto-footer .info-item .title,
+.experto-footer .info-item a { font-size: 18px; color: #f4f7f5; }
+.experto-footer .info-item span,
+.experto-footer .copyright-text { font-size: 15.6px; color: #e0e9e3; }
+/* Allow grid/flex children and long addresses to shrink and wrap. */
+.experto-home-content :is(article,section,.home-service-copy,.client-group-values,.about-overview-copy),
+.experto-footer .footer-main > * { min-width: 0; }
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .header-style-one .main-menu { display: none; }
+  .header-style-one .main-box { justify-content: space-between; }
+  .header-style-one .main-box .mobile-nav-toggler,
+  .header-style-one .sticky-header .mobile-nav-toggler,
+  .header-style-one .mobile-menu .navigation.d-lg-none { display: block !important; }
+}
+@media (max-width: 767.98px) {
+  .banner-section .content-column .inner-column .title { font-size: 55.2px; line-height: 1.2; }
+  .banner-section .text { max-width: 100%; }
+  .experto-home-content .client-values-list li { min-width: 0; }
+  .experto-footer .footer-main { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .page-wrapper main h1 { font-size: clamp(40px, 10vw, 64px); }
+}
+@media (max-width: 374.98px) {
+  .experto-footer .footer-main { grid-template-columns: minmax(0,1fr); }
+}
+
+/* Distinct opening statement, with the client's exact wording preserved. */
+.experto-home-content .client-group-statement {
+  background: #eef3ef;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.experto-home-content .client-intro-benefits .client-group-statement .client-group-promises {
+  color: #183d32;
+  font-weight: 650;
+  line-height: 1.65;
+  margin: 0;
+}
+.experto-home-content .client-intro-benefits .client-group-statement .client-group-motto {
+  color: #24564a;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #d2dfd6;
+}
+@media (max-width: 767.98px) {
+  .experto-home-content .client-group-statement { padding: 20px 16px; }
+}

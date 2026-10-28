@@ -7,8 +7,10 @@ import ClientAbout from '../section/client/ClientAbout';
 export default function Home1() {
   return <div className="page-wrapper"><Layout>
     <Banner />
+    <div className="experto-home-content">
     <PartnerShowcase />
     <ClientGroup />
     <ClientAbout />
+    </div>
   </Layout></div>;
 }

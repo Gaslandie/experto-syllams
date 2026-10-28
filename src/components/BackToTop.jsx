@@ -16,7 +16,7 @@ function BackToTop({ className = '' }) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
     });
   };
 
@@ -24,7 +24,7 @@ function BackToTop({ className = '' }) {
   return (
     isVisible && (
       <div className="footer-bottom-two">
-        <button className={`goTop-btn ${className}`} onClick={scrollToTop}><i className="fa-solid fa-angles-up"></i> <i className="fa-solid fa-angles-up"></i></button>
+        <button type="button" aria-label="Remonter en haut de la page" className={`goTop-btn ${className}`} onClick={scrollToTop}><i className="fa-solid fa-angles-up"></i> <i className="fa-solid fa-angles-up"></i></button>
       </div>
     )
   );
