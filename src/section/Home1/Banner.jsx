@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import DOMPurify from 'dompurify';
 import { Link } from "react-router-dom";
@@ -91,6 +91,29 @@ BannerSlide.propTypes = {
 
 function Banner() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const valuesRef = useRef(null);
+  const valuesAnimationRef = useRef(null);
+
+  useEffect(() => {
+    const element = valuesRef.current;
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const animateValues = () => {
+      // Start from the current size, including when a slide is changed early.
+      const currentTransform = window.getComputedStyle(element).transform;
+      valuesAnimationRef.current?.cancel();
+      if (motionPreference.matches) return;
+      valuesAnimationRef.current = element.animate([
+        { transform: currentTransform, offset: 0 },
+        { transform: 'scale(1)', offset: 0.125, easing: 'ease-out' },
+        { transform: 'scale(1.04)', offset: 1 },
+      ], { duration: 8000, fill: 'forwards' });
+    };
+    animateValues();
+    motionPreference.addEventListener('change', animateValues);
+    return () => motionPreference.removeEventListener('change', animateValues);
+  }, [activeIndex]);
+
+  useEffect(() => () => valuesAnimationRef.current?.cancel(), []);
 
   const handleScrollDown = () => {
     document.getElementById('client-references')?.scrollIntoView({
@@ -101,6 +124,17 @@ function Banner() {
 
   return (
     <section id="home" className="banner-section">
+      <aside ref={valuesRef} className="hero-values" aria-label="Nos valeurs">
+        <p className="hero-values-intro">Vous écoutez pour mieux vous Parler<br />Vous comprendre pour mieux Vous Conseillez</p>
+        <p className="hero-values-motto">A Partners for one day Partners forever</p>
+        <h2>Nos Valeurs pour y arriver :</h2>
+        <ul>
+          <li>LA RIGUEUR DANS L’ETHIQUE &amp; LA DEONTOLOGIE</li>
+          <li>DES RESULTATS EFFICACES &amp; EFFICIENTS</li>
+          <li>LE PROFESSIONALISME &amp; COMPETENCE</li>
+          <li>LE RESPECT DE NOTRE REPUTATION</li>
+        </ul>
+      </aside>
       <div className="sec-shape">
         <img src={BannerShapeImage2} alt="Shape" />
       </div>

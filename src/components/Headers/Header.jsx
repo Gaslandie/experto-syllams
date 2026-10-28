@@ -1,15 +1,13 @@
-import ValuesTicker from '../../section/client/ValuesTicker';
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
-const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
-const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
-const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
-const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-aces-colors.webp`;
+const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
+const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
+const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
+const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
-    const { pathname } = useLocation();
     const [isDarkMode, setIsDarkMode] = useState(false);
         useEffect(() => {
             const checkDarkMode = () => {
@@ -58,7 +56,6 @@ const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }
                     {/* Mobile Nav toggler */}
                 </div>
             </div>
-            {pathname === "/" && <ValuesTicker />}
             <div className="auto-container">
                 {/* Mobile Menu */}
                 <div className="mobile-menu">

@@ -858,6 +858,51 @@
 .mobile-menu .navigation li > a,
 .footer-style-one .user-links a { font-weight: 650; }
 
+.banner-section .banner-slider .slide-bg::before {
+  background: rgba(4, 32, 30, .68);
+}
+
+.banner-section .hero-values {
+  transform-origin: top right;
+  position: absolute;
+  top: 48px;
+  right: max(24px, calc((100% - 1320px) / 2));
+  z-index: 3;
+  width: 38%;
+  max-width: 480px;
+  padding: 22px 24px;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.hero-values .hero-values-intro { margin: 0 0 14px; color: inherit; }
+.hero-values .hero-values-motto { margin: 0 0 18px; color: #ffd0a6; font-weight: 750; }
+.banner-section .hero-values h2 { margin: 0 0 8px; color: inherit; font-size: 17px; line-height: 1.5; }
+.hero-values ul { padding: 0; margin: 0; list-style: none; }
+.hero-values li { position: relative; padding-left: 21px; margin-top: 5px; }
+.hero-values li::before { content: "❖"; position: absolute; left: 0; color: #ffd0a6; }
+@media (min-width: 992px) {
+  .banner-section .content-column { width: 58%; }
+  .banner-section .content-column + .col-lg-4 { width: 42%; }
+  .banner-section .text { padding-top: 160px; }
+}
+@media (max-width: 991.98px) {
+  .banner-section .hero-values {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    max-width: none;
+    margin: 24px;
+  }
+  .banner-section { background: #163a36; }
+  .banner-section .outer-box { padding-top: 70px; }
+}
+@media (max-width: 575.98px) {
+  .banner-section .hero-values { margin: 16px; padding: 18px; font-size: 14px; }
+}
+
 /* Equal-height hero slides: the tallest text determines the shared height.
    Keep backgrounds stretched to that height through every fade transition. */
 .banner-section .banner-slider .swiper-wrapper { align-items: stretch; }
