@@ -11,10 +11,10 @@ const PageTitle = (props) => {
             <span className="temporary-image-label">Image temporaire</span>
             <div className="auto-container">
                 <div className="title-outer">
-                    <ul className="page-breadcrumb">
+                    {!props.hideBreadcrumb && <ul className="page-breadcrumb">
                         <li><Link to="">Accueil</Link></li>
                         <li>{props.pageName}</li>
-                    </ul>
+                    </ul>}
                     <h1 className="title">{props.pageName}</h1>
                 </div>
             </div>

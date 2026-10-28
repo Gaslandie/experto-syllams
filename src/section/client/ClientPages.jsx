@@ -6,12 +6,12 @@ import ClientAbout from "./ClientAbout";
 import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
-function Page({ title, children }) {
-  return <div className="page-wrapper"><Layout><PageTitle pageName={title} /><main className="client-page"><div className="container">{children}</div></main></Layout></div>;
+function Page({ title, children, hideBreadcrumb = false }) {
+  return <div className="page-wrapper"><Layout><PageTitle pageName={title} hideBreadcrumb={hideBreadcrumb} /><main className="client-page"><div className="container">{children}</div></main></Layout></div>;
 }
 
 export function AboutPage() {
-  return <Page title="Qui sommes-nous ?">
+  return <Page title="Qui sommes-nous ?" hideBreadcrumb>
     <div className="experto-home-content">
       <ClientAbout />
     </div>
