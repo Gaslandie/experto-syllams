@@ -50,26 +50,6 @@
     "logo": "panaudit.webp"
   },
   {
-    "id": "2m-plus",
-    "name": "2M Plus",
-    "logo": "2m-plus.webp"
-  },
-  {
-    "id": "aaa",
-    "name": "AAA",
-    "logo": "aaa.webp"
-  },
-  {
-    "id": "afrimat",
-    "name": "Afrimat",
-    "logo": "afrimat.webp"
-  },
-  {
-    "id": "as-kaloum",
-    "name": "AS Kaloum",
-    "logo": "as-kaloum.webp"
-  },
-  {
     "id": "builders",
     "name": "Builders",
     "logo": "builders.webp"
@@ -307,5 +287,25 @@
     "id": "hic",
     "name": "HIC & Partners",
     "logo": "hic.webp"
+  },
+  {
+    "id": "2m-plus",
+    "name": "2M Plus",
+    "logo": "2m-plus.webp"
+  },
+  {
+    "id": "aaa",
+    "name": "AAA",
+    "logo": "aaa.webp"
+  },
+  {
+    "id": "afrimat",
+    "name": "Afrimat",
+    "logo": "afrimat.webp"
+  },
+  {
+    "id": "as-kaloum",
+    "name": "AS Kaloum",
+    "logo": "as-kaloum.webp"
   }
 ]

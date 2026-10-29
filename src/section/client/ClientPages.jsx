@@ -15,7 +15,6 @@ export function AboutPage() {
     <div className="experto-home-content">
       <ClientAbout />
     </div>
-    <Link className="btn-two" to="/contacts">Nous contacter</Link>
   </Page>;
 }
 

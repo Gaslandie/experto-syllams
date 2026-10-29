@@ -1,3 +1,5 @@
+import ClientExperts from "./ClientExperts";
+
 export default function ClientAbout() {
   return <section className="group-about" aria-label="Présentation du groupe">
     <div className="container">
@@ -8,6 +10,7 @@ export default function ClientAbout() {
         <p>Le <strong>Groupe Experto-Syllams</strong> est, sur le plan national et sous-régional, crédité du statut de Cabinet International du fait du cursus académique et de l’expérience professionnelle de ses principaux intervenants d’une part, et de l’approche méthodologique développée lors la réalisation de ses missions dans le strict respect des normes professionnelles, d’éthiques et déontologie applicables à la profession de Conseil et d’Audit.</p>
         <p>Forts de nos compétences en gestion, en comptabilités techniques, en réglementaires et, le <strong>Groupe Experto-Syllams</strong> a développé ses propres outils, méthodologies et applications permettant de nous conformer aux spécificités du marché international et celle Africain en particulier.</p>
         <p>Ces atouts garantissent à nos clients un service professionnel de qualité au même titre que les autres cabinets internationaux, et confèrent une notoriété sous-régionale à notre signature.</p>
+        <ClientExperts />
       </div>
     </div>
   </section>;
