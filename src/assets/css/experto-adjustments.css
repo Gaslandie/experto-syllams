@@ -532,7 +532,7 @@
 .partner-introduction-copy .partner-invitation { margin-bottom: 0; color: #1a4137; font-weight: 600; }
 .partner-divider { margin: 40px 0 0; border: 0; border-top: 1px solid #cbd9d0; opacity: 1; }
 .partner-strip { overflow: hidden; padding: 32px 0 24px; mask-image: linear-gradient(to right, transparent, #000 24px, #000 calc(100% - 24px), transparent); }
-.partner-track { display: flex; width: max-content; animation: partner-scroll 35s linear infinite; }
+.partner-track { display: flex; width: max-content; animation: partner-scroll var(--partner-scroll-duration, 35s) linear infinite; }
 .partner-items { display: flex; flex-shrink: 0; gap: 24px; padding-right: 24px; }
 .partner-logo-card { width: 270px; background: #fff; border: 1px solid #dce5df; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(22, 56, 57, .04); transition: border-color .2s ease, box-shadow .2s ease; }
 .partner-logo-card:hover { border-color: #99b3a5; box-shadow: 0 8px 22px rgba(22, 56, 57, .09); }

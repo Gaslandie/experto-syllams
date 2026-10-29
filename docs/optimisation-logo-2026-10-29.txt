@@ -1,0 +1,23 @@
+Optimisation du logo — 29 octobre 2026
+
+Références consultées :
+- Google WebP : https://developers.google.com/speed/webp/
+  WebP propose une compression sans perte et conserve la transparence.
+- MDN : https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types
+  WebP est pris en charge par les navigateurs courants.
+
+Comparaison locale :
+- PNG original : 2172 × 724, 883137 octets.
+- WebP sans perte à la résolution originale : 597810 octets.
+- WebP retenu : 880 × 293, 133334 octets (84,9 % de moins que le PNG).
+  Largeur supérieure à trois fois celle affichée dans le site.
+
+Adaptation : redimensionnement technique puis encodage WebP sans perte.
+Aucune modification des dimensions CSS, des textes, des couleurs de marque
+ou de la composition. Le PNG original reste disponible.
+Le préchargement prioritaire et toutes les variantes du logo utilisent
+la même nouvelle URL. Aucun service externe ni dépendance ajouté.
+
+Vérifications : égalité des pixels entre la version redimensionnée et le
+WebP décodé (canal alpha inclus), construction GitHub Pages réussie.
+Pas de contrôle visuel ni de mesure du temps réseau réel.

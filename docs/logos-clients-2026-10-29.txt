@@ -1,0 +1,31 @@
+Logos clients — 29 octobre 2026
+
+Source : 71 fichiers transmis par le client dans Downloads. Comparaison avec
+la liste existante et inspection des fichiers fournis, sans contrôle visuel
+de la page. La référence reste le défilement demandé par Gassama : une ligne,
+sans pays et sans nouvelle présentation. Aucun logo récupéré sur Internet.
+
+Résultat : 61 références uniques (60 fichiers fournis et PwC déjà présent).
+Les nouveaux Deloitte, EY, KPMG et Mazars remplacent leurs anciens fichiers
+dans la liste. Une seule entrée par marque, même si les images diffèrent.
+Le montage Big Four est exclu : ses quatre marques figurent séparément.
+Le détail des choix et les empreintes des sources figurent dans le JSON voisin.
+
+AIS, Rusal et UVH sont des photos de lieux : mises de côté conformément
+à la réponse explicite de Gassama. Les originaux restent dans Downloads.
+Smart Box : seule la partie logo du prospectus apparaît, par cadrage SVG
+local dans la page. Le fichier original n'est pas retouché.
+
+Performance : WebP sans perte après redimensionnement technique à 630 × 330
+maximum ; transparence conservée. Aucun agrandissement des petites sources.
+Une seule URL par logo, également utilisée pour la copie de boucle.
+Durée proportionnelle au nombre d'entrées : 7 secondes par carte, afin de
+conserver la vitesse précédente. Pause au survol/focus et mode sans animation
+conservés ; la copie de boucle reste masquée aux lecteurs d'écran.
+
+Sécurité : import d'images matricielles réencodées, sans métadonnées source,
+sans code actif ni dépendance externe ajoutée. SVG de cadrage écrit dans le
+composant, noms et chemins issus de la liste locale contrôlée.
+Aucun changement d'authentification ni de données serveur.
+Préparation initiale en local ; commit, push et publication autorisés ensuite
+par Gassama le 29 octobre 2026.

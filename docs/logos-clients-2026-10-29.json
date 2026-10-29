@@ -1,0 +1,479 @@
+{
+  "imported": [
+    {
+      "id": "deloitte",
+      "source": "PCab-Del.png",
+      "sha256": "e4f4618e4bcdfaf25cc9ff5fccf54a18a0214e9322056bb96db50528123e0099",
+      "asset": "deloitte.webp",
+      "bytes": 5634
+    },
+    {
+      "id": "ey",
+      "source": "PCab-EY.png",
+      "sha256": "1cd54024f32d976dfeaafb7c0e16eadab2e9ca2a6fc5c6a549aa13c1bb082070",
+      "asset": "ey.webp",
+      "bytes": 7776
+    },
+    {
+      "id": "kpmg",
+      "source": "PCab-KPMG.png",
+      "sha256": "e82fa4c401797ee3a09ddcd005890cfb590460bd2d199f5bd54d2d8a6a571c20",
+      "asset": "kpmg.webp",
+      "bytes": 3614
+    },
+    {
+      "id": "mazars",
+      "source": "PCab-Mazars.png",
+      "sha256": "27d4cf31664c8338acb465276cdcedc543df65b5857b6c51c6bfe887534244c6",
+      "asset": "mazars.webp",
+      "bytes": 33144
+    },
+    {
+      "id": "andersen-consulting",
+      "source": "PCab-AAnderson.png",
+      "sha256": "4922755c1c36496c30abf38c24ace085055301b3061bd10b859f44d2d3bd82c2",
+      "asset": "andersen-consulting.webp",
+      "bytes": 65396
+    },
+    {
+      "id": "bdo",
+      "source": "PCab-BDO''.jpeg",
+      "sha256": "09d6fc362d85193feceb5a0a88f5f8d8200bb5bb95fec3a8d40c632a6c2a1118",
+      "asset": "bdo.webp",
+      "bytes": 141458
+    },
+    {
+      "id": "grant-thornton",
+      "source": "PCab-GrantThornton.png",
+      "sha256": "0e21f023d7680e1251529778f35450e2ea16da7f3bb0b23df9b80c7a9f05e6b5",
+      "asset": "grant-thornton.webp",
+      "bytes": 21570
+    },
+    {
+      "id": "maeco",
+      "source": "PCab-MAECO.JPG.jpeg",
+      "sha256": "0fbe0ed939e437af381b1823093e0e8f4fb6b443082196380ca35e355d7dd6a8",
+      "asset": "maeco.webp",
+      "bytes": 128804
+    },
+    {
+      "id": "panaudit",
+      "source": "PCab-Panaudit.jpg.jpeg",
+      "sha256": "e75263b74d65d6c246bfe1302d8a300d5b5cb21ea4c39c727b367900cf3c5b69",
+      "asset": "panaudit.webp",
+      "bytes": 25350
+    },
+    {
+      "id": "2m-plus",
+      "source": "CLog-2MPLus.jpg.jpeg",
+      "sha256": "903f17cb86dc89762fc35601a82e1f599f32235575392f14b5d2c336551f67bc",
+      "asset": "2m-plus.webp",
+      "bytes": 79362
+    },
+    {
+      "id": "aaa",
+      "source": "CLog-AAA.jpg.jpeg",
+      "sha256": "9e0eebdab2d619fb9228e304ab5ad89a3609e8500c6e983942fb73b9a68dc009",
+      "asset": "aaa.webp",
+      "bytes": 12806
+    },
+    {
+      "id": "afrimat",
+      "source": "CLog-Afrimat.jpg.jpeg",
+      "sha256": "862c3cbedf3378e03736f3dfa7db95319a88b74e977a61ee38e47cf754042963",
+      "asset": "afrimat.webp",
+      "bytes": 33694
+    },
+    {
+      "id": "as-kaloum",
+      "source": "CLog-Ask.jpeg",
+      "sha256": "fa8edce1841f2053f45dd23f95a1d36b2f8b2675ce7b9ad346f00e0c5ea6e1ef",
+      "asset": "as-kaloum.webp",
+      "bytes": 116442
+    },
+    {
+      "id": "builders",
+      "source": "CLog-Builders.jpg.jpeg",
+      "sha256": "bef46b73c2ce0aeadebe44845376ed13b6c9987d4f30780d58eb0a0648209425",
+      "asset": "builders.webp",
+      "bytes": 70624
+    },
+    {
+      "id": "cagif",
+      "source": "CLog-CAGIF.jpg.jpeg",
+      "sha256": "1c42e2caf7bb145d191303a2bc8755b7b208dd59c385ee3f9a33e01729a463c4",
+      "asset": "cagif.webp",
+      "bytes": 25080
+    },
+    {
+      "id": "cap",
+      "source": "CLog-CAP.png",
+      "sha256": "6006c8ac0737149438b0987d3f50a6bbe3eb996216a66f16fffe3ade392b5ed3",
+      "asset": "cap.webp",
+      "bytes": 4074
+    },
+    {
+      "id": "cfed",
+      "source": "CLog-CFED-2.png",
+      "sha256": "fa084a2969fdef90a56381c8701e33d146f1294bb838ecd61a0ec35490e5e75f",
+      "asset": "cfed.webp",
+      "bytes": 1512
+    },
+    {
+      "id": "cip",
+      "source": "CLog-CIP.jpg.jpeg",
+      "sha256": "a84444ed4762423dfac1a3dd84f13511be051fccc9448a645450f75236811465",
+      "asset": "cip.webp",
+      "bytes": 48684
+    },
+    {
+      "id": "call-me",
+      "source": "CLog-CallMe.jpg.jpeg",
+      "sha256": "f9670fe5073417fe3e2c9cee857739df1da37715a39840ce81b9fcae668cf0bd",
+      "asset": "call-me.webp",
+      "bytes": 23514
+    },
+    {
+      "id": "cobagui",
+      "source": "CLog-Cobagui.jpg.jpeg",
+      "sha256": "9e69371f3c051e63ef2cb2aaf5ff8574a3e0b7c667ba98c256edf200a75866a8",
+      "asset": "cobagui.webp",
+      "bytes": 25198
+    },
+    {
+      "id": "dms",
+      "source": "CLog-DMS.jpg.jpeg",
+      "sha256": "1a15927042c76181601079f3d07808b0cc60f846a68fe10e4c93d302d2cef181",
+      "asset": "dms.webp",
+      "bytes": 26962
+    },
+    {
+      "id": "ets-sita",
+      "source": "CLog-ETS-Sita.jpg.jpeg",
+      "sha256": "0598bda1d17e864f814ac024fec0e6db041a6e53edc150483c5df9231d0a2bd5",
+      "asset": "ets-sita.webp",
+      "bytes": 61550
+    },
+    {
+      "id": "ecobank",
+      "source": "CLog-Ecobank.jpeg",
+      "sha256": "120eccd6107efd0e9569298219718b43190cacdae3a3aedcd9d016b8ce813f2d",
+      "asset": "ecobank.webp",
+      "bytes": 27980
+    },
+    {
+      "id": "faaiss",
+      "source": "CLog-Faissa.JPG.jpeg",
+      "sha256": "4bb78f55fa7e120a0387652f78efca73c6a2da7d6bc52d9f8d04036fb47d1f3f",
+      "asset": "faaiss.webp",
+      "bytes": 71472
+    },
+    {
+      "id": "ge",
+      "source": "CLog-GE.jpg.jpeg",
+      "sha256": "6ece75bd5f93386b773b8f447bc9c1f9edaba9dfc997621e0bc4d32f431108f8",
+      "asset": "ge.webp",
+      "bytes": 21836
+    },
+    {
+      "id": "gras-savoye",
+      "source": "CLog-Grasavoye.jpg.jpeg",
+      "sha256": "ad95642cfb03649e414b601da40dc5fc8144a8425af5f8e9d2db82cadf95d91b",
+      "asset": "gras-savoye.webp",
+      "bytes": 10434
+    },
+    {
+      "id": "asco",
+      "source": "CLog-GrpeASCOgn.png",
+      "sha256": "c152d394d8f30e008cfa60d71163a7466e1ec3ae84ddccff48a7fe2c1fb05feb",
+      "asset": "asco.webp",
+      "bytes": 24448
+    },
+    {
+      "id": "housemart",
+      "source": "CLog-House.png",
+      "sha256": "a053c33c2f6a6d5d7a8f4b4baa57b81f0b0d51be7d7f76f281f90412d4a0d561",
+      "asset": "housemart.webp",
+      "bytes": 7884
+    },
+    {
+      "id": "ign",
+      "source": "CLog-IGN.jpg.jpeg",
+      "sha256": "131478135591d2b4a5f3317bcfd5879354e864f51e82ee8dfcd86a8d701bf6e2",
+      "asset": "ign.webp",
+      "bytes": 64602
+    },
+    {
+      "id": "kebo",
+      "source": "CLog-KEBO.jpg.jpeg",
+      "sha256": "d1584b5cb07e0881f1097fa28641c26eff61a7bcd01cd5fc4b7fc9f9b89ec4d9",
+      "asset": "kebo.webp",
+      "bytes": 69002
+    },
+    {
+      "id": "laguipres",
+      "source": "CLog-Laguipres.jpeg",
+      "sha256": "516fd645e2dc274d87e5e0a70d9b6faf66b60cb004a9f090f49e901dd745b2fc",
+      "asset": "laguipres.webp",
+      "bytes": 49326
+    },
+    {
+      "id": "licorne",
+      "source": "CLog-Licorn.jpg.jpeg",
+      "sha256": "5caa5d05f4012628ab685c7c16f247bb7fb6956cf136568d5c32101dedec9c44",
+      "asset": "licorne.webp",
+      "bytes": 45256
+    },
+    {
+      "id": "mapper",
+      "source": "CLog-Mapper.jpg.jpeg",
+      "sha256": "ad99267fa0ffe9f579bca6a0a3e20f3b79c2d24649e54ff5020e240b850f0ba2",
+      "asset": "mapper.webp",
+      "bytes": 30498
+    },
+    {
+      "id": "nicotram",
+      "source": "CLog-NICO.jpg.jpeg",
+      "sha256": "39f1f5f07056d5085e5627e11b872e66c4892cd844ec14615638a979e3a1d924",
+      "asset": "nicotram.webp",
+      "bytes": 16874
+    },
+    {
+      "id": "ogp",
+      "source": "CLog-OGP.jpg.jpeg",
+      "sha256": "5510d6f82df00af1188bdec8117f52411b2fd2c02089787f5af4913a5dac3f28",
+      "asset": "ogp.webp",
+      "bytes": 32498
+    },
+    {
+      "id": "pcg",
+      "source": "CLog-PCG.jpeg",
+      "sha256": "588f180979054f48fc6b1e465c4379f07359c057d01a9c13735e9d35046a477e",
+      "asset": "pcg.webp",
+      "bytes": 25032
+    },
+    {
+      "id": "stade-lansana-conte",
+      "source": "CLog-SGLC.jpg.jpeg",
+      "sha256": "908907909b1c66816e5c0213c4e3afc95d21a6e369675a8ad836e9adc53fae3e",
+      "asset": "stade-lansana-conte.webp",
+      "bytes": 103734
+    },
+    {
+      "id": "sunda",
+      "source": "CLog-SUNDA.jpeg",
+      "sha256": "d016f0c38003971498876fd2d53cfc0ecda5f03ae4c08d2cd1c0456e9564e45e",
+      "asset": "sunda.webp",
+      "bytes": 17446
+    },
+    {
+      "id": "sable-mining",
+      "source": "CLog-Sable.png",
+      "sha256": "6ef519ea2c1bb170a362a1924580aba23637175b57e9c575c539cb7d83b9dac8",
+      "asset": "sable-mining.webp",
+      "bytes": 8482
+    },
+    {
+      "id": "shacman",
+      "source": "CLog-Sachman.jpeg",
+      "sha256": "e8a7d8b710ad759a79f71c888a5b09e25123040f8221bf58ab06dc377713d9b5",
+      "asset": "shacman.webp",
+      "bytes": 29998
+    },
+    {
+      "id": "salguidia",
+      "source": "CLog-Salguidia.jpg.jpeg",
+      "sha256": "68b0af1cdcc9555a0d6ebbeb73b5493a5520fe7bfebb116500a61a6999e68f31",
+      "asset": "salguidia.webp",
+      "bytes": 40884
+    },
+    {
+      "id": "smart-box",
+      "source": "CLog-SamrtBox.jpeg",
+      "sha256": "f2eda1427e3a98ab8b2ed6a1bd05ea282b1f911a406060fb6f8b37adbd6d8c39",
+      "asset": "smart-box.webp",
+      "bytes": 186538
+    },
+    {
+      "id": "sino",
+      "source": "CLog-SinoAnda.jpeg",
+      "sha256": "9ea68079979c22d4965306ad3a1a4f8920fa7edaf931593f30834807f1c058c6",
+      "asset": "sino.webp",
+      "bytes": 52452
+    },
+    {
+      "id": "soguidev",
+      "source": "CLog-Soguidev.jpg.jpeg",
+      "sha256": "658c16e115429ccfba1a33a5eeaf98ec968337ef3048db2f4d3173a954313dc6",
+      "asset": "soguidev.webp",
+      "bytes": 29658
+    },
+    {
+      "id": "startimes",
+      "source": "CLog-Stim.jpg.jpeg",
+      "sha256": "efb678062221d4933356743ac06786a9222b60f8fac488d1637f9dc80dbfc6ae",
+      "asset": "startimes.webp",
+      "bytes": 32646
+    },
+    {
+      "id": "trustaco",
+      "source": "CLog-Trustaco.jpg.jpeg",
+      "sha256": "306522b6cf364d18d31c7e628bb9200b1b465d3945c20d4bc5d7dc171cf9abfd",
+      "asset": "trustaco.webp",
+      "bytes": 12902
+    },
+    {
+      "id": "twyford",
+      "source": "CLog-Twyfor.png",
+      "sha256": "c0fbf94c08cddefa2989afaf08ab6910a960f1b630fede72aa27837983d60ed7",
+      "asset": "twyford.webp",
+      "bytes": 19856
+    },
+    {
+      "id": "us-embassy",
+      "source": "CLog-US Embassy.png",
+      "sha256": "d9dc0304da97433be13ef3f0b4ccdfe7fb5767442c8337cd74efd445a084aa62",
+      "asset": "us-embassy.webp",
+      "bytes": 68092
+    },
+    {
+      "id": "west-africa-exploration",
+      "source": "CLog-WAE.png",
+      "sha256": "ab0732a320248a7cef994043cd6e8a430ea199c3a50de6f436be335bc71075a5",
+      "asset": "west-africa-exploration.webp",
+      "bytes": 28836
+    },
+    {
+      "id": "wakili",
+      "source": "CLog-Wakili.jpg.jpeg",
+      "sha256": "91f602bf5b4a576a025f29f432f0f20dbbdd177df26c12a218fca3fb4d029822",
+      "asset": "wakili.webp",
+      "bytes": 18984
+    },
+    {
+      "id": "wolikhai",
+      "source": "CLog-Wolikhai.jpg.jpeg",
+      "sha256": "58627a7be964b6fa2e7ef5cebc5f6f49c797073610d3d728ebfb5876f97af6ac",
+      "asset": "wolikhai.webp",
+      "bytes": 49482
+    },
+    {
+      "id": "universite-gandhi",
+      "source": "CLogUniv-Gandhi.jpeg",
+      "sha256": "a88d6f76129eaf6f39c3da796d12b6aef068c8688d0db25cc5c9367ebe36e562",
+      "asset": "universite-gandhi.webp",
+      "bytes": 34412
+    },
+    {
+      "id": "iscaeg",
+      "source": "CLogUniv-ISCAEG.jpeg",
+      "sha256": "2c2746386c3076fef98d53c6bfc288d87a8578898207740bec6ed3cac2335848",
+      "asset": "iscaeg.webp",
+      "bytes": 65756
+    },
+    {
+      "id": "universite-nongo",
+      "source": "CLogUniv-Nongo.jpeg",
+      "sha256": "c78f8f5e0805b30bf158cf44e9776eef4dc7309403ba4b480e50e7955fcc5300",
+      "asset": "universite-nongo.webp",
+      "bytes": 49204
+    },
+    {
+      "id": "academie-sherbrooke",
+      "source": "CLogUniv-Sherb.jpeg",
+      "sha256": "ab203204facebfe39dfad7e473826e8f1c56e78b3a9fd2c08f61a8e5ab75565c",
+      "asset": "academie-sherbrooke.webp",
+      "bytes": 57662
+    },
+    {
+      "id": "universite-nelson-mandela",
+      "source": "CLogUniv-UNM.jpg.jpeg",
+      "sha256": "26c54c24be5c3c46305b2b05c34999faf4fdf1e4f8e53728d44aed225b92b5e3",
+      "asset": "universite-nelson-mandela.webp",
+      "bytes": 50358
+    },
+    {
+      "id": "guinee-gaz",
+      "source": "Clog-GG.jpeg",
+      "sha256": "271b623dac0bb70c279cc48f1eacf606c873d04c88f2fc9324a64bf4d91584a0",
+      "asset": "guinee-gaz.webp",
+      "bytes": 18332
+    },
+    {
+      "id": "ifap",
+      "source": "Clog-IFAP.jpg.jpeg",
+      "sha256": "d21699ba0cc49e4d168096dc011064aa9c6cb1d0e022bf5c76bcfadcbe716273",
+      "asset": "ifap.webp",
+      "bytes": 35782
+    },
+    {
+      "id": "sebur",
+      "source": "Clog-Sebur.jpg.jpeg",
+      "sha256": "0f626ac9010bd83c6d1d4ae89827e9f80055a6332daa87b3a10e1d0e3db0b599",
+      "asset": "sebur.webp",
+      "bytes": 33112
+    },
+    {
+      "id": "hic",
+      "source": "PLog-HIC.jpg.jpeg",
+      "sha256": "4217c9681bb80cfcdb1fffd3082073ba889b89ffea40a018c2c6cbfbc3048c80",
+      "asset": "hic.webp",
+      "bytes": 104260
+    }
+  ],
+  "excluded": [
+    {
+      "source": "CLog-AIS.jpeg",
+      "reason": "Photo de lieu : mise de côté à la demande de Gassama"
+    },
+    {
+      "source": "CLog-Russal.jpeg",
+      "reason": "Photo de lieu : mise de côté à la demande de Gassama"
+    },
+    {
+      "source": "CLogUniv-UVH.jpeg",
+      "reason": "Photo de lieu : mise de côté à la demande de Gassama"
+    },
+    {
+      "source": "CLog-GE.jpg (1).jpeg",
+      "reason": "Copie exacte de GE"
+    },
+    {
+      "source": "CLog-IGN.jpg (1).jpeg",
+      "reason": "Copie exacte de IGN"
+    },
+    {
+      "source": "CLog-Stimes.jpg.jpeg",
+      "reason": "Autre version de StarTimes"
+    },
+    {
+      "source": "CLog-WAE.jpg.jpeg",
+      "reason": "Autre version de West Africa Exploration"
+    },
+    {
+      "source": "CLogUniv-SH_LOGO2010-1.png",
+      "reason": "Autre version de Canadian Academy / Académie de Sherbrooke"
+    },
+    {
+      "source": "PCab-BDO.png",
+      "reason": "Autre fichier BDO : version fournie du cabinet retenue"
+    },
+    {
+      "source": "PCab-Big4.jpg.jpeg",
+      "reason": "Montage Big Four : quatre marques déjà représentées"
+    },
+    {
+      "source": "PCab-Mazzars.jpeg",
+      "reason": "Autre version de Mazars"
+    }
+  ],
+  "existingRetained": [
+    "pwc.svg"
+  ],
+  "existingReplaced": [
+    "deloitte.svg",
+    "ey.svg",
+    "kpmg.svg",
+    "mazars.svg"
+  ]
+}

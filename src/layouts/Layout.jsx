@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import BackToTop from "../components/BackToTop";
 
 // Import all footer components
 import Footer from "../components/Footers/Footer";
@@ -25,7 +24,7 @@ import Header6Single from "../components/Headers/Header6Single";
 import Header7 from "../components/Headers/Header7";
 import Header7Single from "../components/Headers/Header7Single";
 
-const Layout = ({ children, HeaderStyle, FooterStyle, styleMode, hideFooter = false }) => {
+const Layout = ({ children, HeaderStyle, FooterStyle, styleMode, hideFooter = true }) => {
     const [searchToggle, setSearchToggled] = useState(false);
     const [scroll, setScroll] = useState(0);
     const handleToggle = () => setSearchToggled(!searchToggle);
@@ -89,7 +88,6 @@ const Layout = ({ children, HeaderStyle, FooterStyle, styleMode, hideFooter = fa
             {renderHeader()}
             {children}
             {!hideFooter && renderFooter()}
-            <BackToTop />
         </>
     );
 };

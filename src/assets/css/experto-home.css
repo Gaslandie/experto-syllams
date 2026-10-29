@@ -127,7 +127,7 @@
 /* Full-width contact band; magenta sampled from "Groupe" in the current logo. */
 .experto-home-content .project-contact {
   padding: 72px 0;
-  margin-bottom: 64px;
+  margin-bottom: 8px;
   background: #cd01a4;
   color: #fff;
 }
@@ -172,7 +172,7 @@
 .experto-home-content .project-contact-button:hover { background: #f8edf6; }
 .experto-home-content .project-contact-button:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
 @media (max-width: 767.98px) {
-  .experto-home-content .project-contact { padding: 48px 0; margin-bottom: 40px; }
+  .experto-home-content .project-contact { padding: 48px 0; margin-bottom: 8px; }
   .experto-home-content .project-contact-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
 }
 
@@ -693,4 +693,11 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .experto-home-content .partner-logo-card { transition: none; }
+}
+
+/* Keep the supplied Smart Box logo only; clip the brochure in the page. */
+.experto-home-content .partner-logo-slot svg {
+  display: block;
+  width: calc(100% - 24px);
+  height: 110px;
 }

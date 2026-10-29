@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../../assets/css/experto-footer.css';
-const FooterLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
+const FooterLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.webp`;
 
 export default function Footer() {
   return <footer id="contact" className="experto-footer">

@@ -1,0 +1,311 @@
+[
+  {
+    "id": "deloitte",
+    "name": "Deloitte",
+    "logo": "deloitte.webp"
+  },
+  {
+    "id": "ey",
+    "name": "EY",
+    "logo": "ey.webp"
+  },
+  {
+    "id": "kpmg",
+    "name": "KPMG",
+    "logo": "kpmg.webp"
+  },
+  {
+    "id": "pwc",
+    "name": "PwC",
+    "logo": "pwc.svg"
+  },
+  {
+    "id": "mazars",
+    "name": "Mazars",
+    "logo": "mazars.webp"
+  },
+  {
+    "id": "andersen-consulting",
+    "name": "Andersen Consulting",
+    "logo": "andersen-consulting.webp"
+  },
+  {
+    "id": "bdo",
+    "name": "BDO",
+    "logo": "bdo.webp"
+  },
+  {
+    "id": "grant-thornton",
+    "name": "Grant Thornton",
+    "logo": "grant-thornton.webp"
+  },
+  {
+    "id": "maeco",
+    "name": "MAECO",
+    "logo": "maeco.webp"
+  },
+  {
+    "id": "panaudit",
+    "name": "Panaudit Guinée",
+    "logo": "panaudit.webp"
+  },
+  {
+    "id": "2m-plus",
+    "name": "2M Plus",
+    "logo": "2m-plus.webp"
+  },
+  {
+    "id": "aaa",
+    "name": "AAA",
+    "logo": "aaa.webp"
+  },
+  {
+    "id": "afrimat",
+    "name": "Afrimat",
+    "logo": "afrimat.webp"
+  },
+  {
+    "id": "as-kaloum",
+    "name": "AS Kaloum",
+    "logo": "as-kaloum.webp"
+  },
+  {
+    "id": "builders",
+    "name": "Builders",
+    "logo": "builders.webp"
+  },
+  {
+    "id": "cagif",
+    "name": "CAGIF International",
+    "logo": "cagif.webp"
+  },
+  {
+    "id": "cap",
+    "name": "CAP",
+    "logo": "cap.webp"
+  },
+  {
+    "id": "cfed",
+    "name": "C.F.E.D.",
+    "logo": "cfed.webp"
+  },
+  {
+    "id": "cip",
+    "name": "Complexe Industriel Panafricain",
+    "logo": "cip.webp"
+  },
+  {
+    "id": "call-me",
+    "name": "Call Me",
+    "logo": "call-me.webp"
+  },
+  {
+    "id": "cobagui",
+    "name": "COBAGUI",
+    "logo": "cobagui.webp"
+  },
+  {
+    "id": "dms",
+    "name": "Djintey Multi Services",
+    "logo": "dms.webp"
+  },
+  {
+    "id": "ets-sita",
+    "name": "ETS Sita CRA",
+    "logo": "ets-sita.webp"
+  },
+  {
+    "id": "ecobank",
+    "name": "Ecobank",
+    "logo": "ecobank.webp"
+  },
+  {
+    "id": "faaiss",
+    "name": "Faaïss Group",
+    "logo": "faaiss.webp"
+  },
+  {
+    "id": "ge",
+    "name": "GE",
+    "logo": "ge.webp"
+  },
+  {
+    "id": "gras-savoye",
+    "name": "Gras Savoye",
+    "logo": "gras-savoye.webp"
+  },
+  {
+    "id": "asco",
+    "name": "ASCO Group",
+    "logo": "asco.webp"
+  },
+  {
+    "id": "housemart",
+    "name": "HouseMart",
+    "logo": "housemart.webp"
+  },
+  {
+    "id": "ign",
+    "name": "Institut Géographique National",
+    "logo": "ign.webp"
+  },
+  {
+    "id": "kebo",
+    "name": "Kébo Energy",
+    "logo": "kebo.webp"
+  },
+  {
+    "id": "laguipres",
+    "name": "Laguipres",
+    "logo": "laguipres.webp"
+  },
+  {
+    "id": "licorne",
+    "name": "Licorne Services Guinée",
+    "logo": "licorne.webp"
+  },
+  {
+    "id": "mapper",
+    "name": "Mapper International Trade",
+    "logo": "mapper.webp"
+  },
+  {
+    "id": "nicotram",
+    "name": "Nicotram",
+    "logo": "nicotram.webp"
+  },
+  {
+    "id": "ogp",
+    "name": "Office Guinéen de Publicité",
+    "logo": "ogp.webp"
+  },
+  {
+    "id": "pcg",
+    "name": "Pharmacie Centrale de Guinée",
+    "logo": "pcg.webp"
+  },
+  {
+    "id": "stade-lansana-conte",
+    "name": "Stade Général Lansana Conté",
+    "logo": "stade-lansana-conte.webp"
+  },
+  {
+    "id": "sunda",
+    "name": "Sunda International",
+    "logo": "sunda.webp"
+  },
+  {
+    "id": "sable-mining",
+    "name": "Sable Mining Africa",
+    "logo": "sable-mining.webp"
+  },
+  {
+    "id": "shacman",
+    "name": "Shacman",
+    "logo": "shacman.webp"
+  },
+  {
+    "id": "salguidia",
+    "name": "Salguidia",
+    "logo": "salguidia.webp"
+  },
+  {
+    "id": "smart-box",
+    "name": "Smart Box",
+    "logo": "smart-box.webp",
+    "viewBox": "0 0 372 85",
+    "sourceWidth": 372,
+    "sourceHeight": 537,
+    "cropHeight": 85
+  },
+  {
+    "id": "sino",
+    "name": "Sino",
+    "logo": "sino.webp"
+  },
+  {
+    "id": "soguidev",
+    "name": "Soguidev",
+    "logo": "soguidev.webp"
+  },
+  {
+    "id": "startimes",
+    "name": "StarTimes",
+    "logo": "startimes.webp"
+  },
+  {
+    "id": "trustaco",
+    "name": "Trustaco",
+    "logo": "trustaco.webp"
+  },
+  {
+    "id": "twyford",
+    "name": "Twyford",
+    "logo": "twyford.webp"
+  },
+  {
+    "id": "us-embassy",
+    "name": "Ambassade des États-Unis",
+    "logo": "us-embassy.webp"
+  },
+  {
+    "id": "west-africa-exploration",
+    "name": "West Africa Exploration",
+    "logo": "west-africa-exploration.webp"
+  },
+  {
+    "id": "wakili",
+    "name": "Wakili",
+    "logo": "wakili.webp"
+  },
+  {
+    "id": "wolikhai",
+    "name": "Wolikhai",
+    "logo": "wolikhai.webp"
+  },
+  {
+    "id": "universite-gandhi",
+    "name": "Université Mahatma Gandhi",
+    "logo": "universite-gandhi.webp"
+  },
+  {
+    "id": "iscaeg",
+    "name": "ISCAEG",
+    "logo": "iscaeg.webp"
+  },
+  {
+    "id": "universite-nongo",
+    "name": "Université Nongo Conakry",
+    "logo": "universite-nongo.webp"
+  },
+  {
+    "id": "academie-sherbrooke",
+    "name": "Académie de Sherbrooke",
+    "logo": "academie-sherbrooke.webp"
+  },
+  {
+    "id": "universite-nelson-mandela",
+    "name": "Université Nelson Mandela",
+    "logo": "universite-nelson-mandela.webp"
+  },
+  {
+    "id": "guinee-gaz",
+    "name": "Guinée Gaz",
+    "logo": "guinee-gaz.webp"
+  },
+  {
+    "id": "ifap",
+    "name": "IFAP",
+    "logo": "ifap.webp"
+  },
+  {
+    "id": "sebur",
+    "name": "Sebur",
+    "logo": "sebur.webp"
+  },
+  {
+    "id": "hic",
+    "name": "HIC & Partners",
+    "logo": "hic.webp"
+  }
+]

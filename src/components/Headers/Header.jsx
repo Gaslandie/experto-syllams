@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavLinks from '../NavLinks';
 import MobileMenu from '../MobileMenu';
-const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
-const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
-const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
-const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.png`;
+const MainLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.webp`;
+const DarkLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.webp`;
+const StickyLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.webp`;
+const MobileLogo = `${import.meta.env.BASE_URL}images/experto-syllams-blue.webp`;
 
 const Header = ({ handleOpen, handleRemove, searchToggle, handleToggle, scroll }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
