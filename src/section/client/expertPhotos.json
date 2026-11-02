@@ -60,11 +60,6 @@
     "height": 960
   },
   {
-    "file": "expert-13.webp",
-    "width": 750,
-    "height": 1000
-  },
-  {
     "file": "expert-14.webp",
     "width": 1000,
     "height": 750
@@ -72,11 +67,6 @@
   {
     "file": "expert-15.webp",
     "width": 750,
-    "height": 1000
-  },
-  {
-    "file": "expert-16.webp",
-    "width": 562,
     "height": 1000
   },
   {
@@ -228,20 +218,5 @@
     "file": "expert-46.webp",
     "width": 1000,
     "height": 750
-  },
-  {
-    "file": "expert-47.webp",
-    "width": 655,
-    "height": 1000
-  },
-  {
-    "file": "expert-48.webp",
-    "width": 1000,
-    "height": 988
-  },
-  {
-    "file": "expert-49.webp",
-    "width": 455,
-    "height": 1000
   }
 ]
