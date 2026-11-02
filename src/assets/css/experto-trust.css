@@ -1,0 +1,249 @@
+/* Compared with the current Home on 2026-11-02: reuse its type scale,
+   section spacing, introduction cards and project-contact button proportions.
+   Keep this page's logo palette; do not alter Home or Contact styles. */
+.client-trust-page.experto-home-content {
+  --trust-green: #005400;
+  --trust-blue: #0050ec;
+  --trust-magenta: #cd01a4;
+  --trust-ink: #18251c;
+  --trust-muted: #293c34;
+  padding: 72px 0 24px;
+  background: #fff;
+  color: var(--trust-ink);
+  font-family: var(--home-font);
+  font-size: var(--home-body-size);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.client-trust-page .trust-container {
+  max-width: 1320px;
+  padding-inline: 12px;
+}
+
+.client-trust-page .trust-page-title {
+  margin: 0 0 28px;
+  color: var(--trust-green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: var(--home-title-size);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.client-trust-page .trust-rating-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 32px;
+  min-height: 112px;
+  padding: 28px;
+  border-block: 1px solid #e5eaf6;
+  background: #f4f7fe;
+}
+
+.client-trust-page .trust-rating-score {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.client-trust-page .trust-rating-number {
+  color: var(--trust-green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: var(--home-title-size);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.client-trust-page .trust-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--trust-blue);
+}
+
+.client-trust-page .trust-stars svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.client-trust-page .trust-rating-description {
+  margin: 0;
+  color: var(--trust-muted);
+  font-size: var(--home-body-size);
+  line-height: 1.6;
+}
+
+.client-trust-page .trust-rating-description strong { color: var(--trust-ink); }
+
+.client-trust-page .trust-google-link {
+  min-height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--trust-blue);
+  font: inherit;
+  font-size: var(--home-body-size);
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.client-trust-page .trust-testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 48px 0;
+}
+
+.client-trust-page .trust-testimonial {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 260px;
+  margin: 0;
+  padding: 28px;
+  border: 1px solid #e4e8e4;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.client-trust-page .trust-quote {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  color: var(--trust-green);
+}
+
+.client-trust-page .trust-testimonial blockquote {
+  flex: 1;
+  margin: 0 0 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.client-trust-page .trust-testimonial blockquote p {
+  margin: 0;
+  color: var(--trust-muted);
+  font-family: inherit;
+  font-size: var(--home-body-size);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.client-trust-page .trust-testimonial figcaption {
+  color: var(--trust-green);
+  font-size: var(--home-body-size);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.client-trust-page .trust-invitation {
+  margin: 0;
+  padding: 48px 32px;
+  border-radius: 16px;
+  background: var(--trust-magenta);
+  color: #fff;
+  text-align: center;
+}
+
+.client-trust-page .trust-invitation :is(h2, h3) {
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 2.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.client-trust-page .trust-invitation > p {
+  max-width: 780px;
+  margin: 0 auto 24px;
+  color: #fff;
+  font-size: var(--home-body-size);
+  line-height: 1.5;
+}
+
+.client-trust-page .trust-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.client-trust-page .trust-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  max-width: 100%;
+  padding: 12px 26px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.client-trust-page .trust-button-primary {
+  border-color: #fff;
+  background: #fff;
+  color: var(--trust-magenta);
+}
+
+.client-trust-page .trust-button-secondary {
+  border-color: #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.client-trust-page .trust-button-secondary:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--trust-magenta);
+}
+
+.client-trust-page :is(.trust-google-link, .trust-button):focus-visible {
+  outline: 3px solid var(--trust-blue);
+  outline-offset: 4px;
+}
+
+.client-trust-page .trust-invitation .trust-button:focus-visible {
+  outline-color: #fff;
+}
+
+.client-trust-page button:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .client-trust-page.experto-home-content { padding-top: 56px; }
+  .client-trust-page .trust-rating-band { column-gap: 24px; }
+}
+
+@media (max-width: 767.98px) {
+  .client-trust-page.experto-home-content { padding-top: 40px; }
+  .client-trust-page .trust-rating-band { flex-direction: column; gap: 10px; padding: 24px 16px; text-align: center; }
+  .client-trust-page .trust-testimonials { grid-template-columns: 1fr; gap: 24px; margin-block: 32px; }
+  .client-trust-page .trust-testimonial { min-height: 0; padding: 24px; }
+  .client-trust-page .trust-invitation { padding: 40px 24px; }
+}
+
+@media (max-width: 399.98px) {
+  .client-trust-page .trust-button { width: 100%; }
+}
