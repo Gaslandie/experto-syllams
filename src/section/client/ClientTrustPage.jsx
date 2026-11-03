@@ -1,21 +1,26 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../layouts/Layout";
+import PartnerLogoStrip from "./PartnerLogoStrip";
 import "../../assets/css/experto-trust.css";
 
 // Temporary mockup copy, reproduced verbatim from the user's reference.
 // These reviews and figures are not verified EXPERTO-SYLLAMS reviews.
 const testimonials = [
   {
-    name: "Adrien",
+    name: "AFIF AHMAD",
+    role: "PDG Guinea MultiTrading",
     text: "Super conseil pour ma création de société. Expert-comptable disponible et à l'écoute.",
   },
   {
-    name: "Cécile",
-    text: "Toujours disponible pour m'aider à gérer ma société, je recommande Muriel.",
+    name: "TATIANA EBOT",
+    role: "DG CIP",
+    text: "Toujours disponilbe pour m'aider à gerer ma société, je recommande  Experto-Syllams",
   },
   {
-    name: "Paul",
-    text: "Muriel est d'une grande aide, une experte comme on aime en avoir ! Je recommande vivement ses services.",
+    name: "HENRY LIU",
+    role: "DG Sous-Regional Star DTV Co",
+    text: "Experto-Syllams est d'une grande aide, une experte comme on aime en avoir ! Je recommande vivement ses services.",
   },
 ];
 
@@ -31,6 +36,71 @@ function QuoteIcon() {
   return <svg className="trust-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden="true" focusable="false">
     <path d="M3 21c3 0 7-5 7-12V3H2v9h5c0 5-2 8-4 9ZM15 21c3 0 7-5 7-12V3h-8v9h5c0 5-2 8-4 9Z" />
   </svg>;
+}
+
+function TestimonialsCarousel() {
+  const viewportRef = useRef(null);
+  const groupRef = useRef(null);
+  const [pressed, setPressed] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+
+  useEffect(() => {
+    if (pressed || hovered || focused) return;
+
+    const viewport = viewportRef.current;
+    const group = groupRef.current;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let frame;
+    let previousTime;
+    let offset = viewport.scrollLeft;
+
+    function advance(time) {
+      if (previousTime !== undefined) {
+        const loopWidth = group.getBoundingClientRect().width;
+        offset += Math.min(time - previousTime, 64) * 0.024;
+        if (loopWidth > 0) offset %= loopWidth;
+        viewport.scrollLeft = offset;
+      }
+      previousTime = time;
+      frame = window.requestAnimationFrame(advance);
+    }
+
+    function updateMotion() {
+      window.cancelAnimationFrame(frame);
+      previousTime = undefined;
+      offset = viewport.scrollLeft;
+      if (!reducedMotion.matches) frame = window.requestAnimationFrame(advance);
+    }
+
+    updateMotion();
+    reducedMotion.addEventListener("change", updateMotion);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      reducedMotion.removeEventListener("change", updateMotion);
+    };
+  }, [pressed, hovered, focused]);
+
+  return <section className="trust-testimonials" aria-label="Témoignages clients">
+    <div className="trust-testimonials-viewport" ref={viewportRef} tabIndex={0} role="group" aria-label="Liste des témoignages"
+      onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true); }}
+      onPointerLeave={event => { if (event.pointerType === "mouse") setHovered(false); }}
+      onFocus={event => setFocused(event.currentTarget.matches(":focus-visible"))} onBlur={() => setFocused(false)}
+      onTouchStart={() => setPressed(true)} onTouchEnd={() => setPressed(false)} onTouchCancel={() => setPressed(false)}>
+      <div className="trust-testimonials-track">
+        {[0, 1].map(copy => <div className="trust-testimonials-group" key={copy} ref={copy === 0 ? groupRef : undefined} aria-hidden={copy === 1 ? true : undefined}>
+          {testimonials.map(({ name, role, text }) => <figure className="trust-testimonial" key={name}>
+            <QuoteIcon />
+            <blockquote><p>{text}</p></blockquote>
+            <figcaption>
+              <span className="trust-testimonial-name">{name}</span>
+              <span className="trust-testimonial-role">{role}</span>
+            </figcaption>
+          </figure>)}
+        </div>)}
+      </div>
+    </div>
+  </section>;
 }
 
 export function ClientTrustSection({ embedded = false }) {
@@ -52,13 +122,7 @@ export function ClientTrustSection({ embedded = false }) {
           <button className="trust-google-link" type="button" disabled title="Lien Google à fournir">Voir les avis Google</button>
         </section>
 
-        <section className="trust-testimonials" aria-label="Témoignages clients">
-          {testimonials.map(({ name, text }) => <figure className="trust-testimonial" key={name}>
-            <QuoteIcon />
-            <blockquote><p>{text}</p></blockquote>
-            <figcaption>{name}</figcaption>
-          </figure>)}
-        </section>
+        <TestimonialsCarousel />
 
         <section className="trust-invitation" aria-labelledby="trust-invitation-title">
           <InvitationHeading id="trust-invitation-title">Laisser un témoignage</InvitationHeading>
@@ -68,6 +132,9 @@ export function ClientTrustSection({ embedded = false }) {
             <Link className="trust-button trust-button-secondary" to="/contacts">Nous écrire</Link>
           </div>
         </section>
+        <div className="trust-client-logos">
+          <PartnerLogoStrip />
+        </div>
       </div>
     </Container>;
 }

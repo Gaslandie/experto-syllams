@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout";
 import PageTitle from "../PageTitle";
 import PartnerShowcase from "./PartnerShowcase";
 import ClientAbout from "./ClientAbout";
+import ClientContactDetails from "./ClientContactDetails";
 import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
@@ -32,7 +33,7 @@ export function ServicesPage() {
 }
 
 export function ContactPage() {
-  return <Page title="Nous contacter"><div className="client-page-copy"><h2>Parlons de votre projet</h2><p>Contactez-nous pour échanger sur vos besoins.</p><ul className="client-contact-list"><li><strong>Téléphone :</strong> <a href="tel:+224628216975">+224 628 21 69 75</a></li><li><strong>E-mail :</strong> <a href="mailto:manager@experto-syllams.com">manager@experto-syllams.com</a></li><li id="adresse" tabIndex={-1}><strong>Localisation :</strong> Guinée, Conakry</li><li><strong>WhatsApp principal :</strong> <a href="https://wa.me/224628216975">+224 628 21 69 75</a></li><li><strong>WhatsApp secondaire :</strong> <a href="https://wa.me/2290197590310">+229 01 97 59 03 10</a></li></ul></div></Page>;
+  return <div className="page-wrapper"><Layout><PageTitle pageName="Contacts" hideBreadcrumb /><main className="experto-home-content"><ClientContactDetails /></main></Layout></div>;
 }
 
 export function ReferencesPage({ category }) {

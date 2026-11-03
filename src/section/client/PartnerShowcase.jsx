@@ -1,4 +1,4 @@
-import references from "./clientReferences.json";
+import PartnerLogoStrip from "./PartnerLogoStrip";
 
 export default function PartnerShowcase() {
   return <section id="client-references" className="partner-showcase" aria-labelledby="partner-showcase-title">
@@ -14,21 +14,7 @@ export default function PartnerShowcase() {
       </div>
       <hr className="partner-divider" />
       <h3 className="partner-category">Clients et partenaires</h3>
-      <div className="partner-strip" tabIndex={0} aria-label="Logos de nos clients et partenaires">
-        <div className="partner-track" style={{ "--partner-scroll-duration": `${references.length * 7}s` }}>
-          {[0, 1].map(copy => <div className="partner-items" key={copy} aria-hidden={copy === 1 ? true : undefined}>
-            {references.map(reference => <div className="partner-logo-card" key={reference.id}>
-              <div className="partner-logo-slot">
-                {reference.viewBox ? <svg viewBox={reference.viewBox} width="210" height="110" role="img" aria-label={reference.name} overflow="hidden">
-                  <svg width={reference.sourceWidth} height={reference.cropHeight} overflow="hidden">
-                  <image href={`${import.meta.env.BASE_URL}images/references/${reference.logo}`} width={reference.sourceWidth} height={reference.sourceHeight} />
-                  </svg>
-                </svg> : <img src={`${import.meta.env.BASE_URL}images/references/${reference.logo}`} alt={reference.name} width="210" height="110" loading="lazy" decoding="async" />}
-              </div>
-            </div>)}
-          </div>)}
-        </div>
-      </div>
+      <PartnerLogoStrip />
       </div>
     </div>
   </section>;
