@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import photos from './expertPhotos.json';
 import '../../assets/css/experto-experts.css';
 
@@ -9,6 +9,64 @@ const figures = [
   ['+175', 'CLIENTS'],
   ['6', 'BUSINESS UNITS'],
 ];
+
+function ClientFigures() {
+  const figuresRef = useRef(null);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (motionPreference.matches || !('IntersectionObserver' in window)) {
+      setProgress(1);
+      return;
+    }
+
+    let frame;
+    let startTime;
+    let started = false;
+
+    // One clock keeps all four counters in step, whatever the screen refresh rate.
+    function advance(time) {
+      startTime ??= time;
+      const nextProgress = Math.min((time - startTime) / 2000, 1);
+      setProgress(nextProgress);
+      if (nextProgress < 1) frame = window.requestAnimationFrame(advance);
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting || started) return;
+      started = true;
+      observer.disconnect();
+      frame = window.requestAnimationFrame(advance);
+    }, { threshold: 0.5 });
+
+    function updateMotion() {
+      if (!motionPreference.matches) return;
+      started = true;
+      observer.disconnect();
+      window.cancelAnimationFrame(frame);
+      setProgress(1);
+    }
+
+    observer.observe(figuresRef.current);
+    motionPreference.addEventListener('change', updateMotion);
+    return () => {
+      observer.disconnect();
+      window.cancelAnimationFrame(frame);
+      motionPreference.removeEventListener('change', updateMotion);
+    };
+  }, []);
+
+  return <div className="client-about-figures" ref={figuresRef} aria-label="Le groupe en chiffres">
+    {figures.map(([value, label]) => <div className="client-about-figure" key={label}>
+      <span className="client-about-figure-value">
+        <span className="client-about-figure-total">{value}</span>
+        <span aria-hidden="true">{value.startsWith('+') ? '+' : ''}{Math.floor(Number(value) * progress)}</span>
+      </span>
+      <span className="client-about-figure-label">{label}</span>
+    </div>)}
+  </div>;
+}
 
 export default function ClientExperts() {
   const [paused, setPaused] = useState(false);
@@ -38,11 +96,6 @@ export default function ClientExperts() {
         </div>
       </div>
     </section>
-    <div className="client-about-figures" aria-label="Le groupe en chiffres">
-      {figures.map(([value, label]) => <div className="client-about-figure" key={label}>
-        <span className="client-about-figure-value">{value}</span>
-        <span className="client-about-figure-label">{label}</span>
-      </div>)}
-    </div>
+    <ClientFigures />
   </>;
 }

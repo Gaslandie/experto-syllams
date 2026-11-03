@@ -32,7 +32,7 @@ export default function ClientContactDetails() {
     window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
   };
 
-  return <section id="adresse" className="client-contact-details" tabIndex={-1} aria-labelledby="client-contact-details-title">
+  return <section className="client-contact-details" aria-labelledby="client-contact-details-title">
     <div className="container">
       <div className="client-contact-details-inner">
         <div className="client-contact-details-info">
@@ -45,7 +45,7 @@ export default function ClientContactDetails() {
               </span>
               <address className="client-contact-details-text">
                 4ème étage, Immeuble Archevêché<br />
-                – Almaya / Kaloum<br />
+                – Almamya / Kaloum<br />
                 Conakry, Rép. de Guinée
               </address>
             </li>

@@ -4,6 +4,7 @@ import PageTitle from "../PageTitle";
 import PartnerShowcase from "./PartnerShowcase";
 import ClientAbout from "./ClientAbout";
 import ClientContactDetails from "./ClientContactDetails";
+import ClientContactMap from "./ClientContactMap";
 import { clientServices } from "./ClientServices";
 import { firms } from "../../components/NavLinks";
 
@@ -33,7 +34,7 @@ export function ServicesPage() {
 }
 
 export function ContactPage() {
-  return <div className="page-wrapper"><Layout><PageTitle pageName="Contacts" hideBreadcrumb /><main className="experto-home-content"><ClientContactDetails /></main></Layout></div>;
+  return <div className="page-wrapper"><Layout><PageTitle pageName="Contacts" hideBreadcrumb /><main className="experto-home-content"><ClientContactDetails /><ClientContactMap /></main></Layout></div>;
 }
 
 export function ReferencesPage({ category }) {
