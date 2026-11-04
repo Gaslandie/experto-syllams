@@ -1,0 +1,595 @@
+{
+  "nationales": [
+    {
+      "id": "oeccag",
+      "name": "OECCAG",
+      "logo": "images/affiliations/nationales/oeccag.png",
+      "width": 642,
+      "height": 311,
+      "paragraphs": [
+        [
+          {
+            "text": "L'"
+          },
+          {
+            "text": "OECCAG",
+            "bold": true
+          },
+          {
+            "text": " (parfois simplement abrégé OECCA) désigne l'"
+          },
+          {
+            "text": "Ordre des Experts-Comptables et Comptables Agréés de Guinée",
+            "bold": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        [
+          {
+            "text": "Est l'organisme national d'autorégulation, de contrôle et de représentation de la profession comptable en République de Guinée."
+          }
+        ],
+        [
+          {
+            "text": "Il constitue le dernier maillon de la pyramide institutionnelle que nous avons étudiée, agissant directement au niveau local pour le marché guinéen."
+          }
+        ]
+      ],
+      "url": "https://oeccag.org"
+    },
+    {
+      "id": "oecca-benin",
+      "name": "OECCA-BÉNIN",
+      "logo": "images/affiliations/nationales/oecca-benin.jpeg",
+      "width": 246,
+      "height": 115,
+      "paragraphs": [
+        [
+          {
+            "text": "L'"
+          },
+          {
+            "text": "OECCA-BÉNIN",
+            "bold": true
+          },
+          {
+            "text": " est  l'"
+          },
+          {
+            "text": "Ordre des Experts-Comptables et Comptables Agréés du Bénin",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "Créé par la loi n° 2004-03 de 2006, c'est l'unique organisation professionnelle légalement reconnue pour régir, représenter et superviser les métiers de la comptabilité et de l'audit financier en République du Bénin."
+          }
+        ],
+        [
+          {
+            "text": "Son siège se trouve à Cotonou."
+          }
+        ],
+        [
+          {
+            "text": "Tout comme ses homologues guinéen (OECCAG) et sénégalais (ONECCA sn), l'OECCA-BÉNIN assure des missions de régulation à l'échelle nationale."
+          }
+        ]
+      ],
+      "url": "https://oeccabenin.bj"
+    },
+    {
+      "id": "onecca-senegal",
+      "name": "ONECCA Sénégal",
+      "logo": "images/affiliations/nationales/onecca-senegal.jpeg",
+      "width": 291,
+      "height": 84,
+      "paragraphs": [
+        [
+          {
+            "text": "L’ONECCA ",
+            "bold": true
+          },
+          {
+            "text": "désigne"
+          },
+          {
+            "text": " Ordre National des Experts Comptables et Comptables Agréés du Sénégal",
+            "bold": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        [
+          {
+            "text": "Créé par la loi n° 2000-05 du 10 janvier 2000, cet ordre professionnel national assure la représentation, la régulation et le contrôle des métiers de la comptabilité et de l'audit financier sur l'ensemble du territoire sénégalais."
+          }
+        ],
+        [
+          {
+            "text": "Il est placé sous la tutelle du ministère des Finances."
+          }
+        ]
+      ],
+      "url": "https://www.onecca.org"
+    },
+    {
+      "id": "oec-ci",
+      "name": "OEC-CI",
+      "logo": "images/affiliations/nationales/oec-ci.png",
+      "width": 246,
+      "height": 73,
+      "paragraphs": [
+        [
+          {
+            "text": "L'"
+          },
+          {
+            "text": "OEC-CI ",
+            "bold": true
+          },
+          {
+            "text": " désigne l'"
+          },
+          {
+            "text": "Ordre des Experts-Comptables de Côte d'Ivoire",
+            "bold": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        [
+          {
+            "text": "Établi en 1995, c'est l'un des ordres professionnels de comptabilité et d'audit les plus anciens et les plus influents de la zone UEMOA. Placé sous la tutelle du Ministère de l'Économie et des Finances, il constitue l'unique instance nationale chargée d'organiser, d'animer et de réguler la profession comptable sur le territoire ivoirien."
+          }
+        ]
+      ],
+      "url": "https://www.oec.ci"
+    },
+    {
+      "id": "onecca-bf",
+      "name": "ONECCA-BF",
+      "logo": "images/affiliations/nationales/onecca-bf.jpeg",
+      "width": 738,
+      "height": 414,
+      "paragraphs": [
+        [
+          {
+            "text": "L'"
+          },
+          {
+            "text": "ONECCA-BF",
+            "bold": true
+          },
+          {
+            "text": " désigne l'"
+          },
+          {
+            "text": "Ordre National des Experts Comptables et des Comptables Agréés du Burkina Faso",
+            "bold": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        [
+          {
+            "text": "Créé par la loi en décembre 2005 et placé sous la tutelle du Ministère de l'Économie et des Finances, il constitue l'unique autorité légale chargée de réglementer, de représenter et de contrôler la profession comptable et d'audit financier sur l'ensemble du territoire burkinabè."
+          }
+        ]
+      ]
+    }
+  ],
+  "internationales": [
+    {
+      "id": "international",
+      "title": "Au plan international",
+      "items": [
+        {
+          "id": "ifac",
+          "name": "IFAC",
+          "logo": "images/affiliations/internationales/ifac.jpeg",
+          "width": 260,
+          "height": 148,
+          "paragraphs": [
+            [
+              {
+                "text": "L'"
+              },
+              {
+                "text": "IFAC",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "International Federation of Accountants",
+                "bold": true
+              },
+              {
+                "text": ", ou "
+              },
+              {
+                "text": "Fédération internationale des comptables",
+                "italic": true
+              },
+              {
+                "text": " en français) est "
+              },
+              {
+                "text": "l'organisation mondiale qui fédère et représente la profession comptable au niveau international",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "fidef",
+          "name": "FIDEF",
+          "logo": "images/affiliations/internationales/fidef.png",
+          "width": 214,
+          "height": 148,
+          "paragraphs": [
+            [
+              {
+                "text": "La "
+              },
+              {
+                "text": "FIDEF",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "Fédération Internationale des Experts-Comptables Francophones",
+                "bold": true
+              },
+              {
+                "text": ") est un organisme professionnel mondial qui rassemble les Ordres, Instituts et organisations comptables des pays de l'espace francophone."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "cncc",
+          "name": "CNCC",
+          "logo": "images/affiliations/internationales/cncc.png",
+          "width": 270,
+          "height": 148,
+          "paragraphs": [
+            [
+              {
+                "text": "institution nationale Française chargée de "
+              },
+              {
+                "text": "représenter, fédérer et réguler la profession de commissaire aux comptes (les auditeurs légaux)",
+                "bold": true
+              },
+              {
+                "text": ". Fondée en 1969, elle est reconnue d'utilité publique et est placée sous la tutelle du ministère de la Justice (le Garde des Sceaux)."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "h3c",
+          "name": "H3C",
+          "logo": "images/affiliations/internationales/h3c.jpeg",
+          "width": 708,
+          "height": 282,
+          "paragraphs": [
+            [
+              {
+                "text": "Le Haut Conseil du Commissariat aux Comptes (H3C) est l'autorité publique indépendante chargée de réguler et de surveiller la profession de commissaire aux comptes en France."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "iia",
+          "name": "IIA",
+          "logo": "images/affiliations/internationales/iia.png",
+          "width": 447,
+          "height": 447,
+          "paragraphs": [
+            [
+              {
+                "text": "L'"
+              },
+              {
+                "text": "IIA",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "The Institute of Internal Auditors",
+                "bold": true
+              },
+              {
+                "text": ", ou "
+              },
+              {
+                "text": "Institut des Auditeurs Internes",
+                "italic": true
+              },
+              {
+                "text": " en français) est "
+              },
+              {
+                "text": "l'association professionnelle internationale qui définit les normes, les certifications et le cadre de référence mondial de l'audit interne",
+                "bold": true
+              },
+              {
+                "text": ". [1, 2]"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afrique",
+      "title": "Au plan Africain Sous-régional",
+      "items": [
+        {
+          "id": "ohada",
+          "name": "OHADA",
+          "logo": "images/affiliations/internationales/ohada.jpeg",
+          "width": 597,
+          "height": 335,
+          "paragraphs": [
+            [
+              {
+                "text": "L'"
+              },
+              {
+                "text": "OHADA",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "Organisation pour l'Harmonisation en Afrique du Droit des Affaires",
+                "bold": true
+              },
+              {
+                "text": ") est une organisation internationale dotée d'une personnalité juridique, créée par le Traité de Port-Louis le 17 octobre 1993."
+              }
+            ],
+            [
+              {
+                "text": "Elle regroupe aujourd'hui "
+              },
+              {
+                "text": "17 pays membres",
+                "bold": true
+              },
+              {
+                "text": " (principalement d'Afrique de l'Ouest, d'Afrique centrale et des Comores). Sa finalité ultime est de "
+              },
+              {
+                "text": "garantir la sécurité juridique et judiciaire des investissements afin de stimuler le développement économique de l'Afrique",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "cppc",
+          "name": "CPPC",
+          "logo": "images/affiliations/internationales/cppc.png",
+          "width": 738,
+          "height": 414,
+          "paragraphs": [
+            [
+              {
+                "text": "Le Conseil Permanent de la Profession Comptable (CPPC) : est un organe consultatif et stratégique de l'"
+              },
+              {
+                "text": "Union Économique et Monétaire Ouest-Africaine",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Il coordonne les actions des différents Ordres Nationaux (les ONECCA), veille à l'application uniforme du code de déontologie, s'assure du respect des normes internationales (comme celles de l'IFAC) et favorise la libre circulation des experts-comptables dans l'espace communautaire"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "ccoa",
+          "name": "CCOA",
+          "logo": "images/affiliations/internationales/ccoa.jpeg",
+          "width": 196,
+          "height": 66,
+          "paragraphs": [
+            [
+              {
+                "text": "Placé sous l'autorité de la Commission de l'UEMOA (Union Économique et Monétaire Ouest-Africaine), le CCOA est l'organisme consultatif intergouvernemental officiel chargé de la normalisation comptable sous-régionale."
+              }
+            ],
+            [
+              {
+                "text": "Le CCOA prépare et rédige les projets de règles, de réglementations et de lois relatives au "
+              },
+              {
+                "text": "droit comptable applicable au sein États membres",
+                "bold": true
+              },
+              {
+                "text": " de l'Union."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "ohada-comptabilite",
+          "name": "OHADA",
+          "logo": "images/affiliations/internationales/ohada-comptabilite.jpeg",
+          "width": 314,
+          "height": 318,
+          "paragraphs": [
+            [
+              {
+                "text": "est l'institution officielle chargée de "
+              },
+              {
+                "text": "centraliser, d'harmoniser et de moderniser toutes les règles comptables applicables dans les 17 États membres",
+                "bold": true
+              },
+              {
+                "text": " de l'espace OHADA (Organisation pour l'Harmonisation en Afrique du Droit des Affaires)."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "abwa",
+          "name": "ABWA",
+          "logo": "images/affiliations/internationales/abwa.jpeg",
+          "width": 299,
+          "height": 136,
+          "paragraphs": [
+            [
+              {
+                "text": "L'"
+              },
+              {
+                "text": "ABWA",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "Association of Accountancy Bodies in West Africa",
+                "bold": true
+              },
+              {
+                "text": ", ou "
+              },
+              {
+                "text": "Association des organismes professionnels de comptabilité en Afrique de l'Ouest",
+                "italic": true
+              },
+              {
+                "text": " en français) est "
+              },
+              {
+                "text": "l'organisation régionale qui fédère, développe et représente la profession comptable à l'échelle de l'Afrique de l'Ouest.",
+                "bold": true
+              }
+            ],
+            [
+              {
+                "text": "Fondée en 1982 et basée au Nigeria (à Abuja), l'ABWA est un "
+              },
+              {
+                "text": "partenaire réseau reconnu par l'IFAC",
+                "bold": true
+              },
+              {
+                "text": " (la fédération mondiale). Elle rassemble 16 organisations professionnelles nationales issues de 15 pays (couvrant à la fois l'espace anglophone et francophone, dont la Guinée, le Sénégal, la Côte d'Ivoire ou encore le Nigeria), représentant ainsi plus de "
+              },
+              {
+                "text": "120 000 experts-comptables",
+                "bold": true
+              },
+              {
+                "text": " dans la sous-région."
+              }
+            ]
+          ]
+        },
+        {
+          "id": "pafa",
+          "name": "PAFA",
+          "logo": "images/affiliations/internationales/pafa.jpeg",
+          "width": 479,
+          "height": 551,
+          "paragraphs": [
+            [
+              {
+                "text": "La "
+              },
+              {
+                "text": "PAFA",
+                "bold": true
+              },
+              {
+                "text": " ("
+              },
+              {
+                "text": "Pan African Federation of Accountants",
+                "bold": true
+              },
+              {
+                "text": ", ou "
+              },
+              {
+                "text": "Fédération Panafricaine des Comptables",
+                "italic": true
+              },
+              {
+                "text": " en français) est "
+              },
+              {
+                "text": "l'organisation continentale unique qui fédère, développe et représente la profession comptable à l'échelle de toute l'Afrique",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Inaugurée en mai 2011 à Dakar (Sénégal) et basée à Johannesburg (Afrique du Sud), la PAFA est un "
+              },
+              {
+                "text": "partenaire réseau officiel de l'IFAC",
+                "bold": true
+              },
+              {
+                "text": " (la fédération mondiale). Elle regroupe aujourd'hui "
+              },
+              {
+                "text": "57 organisations professionnelles comptables nationales réparties dans 47 pays africains",
+                "bold": true
+              },
+              {
+                "text": ", représentant ainsi la voix de plus de "
+              },
+              {
+                "text": "120 000 professionnels",
+                "bold": true
+              },
+              {
+                "text": " sur le continent."
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "tagline": "Une Expertise Légitimée et propulsée via des garants de taille"
+}

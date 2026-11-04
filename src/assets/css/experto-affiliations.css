@@ -1,0 +1,115 @@
+.client-affiliations-page {
+  padding: 64px 0 48px;
+  background: #fff;
+}
+
+.client-affiliations-page .affiliations-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.client-affiliations-page h1 {
+  margin: 0;
+  color: var(--home-ink);
+  font-family: var(--home-font);
+  font-size: var(--home-title-size);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.client-affiliations-page :is(a, .affiliations-scroll-viewport):focus-visible { outline: 3px solid var(--home-green); outline-offset: 3px; }
+.client-affiliations-page .affiliations-row { --visible-items: 3; margin-bottom: 40px; }
+.client-affiliations-page .affiliations-row:last-child { margin-bottom: 0; }
+
+.client-affiliations-page .affiliations-row-title {
+  margin: 0 0 20px;
+  color: var(--home-green);
+  font-family: var(--home-font);
+  font-size: var(--home-subtitle-size);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.client-affiliations-page .affiliations-scroll-viewport {
+  container-type: inline-size;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-bottom: 12px;
+}
+
+.client-affiliations-page .affiliations-scroll-viewport::-webkit-scrollbar { display: none; }
+
+.client-affiliations-page .affiliations-scroll-track { display: flex; width: max-content; align-items: stretch; }
+.client-affiliations-page .affiliations-scroll-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+  gap: 16px;
+  margin: 0;
+  padding: 0 16px 0 0;
+  list-style: none;
+}
+
+.client-affiliations-page .affiliation-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: 10px;
+  width: calc((100cqw - (var(--visible-items) - 1) * 16px) / var(--visible-items));
+  min-width: 0;
+}
+
+.client-affiliations-page .affiliation-logo {
+  display: grid;
+  place-items: center;
+  height: 156px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--home-line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.client-affiliations-page .affiliation-logo img { display: block; width: 100%; height: 130px; object-fit: contain; }
+.client-affiliations-page .affiliation-copy {
+  flex: 1;
+  padding: 18px 16px 24px;
+  border: 1px solid var(--home-line);
+  border-radius: 12px;
+  background: #f6f8f5;
+  color: #293c34;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.client-affiliations-page .affiliation-copy p { margin: 0 0 14px; color: inherit; font: inherit; }
+.client-affiliations-page .affiliation-copy p:last-child { margin-bottom: 0; }
+.client-affiliations-page .affiliation-copy strong { font-weight: 750; }
+.client-affiliations-page .affiliation-website { color: var(--home-green); font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.client-affiliations-page .affiliations-motto { margin-bottom: 28px; padding-bottom: 0; border-radius: 12px; background: var(--home-ink); color: #fff; }
+.client-affiliations-page .affiliations-motto .affiliations-scroll-group { min-width: 100cqw; padding-right: 48px; }
+.client-affiliations-page .affiliations-motto span { display: block; padding: 20px 24px; white-space: nowrap; font-size: 22px; font-weight: 650; line-height: 1.5; }
+.client-affiliations-page .affiliations-blink { animation: affiliations-blink 3s ease-in-out infinite; }
+@keyframes affiliations-blink { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+
+@media (max-width: 767.98px) {
+  .client-affiliations-page { padding: 40px 0 32px; }
+  .client-affiliations-page .affiliations-row { --visible-items: 2; }
+}
+@media (max-width: 575.98px) {
+  .client-affiliations-page .affiliations-row { --visible-items: 1; }
+  .client-affiliations-page .affiliations-page-heading { gap: 12px; margin-bottom: 24px; }
+  .client-affiliations-page h1 { font-size: 32px; }
+  .client-affiliations-page .affiliations-row-title { font-size: 23px; }
+  .client-affiliations-page .affiliation-copy { padding: 24px; font-size: 18px; }
+  .client-affiliations-page .affiliations-motto span { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .client-affiliations-page .affiliations-blink { animation: none; }
+  .client-affiliations-page .affiliations-scroll-group[aria-hidden="true"] { display: none; }
+}

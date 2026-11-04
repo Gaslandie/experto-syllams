@@ -15,12 +15,12 @@ const testimonials = [
   {
     name: "TATIANA EBOT",
     role: "DG CIP",
-    text: "Toujours disponilbe pour m'aider à gerer ma société, je recommande  Experto-Syllams",
+    text: "Toujours disponible pour m'aider à gérer ma société, je recommande le Groupe Experto-Syllams",
   },
   {
     name: "HENRY LIU",
     role: "DG Sous-Regional Star DTV Co",
-    text: "Experto-Syllams est d'une grande aide, une experte comme on aime en avoir ! Je recommande vivement ses services.",
+    text: "Le groupe Experto-Syllams est d'une grande aide, une expertise comme on aime en avoir ! Je recommande vivement ses services.",
   },
 ];
 

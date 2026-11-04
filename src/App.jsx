@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Link, Route, Routes, useLocation } from "react-router-dom";
 import Home1 from "./pages/index";
 import ClientTrustPage from "./section/client/ClientTrustPage";
+import ClientAffiliationsPage from "./section/client/ClientAffiliationsPage";
 import Layout from "./layouts/Layout";
 import { AboutPage, ContactPage } from "./section/client/ClientPages";
 
@@ -17,7 +18,7 @@ function Construction() {
 function SiteRoutes() {
   const { pathname, hash, key } = useLocation();
   useEffect(() => {
-    document.title = `${pathname === "/" ? "Accueil" : pathname === "/qui-sommes-nous" ? "Qui sommes-nous ?" : pathname === "/references" ? "Nous font confiance" : pathname === "/contacts" ? "Contacts" : "En construction"} | GROUPE EXPERTO-SYLLAMS`;
+    document.title = `${pathname === "/" ? "Accueil" : pathname === "/qui-sommes-nous" ? "Qui sommes-nous ?" : pathname === "/references" ? "Nous font confiance" : pathname === "/references/nationales" ? "Nationaux" : pathname === "/references/internationales" ? "Internationales" : pathname === "/contacts" ? "Contacts" : "En construction"} | GROUPE EXPERTO-SYLLAMS`;
     document.body.classList.remove("mobile-menu-visible");
     let targetId = "";
     try {
@@ -37,6 +38,8 @@ function SiteRoutes() {
     <Route path="/" element={<Home1 />} />
     <Route path="/qui-sommes-nous" element={<AboutPage />} />
     <Route path="/references" element={<ClientTrustPage />} />
+    <Route path="/references/nationales" element={<ClientAffiliationsPage key="nationales" category="nationales" />} />
+    <Route path="/references/internationales" element={<ClientAffiliationsPage key="internationales" category="internationales" />} />
     <Route path="/contacts" element={<ContactPage />} />
     <Route path="*" element={<Construction />} />
   </Routes>;
