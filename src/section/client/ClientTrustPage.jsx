@@ -112,6 +112,10 @@ export function ClientTrustSection({ embedded = false }) {
       <div className="container trust-container">
         <Heading id="trust-page-title" className="trust-page-title">Nous font confiance</Heading>
 
+        <div className="trust-client-logos">
+          <PartnerLogoStrip />
+        </div>
+
         <section className="trust-rating-band" aria-label="Note des avis Google">
           <div className="trust-rating-score">
             <span className="trust-rating-number">5.0</span>
@@ -132,9 +136,6 @@ export function ClientTrustSection({ embedded = false }) {
             <Link className="trust-button trust-button-secondary" to="/contacts">Nous écrire</Link>
           </div>
         </section>
-        <div className="trust-client-logos">
-          <PartnerLogoStrip />
-        </div>
       </div>
     </Container>;
 }

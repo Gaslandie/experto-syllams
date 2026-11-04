@@ -21,7 +21,7 @@
   padding-inline: 12px;
 }
 
-.client-trust-page .trust-client-logos { margin-top: 48px; }
+.client-trust-page .trust-client-logos { margin-bottom: 48px; }
 
 .client-trust-page .trust-page-title {
   margin: 0 0 28px;
@@ -282,7 +282,7 @@
   .client-trust-page .trust-testimonials { margin-block: 32px; }
   .client-trust-page .trust-testimonial { width: min(360px, calc(100vw - 64px)); min-height: 280px; padding: 24px; }
   .client-trust-page .trust-invitation { padding: 40px 24px; }
-  .client-trust-page .trust-client-logos { margin-top: 32px; }
+  .client-trust-page .trust-client-logos { margin-bottom: 32px; }
 }
 
 @media (max-width: 399.98px) {

@@ -126,9 +126,9 @@ export default function ClientAffiliationsPage({ category }) {
   return <div className="page-wrapper"><Layout>
     <main className="client-affiliations-page experto-home-content">
       <div className="container">
-        <div className="affiliations-page-heading">
+        {!international && <div className="affiliations-page-heading">
           <h1>{title}</h1>
-        </div>
+        </div>}
         {international && <AutoScroller id="affiliations-motto" label={affiliations.tagline} speed={30} className="affiliations-motto">
           {() => <span>{affiliations.tagline}</span>}
         </AutoScroller>}
