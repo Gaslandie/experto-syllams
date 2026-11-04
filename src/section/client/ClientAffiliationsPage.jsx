@@ -89,15 +89,17 @@ function AutoScroller({ id, label, list = false, speed = 18, className = "", onP
 }
 
 function AffiliationCard({ item, hidden }) {
+  const logos = item.logos || [{ logo: item.logo, name: item.name, width: item.width, height: item.height }];
   return <li className="affiliation-card">
-    <figure className="affiliation-logo">
-      <img src={`${import.meta.env.BASE_URL}${item.logo}`} alt={hidden ? "" : `Logo ${item.name}`}
-        width={item.width} height={item.height} loading="eager" decoding="async" />
+    <figure className={`affiliation-logo${logos.length > 1 ? " affiliation-logo--stacked" : ""}`}>
+      {logos.map(logo => <img key={logo.logo} src={`${import.meta.env.BASE_URL}${logo.logo}`} alt={hidden ? "" : `Logo ${logo.name}`}
+        width={logo.width} height={logo.height} loading="eager" decoding="async" />)}
     </figure>
     <div className="affiliation-copy">
       {item.paragraphs.map((parts, index) => <p key={index}>
-        {parts.map(({ text, bold, italic }, partIndex) => {
+        {parts.map(({ text, bold, italic, href }, partIndex) => {
           const content = italic ? <em>{text}</em> : text;
+          if (href) return <a key={partIndex} href={href} target="_blank" rel="noopener noreferrer" tabIndex={hidden ? -1 : undefined}>{bold ? <strong>{content}</strong> : content}</a>;
           return bold ? <strong key={partIndex}>{content}</strong> : <span key={partIndex}>{content}</span>;
         })}
       </p>)}

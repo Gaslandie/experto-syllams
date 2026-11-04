@@ -182,6 +182,317 @@
           }
         ]
       ]
+    },
+    {
+      "id": "onecca-mali",
+      "name": "ONECCA Mali",
+      "logo": "images/affiliations/nationales/onecca-mali.jpg",
+      "paragraphs": [
+        [
+          {
+            "text": "L’Ordre National des Experts-Comptables et des Comptables Agréés du Mali",
+            "bold": true
+          },
+          {
+            "text": " est l’institution publique à caractère professionnel qui possède le monopole légal pour réglementer, encadrer et représenter la profession comptable sur l’ensemble du territoire malien. Placé sous la tutelle du ministère de l’Économie et des Finances, il est garant de la fiabilité de l’information financière des entreprises du pays."
+          }
+        ],
+        [
+          {
+            "text": "L’Ordre examine les compétences et la moralité des candidats. Nul ne peut exercer la profession d’expert-comptable ou de comptable agréé au Mali sans y être inscrit ("
+          },
+          {
+            "text": "Réguler l’accès au métier",
+            "bold": true
+          },
+          {
+            "text": ")."
+          }
+        ],
+        [
+          {
+            "text": "Il publie et met à jour l’annuaire officiel des professionnels et des cabinets autorisés à exercer légalement, ce qui permet de lutter contre l’exercice illégal de la comptabilité ("
+          },
+          {
+            "text": "Tenir le Tableau de l’Ordre",
+            "bold": true
+          },
+          {
+            "text": ")."
+          }
+        ],
+        [
+          {
+            "text": "Il veille au respect du code d’éthique, applique les normes internationales (notamment le référentiel révisé du SYSCOHADA en vigueur dans l’espace UEMOA) et dispose d’un pouvoir disciplinaire ("
+          },
+          {
+            "text": "Assurer la déontologie et la qualité",
+            "bold": true
+          },
+          {
+            "text": ")."
+          }
+        ]
+      ],
+      "url": "https://www.onecca-mali.org/",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "etats-unis",
+      "name": "AICPA & CIMA et NASBA",
+      "logo": "images/affiliations/nationales/aicpa-cima.png",
+      "paragraphs": [
+        [
+          {
+            "text": "Aux États-Unis, la profession d’expert-comptable (Certified Public Accountant ou CPA) n’est pas gérée par un ordre national unique centralisé comme en France, mais par une organisation décentralisée reposant sur plusieurs institutions de référence."
+          }
+        ],
+        [
+          {
+            "text": "Les Boards de chaque État (State Boards of Accountancy)",
+            "bold": true
+          },
+          {
+            "text": " : Aux États-Unis, la licence de CPA est délivrée et régulée individuellement par chaque État."
+          }
+        ],
+        [
+          {
+            "text": "American Institute of Certified Public Accountants (AICPA & CIMA)",
+            "bold": true
+          },
+          {
+            "text": " : C’est la principale organisation professionnelle nationale représentant les experts-comptables. Elle élabore les normes d’audit et les règles déontologiques, et conçoit l’examen national CPA."
+          }
+        ],
+        [
+          {
+            "text": "https://www.aicpa-cima.com/home",
+            "href": "https://www.aicpa-cima.com/home"
+          }
+        ],
+        [
+          {
+            "text": "National Association of State Boards of Accountancy (NASBA) : Elle regroupe les conseils d’administration de la comptabilité des différents États américains (State Boards) et gère la coordination des examens et des licences."
+          }
+        ]
+      ],
+      "url": "https://nasba.org/",
+      "logos": [
+        {
+          "logo": "images/affiliations/nationales/aicpa-cima.png",
+          "name": "AICPA & CIMA",
+          "width": 1440,
+          "height": 1440
+        },
+        {
+          "logo": "images/affiliations/nationales/nasba.jpg",
+          "name": "NASBA",
+          "width": 399,
+          "height": 120
+        }
+      ],
+      "width": 1440,
+      "height": 1440
+    },
+    {
+      "id": "oec-france",
+      "name": "Ordre des experts-comptables — Conseil national",
+      "logo": "images/affiliations/nationales/oec-france.svg",
+      "paragraphs": [
+        [
+          {
+            "text": "En France, "
+          },
+          {
+            "text": "l’OEC",
+            "bold": true
+          },
+          {
+            "text": " désigne l’"
+          },
+          {
+            "text": "Ordre des experts-comptables",
+            "bold": true
+          },
+          {
+            "text": ", une institution professionnelle réglementée créée par l’ordonnance du 19 septembre 1945. Placé sous la tutelle du ministère de l’Économie et des Finances, il regroupe et encadre obligatoirement toutes les personnes habilitées à exercer la profession d’expert-comptable dans le pays."
+          }
+        ],
+        [
+          {
+            "text": "L’OEC remplit des missions d’intérêt public pour encadrer la profession et protéger le tissu économique :"
+          }
+        ],
+        [
+          {
+            "text": "– Réguler l’accès au métier"
+          }
+        ],
+        [
+          {
+            "text": "– Garantir la déontologie"
+          }
+        ],
+        [
+          {
+            "text": "– Lutter contre l’exercice illégal"
+          }
+        ],
+        [
+          {
+            "text": "– Représenter la profession"
+          }
+        ],
+        [
+          {
+            "text": "L’institution s’organise sur deux échelons territoriaux distincts :"
+          }
+        ],
+        [
+          {
+            "text": "– Le "
+          },
+          {
+            "text": "Conseil National (CNOEC)",
+            "bold": true
+          },
+          {
+            "text": " : Basé à Paris"
+          }
+        ],
+        [
+          {
+            "text": "– Les "
+          },
+          {
+            "text": "Conseils Régionaux (CROEC)",
+            "bold": true
+          },
+          {
+            "text": " : Ils gèrent la profession au plus près du terrain"
+          }
+        ]
+      ],
+      "url": "https://www.experts-comptables.org/",
+      "width": 382,
+      "height": 76
+    },
+    {
+      "id": "cpa-canada",
+      "name": "CPA Canada",
+      "logo": "images/affiliations/nationales/cpa-canada.png",
+      "paragraphs": [
+        [
+          {
+            "text": "Au "
+          },
+          {
+            "text": "Canada",
+            "bold": true
+          },
+          {
+            "text": ", il n’existe pas d’organisme portant textuellement le nom d’« Ordre des experts-comptables ». L’équivalent officiel est l’organisation des "
+          },
+          {
+            "text": "Comptables professionnels agréés (CPA)",
+            "bold": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        [
+          {
+            "text": "Contrairement à la France ou en Guinée où la profession est centralisée par un Ordre national unique, le système canadien est décentralisé par province et territoire."
+          }
+        ],
+        [
+          {
+            "text": "Une structure en deux échelons",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "L’échelon national — CPA Canada",
+            "bold": true
+          },
+          {
+            "text": " : C’est l’organisation nationale qui unifie la profession. Elle représente les CPA canadiens à l’échelle internationale, contribue à l’élaboration des normes comptables, et développe le programme de formation professionnelle (PEP)."
+          }
+        ],
+        [
+          {
+            "text": "https://www.cpacanada.ca/fr",
+            "href": "https://www.cpacanada.ca/fr"
+          }
+        ],
+        [
+          {
+            "text": "L’échelon provincial — Les Ordres provinciaux : Ce sont eux qui possèdent le pouvoir légal de réglementer la profession. Par exemple, si vous exercez au Québec, vous devez obligatoirement être inscrit à l’Ordre des CPA du Québec. Ce sont ces ordres locaux qui délivrent le permis d’exercice, gèrent le tableau des membres et protègent le public."
+          }
+        ]
+      ],
+      "url": "https://cpaquebec.ca/",
+      "width": 1920,
+      "height": 463
+    },
+    {
+      "id": "cicpa",
+      "name": "CICPA",
+      "logo": "images/affiliations/nationales/cicpa.jpg",
+      "paragraphs": [
+        [
+          {
+            "text": "En Chine, l’équivalent de l’Ordre des experts-comptables s’appelle le CICPA (Chinese Institute of Certified Public Accountants / 中国注册会计师协会).",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "Placé sous la supervision directe du ministère des Finances de la République populaire de Chine, ce portail officiel remplit plusieurs fonctions majeures :",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "– "
+          },
+          {
+            "text": "Réglementation et normes ;",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "– "
+          },
+          {
+            "text": "L’examen national CPA ;",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "– "
+          },
+          {
+            "text": "Annuaire et contrôle",
+            "bold": true
+          }
+        ],
+        [
+          {
+            "text": "https://www.cicpa.org.cn/introcicpa/",
+            "href": "https://www.cicpa.org.cn/introcicpa/"
+          }
+        ]
+      ],
+      "url": "https://www.cicpa.org.cn/",
+      "width": 691,
+      "height": 534
     }
   ],
   "internationales": [

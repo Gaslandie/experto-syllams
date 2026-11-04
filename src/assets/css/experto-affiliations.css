@@ -76,6 +76,9 @@
 }
 
 .client-affiliations-page .affiliation-logo img { display: block; width: 100%; height: 130px; object-fit: contain; }
+.client-affiliations-page .affiliation-logo--stacked { grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.client-affiliations-page .affiliation-logo--stacked img { height: 100%; min-height: 0; }
+.client-affiliations-page .affiliation-logo--stacked img:first-child { object-fit: cover; }
 .client-affiliations-page .affiliation-copy {
   flex: 1;
   padding: 18px 16px 24px;
@@ -90,6 +93,7 @@
 .client-affiliations-page .affiliation-copy p { margin: 0 0 14px; color: inherit; font: inherit; }
 .client-affiliations-page .affiliation-copy p:last-child { margin-bottom: 0; }
 .client-affiliations-page .affiliation-copy strong { font-weight: 750; }
+.client-affiliations-page .affiliation-copy a { overflow-wrap: anywhere; }
 .client-affiliations-page .affiliation-website { color: var(--home-green); font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .client-affiliations-page .affiliations-motto { margin-bottom: 28px; padding-bottom: 0; border-radius: 12px; background: var(--home-ink); color: #fff; }
 .client-affiliations-page .affiliations-motto .affiliations-scroll-group { min-width: 100cqw; padding-right: 48px; }
